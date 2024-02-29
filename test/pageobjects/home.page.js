@@ -135,6 +135,42 @@ class HomePage extends Page {
     Title_DT="Check out the latest transactions in Dubai real estate!" 
     Tile_BayutGPT="Get help from the UAE's First AI Property Search Assistant!"
 
+    get PopularLinks00(){
+        return $('//div[@class="_6944f1d2"]/a[.="Dubai Apartments" and contains(@href, "sale")]')
+    }
+    get PopularLinks10(){
+        return $('//a[contains(text(), "Dubai Marina") and contains(@href, "sale")]')
+    }
+    get PopularLinks20(){
+        return $('//a[contains(text(), "Jumeirah Lake Towers (JLT)") and contains(@href, "sale")]')
+    }
+    get PopularLinks30(){
+        return $('//a[contains(text(), "Downtown Dubai") and contains(@href, "sale")]')
+    }
+    get PopularLinks40(){
+        return $('//a[contains(text(), "Business Bay") and contains(@href, "sale")]')
+    }
+    get PopularLinks50(){
+        return $('//li[contains(@class, "_76ddbf32") and contains(@class, "af2d23c9")]//a[text()="Palm Jumeirah" and contains(@href, "sale/apartments")]')
+    }
+    get PopularLinks60(){
+        return $('//li[contains(@class, "_76ddbf32") and contains(@class, "af2d23c9")]//a[text()="Jumeirah Village Circle (JVC)" and contains(@href, "sale/apartments")]')
+    }
+    get PopularLinks70(){
+        return $('//li[contains(@class, "_76ddbf32") and contains(@class, "af2d23c9")]//a[text()="Dubai Silicon Oasis" and contains(@href, "sale/apartments")]')
+    }
+    get PopularLinks80(){
+        return $('//li[contains(@class, "_76ddbf32") and contains(@class, "af2d23c9")]//a[text()="Dubai Sports City" and contains(@href, "sale/apartments")]')
+    }
+    get PopularLinks90(){
+        return $('//li[contains(@class, "_76ddbf32") and contains(@class, "af2d23c9")]//a[text()="Jumeirah Beach Residence (JBR)" and contains(@href, "sale/apartments")]')
+    }
+    get PopularLinks100(){
+        return $('//li[contains(@class, "_76ddbf32") and contains(@class, "af2d23c9")]//a[text()="International City" and contains(@href, "sale/apartments")]')
+    }
+    get ViewAllBtn(){
+        return $('//main/div[5]/div/div[2]/div[1]/div[1]/div/div[1]/div[2]')
+    }
     async SelectPropertyType(element){
          if (element ==='apartment') {
             await this.waitForElementDisplayed(this.PropertyType)

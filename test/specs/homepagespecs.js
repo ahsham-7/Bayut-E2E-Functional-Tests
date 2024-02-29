@@ -130,40 +130,137 @@ describe('HomePage', async () => {
     //     expect(currentUrl).to.include(minNumber).and.to.include(maxNumber);
     // });
     
-    it('Verify Dubai Transaction Tab', async () => {
+    // it('Verify Dubai Transaction Tab', async () => {
+    //     HomePage.openE2E()
+    //     await HomePage.waitForElementDisplayed(HomePage.DubaiTransactionsTab)
+    //     await HomePage.DubaiTransactionsTab.click()
+    //     await HomePage.waitForElementDisplayed(HomePage.HomePageTitleText)
+    //     const text= await HomePage.HomePageTitleText
+    //     const textVal= await text.getText()
+    //     console.log(textVal)
+    //     expect(textVal).to.equal(HomePage.Title_DT)
+    // }),
+    // it('Verify BayutGPT Tab', async () => {
+    //     HomePage.openE2E()
+    //     await HomePage.waitForElementDisplayed(HomePage.GptTab)
+    //     await HomePage.GptTab.click()
+    //     await HomePage.waitForElementDisplayed(HomePage.HomePageTitleText)
+    //     const text= await HomePage.HomePageTitleText
+    //     const textVal= await text.getText()
+    //     console.log(textVal)
+    //     expect(textVal).to.equal(HomePage.Tile_BayutGPT)
+    // }),
+    // it('Verify Property Search Tab', async () => {
+    //     HomePage.openE2E()
+    //     await HomePage.waitForElementDisplayed(HomePage.SearchPageTab)
+    //     await HomePage.SearchPageTab.click()
+    //     await HomePage.waitForElementDisplayed(HomePage.HomePageTitleText)
+    //     const text= await HomePage.HomePageTitleText
+    //     const textVal= await text.getText()
+    //     console.log(textVal)
+    //     expect(textVal).to.equal(HomePage.Title_Homepage)
+    // }),
+    // it('Verify Popular Links Sale: Dubai Aparmtents', async () => {
+    //     HomePage.openE2E()
+    //     await HomePage.waitForElementDisplayed(HomePage.PopularLinks00)
+    //     await HomePage.PopularLinks00.click()
+    //     await HomePage.waitForPageToLoad()
+    //     const currentUrl= await browser.getUrl()
+    //     expect(currentUrl).to.include('dubai').and.to.include('sale') 
+    // }),
+    // it('Verify Popular Links Sale: Dubai Marina', async () => {
+    //     HomePage.openE2E()
+    //     await HomePage.waitForElementDisplayed(HomePage.PopularLinks10)
+    //     await HomePage.PopularLinks10.click()
+    //     await HomePage.waitForPageToLoad()
+    //     const currentUrl= await browser.getUrl()
+    //     expect(currentUrl).to.include('dubai-marina').and.to.include('sale') 
+    // }),
+    // it('Verify Popular Links Sale: Jumeirah Lake Towers (JLT)', async () => {
+    //     HomePage.openE2E()
+    //     await HomePage.waitForElementDisplayed(HomePage.PopularLinks20)
+    //     await HomePage.PopularLinks20.click()
+    //     await HomePage.waitForPageToLoad()
+    //     const currentUrl= await browser.getUrl()
+    //     expect(currentUrl).to.include('jumeirah-lake-towers-jlt').and.to.include('sale') 
+    // }),
+    // it('Verify Popular Links Sale: Downtown Dubai)', async () => {
+    //     HomePage.openE2E()
+    //     await HomePage.waitForElementDisplayed(HomePage.PopularLinks30)
+    //     await HomePage.PopularLinks30.click()
+    //     await HomePage.waitForPageToLoad()
+    //     const currentUrl= await browser.getUrl()
+    //     expect(currentUrl).to.include('downtown-dubai').and.to.include('sale') 
+    // }),
+    // it('Verify Popular Links Sale: Business Bay', async () => {
+    //     HomePage.openE2E()
+    //     await HomePage.waitForElementDisplayed(HomePage.PopularLinks40)
+    //     await HomePage.PopularLinks40.click()
+    //     await HomePage.waitForPageToLoad()
+    //     const currentUrl= await browser.getUrl()
+    //     expect(currentUrl).to.include('business-bay').and.to.include('sale') 
+    // }),
+    it('Verify Popular Links Sale: Palm Jumeirah', async () => {
         HomePage.openE2E()
-        await HomePage.waitForElementDisplayed(HomePage.DubaiTransactionsTab)
-        await HomePage.DubaiTransactionsTab.click()
-        await HomePage.waitForElementDisplayed(HomePage.HomePageTitleText)
-        const text= await HomePage.HomePageTitleText
-        const textVal= await text.getText()
-        console.log(textVal)
-        expect(textVal).to.equal(HomePage.Title_DT)
+        await HomePage.waitForElementDisplayed(HomePage.PopularLinks50)
+        await HomePage.PopularLinks50.click()
+        await HomePage.waitForPageToLoad()
+        const currentUrl= await browser.getUrl()
+        expect(currentUrl).to.include('palm-jumeirah').and.to.include('sale') 
     }),
-    it('Verify BayutGPT Tab', async () => {
+      it('Verify Popular Links Sale: Jumeirah Village Circle(JVC)', async () => {
         HomePage.openE2E()
-        await HomePage.waitForElementDisplayed(HomePage.GptTab)
-        await HomePage.GptTab.click()
-        await HomePage.waitForElementDisplayed(HomePage.HomePageTitleText)
-        const text= await HomePage.HomePageTitleText
-        const textVal= await text.getText()
-        console.log(textVal)
-        expect(textVal).to.equal(HomePage.Tile_BayutGPT)
-    }),
-    it('Verify Property Search Tab', async () => {
-        HomePage.openE2E()
-        await HomePage.waitForElementDisplayed(HomePage.SearchPageTab)
-        await HomePage.SearchPageTab.click()
-        await HomePage.waitForElementDisplayed(HomePage.HomePageTitleText)
-        const text= await HomePage.HomePageTitleText
-        const textVal= await text.getText()
-        console.log(textVal)
-        expect(textVal).to.equal(HomePage.Title_Homepage)
+        await HomePage.waitForElementDisplayed(HomePage.ViewAllBtn)
+        await HomePage.ViewAllBtn.click()
+        await HomePage.waitForElementDisplayed(HomePage.PopularLinks60)
+        await HomePage.PopularLinks60.click()
+        await HomePage.waitForPageToLoad()
+        const currentUrl= await browser.getUrl()
+        expect(currentUrl).to.include('jumeirah-village-circle-jvc').and.to.include('sale') 
     })
-
-
-
-
+    it('Verify Popular Links Sale: Dubai Silicon Oasis', async () => {
+        HomePage.openE2E()
+        await HomePage.waitForElementDisplayed(HomePage.ViewAllBtn)
+        await HomePage.ViewAllBtn.click()
+        await HomePage.waitForElementDisplayed(HomePage.PopularLinks70)
+        await HomePage.PopularLinks70.click()
+        await HomePage.waitForPageToLoad()
+        const currentUrl= await browser.getUrl()
+        expect(currentUrl).to.include('dubai-silicon-oasis').and.to.include('sale') 
+    }),
+    it('Verify Popular Links Sale: Dubai Sports City', async () => {
+        HomePage.openE2E()
+        await HomePage.waitForElementDisplayed(HomePage.ViewAllBtn)
+        await HomePage.ViewAllBtn.click()
+        await HomePage.waitForElementDisplayed(HomePage.PopularLinks80)
+        await HomePage.PopularLinks80.click()
+        await HomePage.waitForPageToLoad()
+        const currentUrl= await browser.getUrl()
+        expect(currentUrl).to.include('dubai-sports-city').and.to.include('sale') 
+    }),
+    it('Verify Popular Links Sale: Jumeirah Beach Residence (JBR)', async () => {
+        HomePage.openE2E()
+        await HomePage.waitForElementDisplayed(HomePage.ViewAllBtn)
+        await HomePage.ViewAllBtn.click()
+        await HomePage.waitForElementDisplayed(HomePage.PopularLinks90)
+        await HomePage.PopularLinks90.click()
+        await HomePage.waitForPageToLoad()
+        const currentUrl= await browser.getUrl()
+        expect(currentUrl).to.include('jumeirah-beach-residence-jbr').and.to.include('sale') 
+    }),
+    it('Verify Popular Links Sale: International City', async () => {
+        HomePage.openE2E()
+        await HomePage.waitForElementDisplayed(HomePage.ViewAllBtn)
+        await HomePage.ViewAllBtn.click()
+        await HomePage.waitForElementDisplayed(HomePage.PopularLinks100)
+        await HomePage.PopularLinks100.click()
+        await HomePage.waitForPageToLoad()
+        const currentUrl= await browser.getUrl()
+        expect(currentUrl).to.include('international-city').and.to.include('sale') 
+    })
+    
+    
+    
 })
 
 
