@@ -200,64 +200,113 @@ describe('HomePage', async () => {
     //     const currentUrl= await browser.getUrl()
     //     expect(currentUrl).to.include('business-bay').and.to.include('sale') 
     // }),
-    it('Verify Popular Links Sale: Palm Jumeirah', async () => {
+    // it('Verify Popular Links Sale: Palm Jumeirah', async () => {
+    //     HomePage.openE2E()
+    //     await HomePage.waitForElementDisplayed(HomePage.PopularLinks50)
+    //     await HomePage.PopularLinks50.click()
+    //     await HomePage.waitForPageToLoad()
+    //     const currentUrl= await browser.getUrl()
+    //     expect(currentUrl).to.include('palm-jumeirah').and.to.include('sale') 
+    // }),
+    //   it('Verify Popular Links Sale: Jumeirah Village Circle(JVC)', async () => {
+    //     HomePage.openE2E()
+    //     await HomePage.waitForElementDisplayed(HomePage.ViewAllBtn)
+    //     await HomePage.ViewAllBtn.click()
+    //     await HomePage.waitForElementDisplayed(HomePage.PopularLinks60)
+    //     await HomePage.PopularLinks60.click()
+    //     await HomePage.waitForPageToLoad()
+    //     const currentUrl= await browser.getUrl()
+    //     expect(currentUrl).to.include('jumeirah-village-circle-jvc').and.to.include('sale') 
+    // })
+    // it('Verify Popular Links Sale: Dubai Silicon Oasis', async () => {
+    //     HomePage.openE2E()
+    //     await HomePage.waitForElementDisplayed(HomePage.ViewAllBtn)
+    //     await HomePage.ViewAllBtn.click()
+    //     await HomePage.waitForElementDisplayed(HomePage.PopularLinks70)
+    //     await HomePage.PopularLinks70.click()
+    //     await HomePage.waitForPageToLoad()
+    //     const currentUrl= await browser.getUrl()
+    //     expect(currentUrl).to.include('dubai-silicon-oasis').and.to.include('sale') 
+    // }),
+    // it('Verify Popular Links Sale: Dubai Sports City', async () => {
+    //     HomePage.openE2E()
+    //     await HomePage.waitForElementDisplayed(HomePage.ViewAllBtn)
+    //     await HomePage.ViewAllBtn.click()
+    //     await HomePage.waitForElementDisplayed(HomePage.PopularLinks80)
+    //     await HomePage.PopularLinks80.click()
+    //     await HomePage.waitForPageToLoad()
+    //     const currentUrl= await browser.getUrl()
+    //     expect(currentUrl).to.include('dubai-sports-city').and.to.include('sale') 
+    // }),
+    // it('Verify Popular Links Sale: Jumeirah Beach Residence (JBR)', async () => {
+    //     HomePage.openE2E()
+    //     await HomePage.waitForElementDisplayed(HomePage.ViewAllBtn)
+    //     await HomePage.ViewAllBtn.click()
+    //     await HomePage.waitForElementDisplayed(HomePage.PopularLinks90)
+    //     await HomePage.PopularLinks90.click()
+    //     await HomePage.waitForPageToLoad()
+    //     const currentUrl= await browser.getUrl()
+    //     expect(currentUrl).to.include('jumeirah-beach-residence-jbr').and.to.include('sale') 
+    // }),
+    it('Verify Popular Links Sale: Abu Dhabi Apartments', async () => {
         HomePage.openE2E()
-        await HomePage.waitForElementDisplayed(HomePage.PopularLinks50)
-        await HomePage.PopularLinks50.click()
+        await HomePage.waitForElementDisplayed(HomePage.PopularLinks01)
+        await HomePage.PopularLinks01.click()
         await HomePage.waitForPageToLoad()
         const currentUrl= await browser.getUrl()
-        expect(currentUrl).to.include('palm-jumeirah').and.to.include('sale') 
+        expect(currentUrl).to.include('abu-dhabi').and.to.include('sale') 
     }),
-      it('Verify Popular Links Sale: Jumeirah Village Circle(JVC)', async () => {
+    it('Verify Popular Links Sale: Al Reem Islands', async () => {
+        HomePage.openE2E()
+        await HomePage.waitForElementDisplayed(HomePage.PopularLinks02)
+        await HomePage.PopularLinks02.click()
+        await HomePage.waitForPageToLoad()
+        const currentUrl= await browser.getUrl()
+        expect(currentUrl).to.include('al-reem-island').and.to.include('sale') 
+    }),
+    it('Verify Popular Links Sale: Al Reef', async () => {
+        HomePage.openE2E()
+        await HomePage.waitForElementDisplayed(HomePage.PopularLinks03)
+        await HomePage.PopularLinks03.click()
+        await HomePage.waitForPageToLoad()
+        const currentUrl= await browser.getUrl()
+        expect(currentUrl).to.include('al-reef').and.to.include('sale') 
+    }),
+    it('Verify Popular Links Sale: Al Ghadeer', async () => {
+        HomePage.openE2E()
+        await HomePage.waitForElementDisplayed(HomePage.PopularLinks04)
+        await HomePage.PopularLinks04.click()
+        await HomePage.waitForPageToLoad()
+        const currentUrl= await browser.getUrl()
+        expect(currentUrl).to.include('al-ghadeer').and.to.include('sale') 
+    }),
+    it('Verify Popular Links Sale: Al Raha Beech', async () => {
+        HomePage.openE2E()
+        await HomePage.waitForElementDisplayed(HomePage.PopularLinks05)
+        await HomePage.PopularLinks05.click()
+        await HomePage.waitForPageToLoad()
+        const currentUrl= await browser.getUrl()
+        expect(currentUrl).to.include('al-raha-beach').and.to.include('sale') 
+    }),
+    it('Verify Popular Links Sale: Saadiyat Islands', async () => {
+        HomePage.openE2E()
+        await HomePage.waitForElementDisplayed(HomePage.PopularLinks06)
+        await HomePage.PopularLinks06.click()
+        await HomePage.waitForPageToLoad()
+        const currentUrl= await browser.getUrl()
+        expect(currentUrl).to.include('saadiyat-island').and.to.include('sale') 
+    }),
+    it('Verify Popular Links Sale: Yas Islands', async () => {
         HomePage.openE2E()
         await HomePage.waitForElementDisplayed(HomePage.ViewAllBtn)
         await HomePage.ViewAllBtn.click()
-        await HomePage.waitForElementDisplayed(HomePage.PopularLinks60)
-        await HomePage.PopularLinks60.click()
+        await HomePage.waitForElementDisplayed(HomePage.PopularLinks07)
+        await HomePage.PopularLinks07.click()
         await HomePage.waitForPageToLoad()
         const currentUrl= await browser.getUrl()
-        expect(currentUrl).to.include('jumeirah-village-circle-jvc').and.to.include('sale') 
+        expect(currentUrl).to.include('yas-island').and.to.include('sale') 
     })
-    it('Verify Popular Links Sale: Dubai Silicon Oasis', async () => {
-        HomePage.openE2E()
-        await HomePage.waitForElementDisplayed(HomePage.ViewAllBtn)
-        await HomePage.ViewAllBtn.click()
-        await HomePage.waitForElementDisplayed(HomePage.PopularLinks70)
-        await HomePage.PopularLinks70.click()
-        await HomePage.waitForPageToLoad()
-        const currentUrl= await browser.getUrl()
-        expect(currentUrl).to.include('dubai-silicon-oasis').and.to.include('sale') 
-    }),
-    it('Verify Popular Links Sale: Dubai Sports City', async () => {
-        HomePage.openE2E()
-        await HomePage.waitForElementDisplayed(HomePage.ViewAllBtn)
-        await HomePage.ViewAllBtn.click()
-        await HomePage.waitForElementDisplayed(HomePage.PopularLinks80)
-        await HomePage.PopularLinks80.click()
-        await HomePage.waitForPageToLoad()
-        const currentUrl= await browser.getUrl()
-        expect(currentUrl).to.include('dubai-sports-city').and.to.include('sale') 
-    }),
-    it('Verify Popular Links Sale: Jumeirah Beach Residence (JBR)', async () => {
-        HomePage.openE2E()
-        await HomePage.waitForElementDisplayed(HomePage.ViewAllBtn)
-        await HomePage.ViewAllBtn.click()
-        await HomePage.waitForElementDisplayed(HomePage.PopularLinks90)
-        await HomePage.PopularLinks90.click()
-        await HomePage.waitForPageToLoad()
-        const currentUrl= await browser.getUrl()
-        expect(currentUrl).to.include('jumeirah-beach-residence-jbr').and.to.include('sale') 
-    }),
-    it('Verify Popular Links Sale: International City', async () => {
-        HomePage.openE2E()
-        await HomePage.waitForElementDisplayed(HomePage.ViewAllBtn)
-        await HomePage.ViewAllBtn.click()
-        await HomePage.waitForElementDisplayed(HomePage.PopularLinks100)
-        await HomePage.PopularLinks100.click()
-        await HomePage.waitForPageToLoad()
-        const currentUrl= await browser.getUrl()
-        expect(currentUrl).to.include('international-city').and.to.include('sale') 
-    })
+
     
     
     

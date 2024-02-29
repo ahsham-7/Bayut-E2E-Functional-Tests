@@ -168,6 +168,28 @@ class HomePage extends Page {
     get PopularLinks100(){
         return $('//li[contains(@class, "_76ddbf32") and contains(@class, "af2d23c9")]//a[text()="International City" and contains(@href, "sale/apartments")]')
     }
+    get PopularLinks01(){
+        return $('//a[contains(text(), "Abu Dhabi Apartments") and contains(@href, "sale")]')
+    }
+    get PopularLinks02(){
+        return $('//li[contains(@class, "_76ddbf32") and contains(@class, "af2d23c9")]//a[text()="Al Reem Island" and contains(@href, "sale/apartments")]')
+    }
+    get PopularLinks03(){
+        return $('//li[contains(@class, "_76ddbf32") and contains(@class, "af2d23c9")]//a[text()="Al Reef" and contains(@href, "sale/apartments")]')
+    }
+    get PopularLinks04(){
+        return $('//li[contains(@class, "_76ddbf32") and contains(@class, "af2d23c9")]//a[text()="Al Ghadeer" and contains(@href, "sale/apartments")]')
+    }
+    get PopularLinks05(){
+        return $('//li[contains(@class, "_76ddbf32") and contains(@class, "af2d23c9")]//a[text()="Al Raha Beach" and contains(@href, "sale/apartments")]')
+    }
+    get PopularLinks06(){
+        return $('//li[contains(@class, "_76ddbf32") and contains(@class, "af2d23c9")]//a[text()="Saadiyat Island" and contains(@href, "sale/apartments")]')
+    }
+    get PopularLinks07(){
+        return $('//li[contains(@class, "_76ddbf32") and contains(@class, "af2d23c9")]//a[text()="Yas Island" and contains(@href, "sale/apartments")]')
+    }
+    
     get ViewAllBtn(){
         return $('//main/div[5]/div/div[2]/div[1]/div[1]/div/div[1]/div[2]')
     }
