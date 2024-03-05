@@ -189,6 +189,22 @@ class HomePage extends Page {
     get PopularLinks07(){
         return $('//li[contains(@class, "_76ddbf32") and contains(@class, "af2d23c9")]//a[text()="Yas Island" and contains(@href, "sale/apartments")]')
     }
+    get PopularLinks001(){
+        return $('//li[contains(@class, "_76ddbf32") and contains(@class, "af2d23c9")]//a[text()="Sharjah" and contains(@href, "sale/apartments")]')
+    }
+    get PopularLinks002(){
+        return $('//a[contains(text(), "Ajman") and contains(@href, "sale/apartments")]')
+    }
+    get PopularLinks003(){
+        return $('//li[contains(@class, "_76ddbf32") and contains(@class, "af2d23c9")]//a[text()="Ras Al Khaimah" and contains(@href, "sale/apartments")]')
+    }
+    get PopularLinks004(){
+        return $('//li[contains(@class, "_76ddbf32") and contains(@class, "af2d23c9")]//a[text()="Al Sawan" and contains(@href, "sale/apartments")]')
+    }
+    get PopularLinks005(){
+        return $('//li[contains(@class, "_76ddbf32") and contains(@class, "af2d23c9")]//a[text()="Al Nahda (Sharjah)" and contains(@href, "sale/apartments")]')
+    }
+    
     
     get ViewAllBtn(){
         return $('//main/div[5]/div/div[2]/div[1]/div[1]/div/div[1]/div[2]')
