@@ -204,10 +204,51 @@ class HomePage extends Page {
     get PopularLinks005(){
         return $('//li[contains(@class, "_76ddbf32") and contains(@class, "af2d23c9")]//a[text()="Al Nahda (Sharjah)" and contains(@href, "sale/apartments")]')
     }
+    get PopularLinks2000(){
+        return $('//a[contains(text(), "Dubai Villas") and contains(@href, "sale/villas")]')
+    }
+    get PopularLinks2001(){
+        return $('//a[text()="Arabian Ranches" and contains(@href, "sale/villas")]')
+    } 
+    get PopularLinks2002(){
+        return $('//a[text()="Dubailand" and contains(@href, "sale/villas")]')
+    } 
+    get PopularLinks2003(){
+        return $('//a[text()="Dubai Hills Estate" and contains(@href, "sale/villas")]')
+
+    } get PopularLinks2004(){
+        return $('//a[text()="Palm Jumeirah" and contains(@href, "sale/villas")]')
+
+    } 
+    get PopularLinks2005(){
+        return $('//a[text()="The Springs" and contains(@href, "sale/villas")]')
+    } 
+    get PopularLinks2006(){
+        return $('//a[text()="Arabian Ranches 2" and contains(@href, "sale/villas")]')
+    } 
+    get PopularLinks2007(){
+        return $('//a[text()="DAMAC Hills" and contains(@href, "sale/villas")]')
+    } 
+    get PopularLinks2008(){
+        return $('//a[text()="Jumeirah Park" and contains(@href, "sale/villas")]')
+    } 
+    get PopularLinks2009(){
+        return $('//a[text()="Mudon" and contains(@href, "sale/villas")]')
+    } 
+    get PopularLinks2010(){
+        return $('//a[text()="Al Furjan" and contains(@href, "sale/villas")]')
+    } 
+    get PopularLinks2011(){
+        return $('//a[text()="The Meadows" and contains(@href, "sale/villas")]')
+    }
+
     
     
     get ViewAllBtn(){
         return $('//main/div[5]/div/div[2]/div[1]/div[1]/div/div[1]/div[2]')
+    }
+    get ViewAllBtn2(){
+        return $('//main/div[5]/div/div[2]/div[1]/div[1]/div/div[2]/div[2]')
     }
     async SelectPropertyType(element){
          if (element ==='apartment') {

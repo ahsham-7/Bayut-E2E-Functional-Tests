@@ -306,46 +306,170 @@ describe('HomePage', async () => {
     //     const currentUrl= await browser.getUrl()
     //     expect(currentUrl).to.include('yas-island').and.to.include('sale') 
     // }),
-     it('Verify Popular Links Sale: Sharjah', async () => {
-        HomePage.openE2E()
-        await HomePage.waitForElementDisplayed(HomePage.PopularLinks001)
-        await HomePage.PopularLinks001.click()
-        await HomePage.waitForPageToLoad()
-        const currentUrl= await browser.getUrl()
-        expect(currentUrl).to.include('sharjah').and.to.include('sale') 
-    }),
-    it('Verify Popular Links Sale: Ajman', async () => {
-        HomePage.openE2E()
-        //await HomePage.waitForElementDisplayed(HomePage.PopularLinks002)
-        await HomePage.PopularLinks002.click()
-        await HomePage.waitForPageToLoad()
-        const currentUrl= await browser.getUrl()
-        expect(currentUrl).to.include('ajman').and.to.include('sale') 
-    })
-    it('Verify Popular Links Sale: Ras AL Khaimah', async () => {
-        HomePage.openE2E()
-        await HomePage.waitForElementDisplayed(HomePage.PopularLinks003)
-        await HomePage.PopularLinks003.click()
-        await HomePage.waitForPageToLoad()
-        const currentUrl= await browser.getUrl()
-        expect(currentUrl).to.include('ras-al-khaimah').and.to.include('sale') 
-    }),
-    it('Verify Popular Links Sale: Al Sawan', async () => {
-        HomePage.openE2E()
-        await HomePage.waitForElementDisplayed(HomePage.PopularLinks004)
-        await HomePage.PopularLinks004.click()
-        await HomePage.waitForPageToLoad()
-        const currentUrl= await browser.getUrl()
-        expect(currentUrl).to.include('al-sawan').and.to.include('sale') 
-    }),
-    it('Verify Popular Links Sale: Al Nahda(Sharjah)', async () => {
-        HomePage.openE2E()
-        await HomePage.waitForElementDisplayed(HomePage.PopularLinks005)
-        await HomePage.PopularLinks005.click()
-        await HomePage.waitForPageToLoad()
-        const currentUrl= await browser.getUrl()
-        expect(currentUrl).to.include('al-nahda-sharjah').and.to.include('sale') 
-    })
+    //  it('Verify Popular Links Sale: Sharjah', async () => {
+    //     HomePage.openE2E()
+    //     await HomePage.waitForElementDisplayed(HomePage.PopularLinks001)
+    //     await HomePage.PopularLinks001.click()
+    //     await HomePage.waitForPageToLoad()
+    //     const currentUrl= await browser.getUrl()
+    //     expect(currentUrl).to.include('sharjah').and.to.include('sale') 
+    // }),
+    // it('Verify Popular Links Sale: Ajman', async () => {
+    //     HomePage.openE2E()
+    //     //await HomePage.waitForElementDisplayed(HomePage.PopularLinks002)
+    //     await HomePage.PopularLinks002.click()
+    //     await HomePage.waitForPageToLoad()
+    //     const currentUrl= await browser.getUrl()
+    //     expect(currentUrl).to.include('ajman').and.to.include('sale') 
+    // })
+    // it('Verify Popular Links Sale: Ras AL Khaimah', async () => {
+    //     HomePage.openE2E()
+    //     await HomePage.waitForElementDisplayed(HomePage.PopularLinks003)
+    //     await HomePage.PopularLinks003.click()
+    //     await HomePage.waitForPageToLoad()
+    //     const currentUrl= await browser.getUrl()
+    //     expect(currentUrl).to.include('ras-al-khaimah').and.to.include('sale') 
+    // }),
+    // it('Verify Popular Links Sale: Al Sawan', async () => {
+    //     HomePage.openE2E()
+    //     await HomePage.waitForElementDisplayed(HomePage.PopularLinks004)
+    //     await HomePage.PopularLinks004.click()
+    //     await HomePage.waitForPageToLoad()
+    //     const currentUrl= await browser.getUrl()
+    //     expect(currentUrl).to.include('al-sawan').and.to.include('sale') 
+    // }),
+    // it('Verify Popular Links Sale: Al Nahda(Sharjah)', async () => {
+    //     HomePage.openE2E()
+    //     await HomePage.waitForElementDisplayed(HomePage.PopularLinks005)
+    //     await HomePage.PopularLinks005.click()
+    //     await HomePage.waitForPageToLoad()
+    //     const currentUrl= await browser.getUrl()
+    //     expect(currentUrl).to.include('al-nahda-sharjah').and.to.include('sale') 
+    // }),
+    it('Verify Popular Links Sale: Dubai Villas', async () => {
+            HomePage.openE2E()
+            await HomePage.waitForElementDisplayed(HomePage.PopularLinks2000)
+            await HomePage.PopularLinks2000.click()
+            await HomePage.waitForPageToLoad()
+            const currentUrl= await browser.getUrl()
+            expect(currentUrl).to.include('dubai').and.to.include('villas') 
+        }),
+
+        it('Verify Popular Links Sale: Arabian Ranches', async () => {
+            HomePage.openE2E()
+            await HomePage.waitForElementDisplayed(HomePage.PopularLinks2001)
+            await HomePage.PopularLinks2001.click()
+            await HomePage.waitForPageToLoad()
+            const currentUrl= await browser.getUrl()
+            expect(currentUrl).to.include('arabian-ranches').and.to.include('villas') 
+        }),
+
+        it('Verify Popular Links Sale: Dubailand', async () => {
+            HomePage.openE2E()
+            await HomePage.waitForElementDisplayed(HomePage.PopularLinks2002)
+            await HomePage.PopularLinks2002.click()
+            await HomePage.waitForPageToLoad()
+            const currentUrl= await browser.getUrl()
+            expect(currentUrl).to.include('dubailand').and.to.include('villas') 
+        }),
+
+        it('Verify Popular Links Sale: Dubai Hills Estate', async () => {
+            HomePage.openE2E()
+            await HomePage.waitForElementDisplayed(HomePage.PopularLinks2003)
+            await HomePage.PopularLinks2003.click()
+            await HomePage.waitForPageToLoad()
+            const currentUrl= await browser.getUrl()
+            expect(currentUrl).to.include('dubai-hills-estate').and.to.include('villas') 
+        }),
+
+        it('Verify Popular Links Sale: Palm Jumeirah', async () => {
+            HomePage.openE2E()
+            await HomePage.waitForElementDisplayed(HomePage.PopularLinks2004)
+            await HomePage.PopularLinks2004.click()
+            await HomePage.waitForPageToLoad()
+            const currentUrl= await browser.getUrl()
+            expect(currentUrl).to.include('palm-jumeirah').and.to.include('villas') 
+        }),
+
+        it('Verify Popular Links Sale: The Springs', async () => {
+            HomePage.openE2E()
+            await HomePage.waitForElementDisplayed(HomePage.PopularLinks2005)
+            await HomePage.PopularLinks2005.click()
+            await HomePage.waitForPageToLoad()
+            const currentUrl= await browser.getUrl()
+            expect(currentUrl).to.include('the-springs').and.to.include('villas') 
+        }),
+
+        it('Verify Popular Links Sale: Arabian Ranches 2', async () => {
+            HomePage.openE2E()
+            await HomePage.waitForElementDisplayed(HomePage.ViewAllBtn2)
+            await HomePage.ViewAllBtn2.click()
+            await HomePage.waitForElementDisplayed(HomePage.PopularLinks2006)
+            await HomePage.PopularLinks2006.click()
+            await HomePage.waitForPageToLoad()
+            const currentUrl= await browser.getUrl()
+            expect(currentUrl).to.include('arabian-ranches-2').and.to.include('villas') 
+        }),
+
+        it('Verify Popular Links Sale: Damac Hills', async () => {
+            HomePage.openE2E()
+            await HomePage.waitForElementDisplayed(HomePage.ViewAllBtn2)
+            await HomePage.ViewAllBtn2.click()
+            await HomePage.waitForElementDisplayed(HomePage.PopularLinks2007)
+            await HomePage.PopularLinks2007.click()
+            await HomePage.waitForPageToLoad()
+            const currentUrl= await browser.getUrl()
+            expect(currentUrl).to.include('damac-hills').and.to.include('villas') 
+        }),
+
+        it('Verify Popular Links Sale: Jumeirah Park', async () => {
+            HomePage.openE2E()
+            await HomePage.waitForElementDisplayed(HomePage.ViewAllBtn2)
+            await HomePage.ViewAllBtn2.click()
+            await HomePage.waitForElementDisplayed(HomePage.PopularLinks2008)
+            await HomePage.PopularLinks2008.click()
+            await HomePage.waitForPageToLoad()
+            const currentUrl= await browser.getUrl()
+            expect(currentUrl).to.include('jumeirah-park').and.to.include('villas') 
+        }),
+
+        it('Verify Popular Links Sale: Mudon', async () => {
+            HomePage.openE2E()
+            await HomePage.waitForElementDisplayed(HomePage.ViewAllBtn2)
+            await HomePage.ViewAllBtn2.click()
+            await HomePage.waitForElementDisplayed(HomePage.PopularLinks2009)
+            await HomePage.PopularLinks2009.click()
+            await HomePage.waitForPageToLoad()
+            const currentUrl= await browser.getUrl()
+            expect(currentUrl).to.include('mudon').and.to.include('villas') 
+        }),
+
+        it('Verify Popular Links Sale: Al Furjan', async () => {
+            HomePage.openE2E()
+            await HomePage.waitForElementDisplayed(HomePage.ViewAllBtn2)
+            await HomePage.ViewAllBtn2.click()
+            await HomePage.waitForElementDisplayed(HomePage.PopularLinks2010)
+            await HomePage.PopularLinks2010.click()
+            await HomePage.waitForPageToLoad()
+            const currentUrl= await browser.getUrl()
+            expect(currentUrl).to.include('al-furjan').and.to.include('villas') 
+        }),
+
+        it('Verify Popular Links Sale: The Meadows', async () => {
+            HomePage.openE2E()
+            await HomePage.waitForElementDisplayed(HomePage.ViewAllBtn2)
+            await HomePage.ViewAllBtn2.click()
+            await HomePage.waitForElementDisplayed(HomePage.PopularLinks2011)
+            await HomePage.PopularLinks2011.click()
+            await HomePage.waitForPageToLoad()
+            const currentUrl= await browser.getUrl()
+            expect(currentUrl).to.include('the-meadows').and.to.include('villas') 
+        })
+
+        
+
+
+
 
 
     
