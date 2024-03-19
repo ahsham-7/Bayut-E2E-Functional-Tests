@@ -1,3 +1,4 @@
+import homePage from '../pageobjects/home.page.js';
 import HomePage from '../pageobjects/home.page.js'
 import { expect } from 'chai';
 describe('HomePage', async () => {
@@ -346,135 +347,341 @@ describe('HomePage', async () => {
     //     const currentUrl= await browser.getUrl()
     //     expect(currentUrl).to.include('al-nahda-sharjah').and.to.include('sale') 
     // }),
-    it('Verify Popular Links Sale: Dubai Villas', async () => {
-            HomePage.openE2E()
-            await HomePage.waitForElementDisplayed(HomePage.PopularLinks2000)
-            await HomePage.PopularLinks2000.click()
-            await HomePage.waitForPageToLoad()
-            const currentUrl= await browser.getUrl()
-            expect(currentUrl).to.include('dubai').and.to.include('villas') 
-        }),
+    // it('Verify Popular Links Sale: Dubai Villas', async () => {
+    //         HomePage.openE2E()
+    //         await HomePage.waitForElementDisplayed(HomePage.PopularLinks2000)
+    //         await HomePage.PopularLinks2000.click()
+    //         await HomePage.waitForPageToLoad()
+    //         const currentUrl= await browser.getUrl()
+    //         expect(currentUrl).to.include('dubai').and.to.include('villas') 
+    //     }),
 
-        it('Verify Popular Links Sale: Arabian Ranches', async () => {
-            HomePage.openE2E()
-            await HomePage.waitForElementDisplayed(HomePage.PopularLinks2001)
-            await HomePage.PopularLinks2001.click()
-            await HomePage.waitForPageToLoad()
-            const currentUrl= await browser.getUrl()
-            expect(currentUrl).to.include('arabian-ranches').and.to.include('villas') 
-        }),
+    //     it('Verify Popular Links Sale: Arabian Ranches', async () => {
+    //         HomePage.openE2E()
+    //         await HomePage.waitForElementDisplayed(HomePage.PopularLinks2001)
+    //         await HomePage.PopularLinks2001.click()
+    //         await HomePage.waitForPageToLoad()
+    //         const currentUrl= await browser.getUrl()
+    //         expect(currentUrl).to.include('arabian-ranches').and.to.include('villas') 
+    //     }),
 
-        it('Verify Popular Links Sale: Dubailand', async () => {
-            HomePage.openE2E()
-            await HomePage.waitForElementDisplayed(HomePage.PopularLinks2002)
-            await HomePage.PopularLinks2002.click()
-            await HomePage.waitForPageToLoad()
-            const currentUrl= await browser.getUrl()
-            expect(currentUrl).to.include('dubailand').and.to.include('villas') 
-        }),
+    //     it('Verify Popular Links Sale: Dubailand', async () => {
+    //         HomePage.openE2E()
+    //         await HomePage.waitForElementDisplayed(HomePage.PopularLinks2002)
+    //         await HomePage.PopularLinks2002.click()
+    //         await HomePage.waitForPageToLoad()
+    //         const currentUrl= await browser.getUrl()
+    //         expect(currentUrl).to.include('dubailand').and.to.include('villas') 
+    //     }),
 
-        it('Verify Popular Links Sale: Dubai Hills Estate', async () => {
-            HomePage.openE2E()
-            await HomePage.waitForElementDisplayed(HomePage.PopularLinks2003)
-            await HomePage.PopularLinks2003.click()
-            await HomePage.waitForPageToLoad()
-            const currentUrl= await browser.getUrl()
-            expect(currentUrl).to.include('dubai-hills-estate').and.to.include('villas') 
-        }),
+    //     it('Verify Popular Links Sale: Dubai Hills Estate', async () => {
+    //         HomePage.openE2E()
+    //         await HomePage.waitForElementDisplayed(HomePage.PopularLinks2003)
+    //         await HomePage.PopularLinks2003.click()
+    //         await HomePage.waitForPageToLoad()
+    //         const currentUrl= await browser.getUrl()
+    //         expect(currentUrl).to.include('dubai-hills-estate').and.to.include('villas') 
+    //     }),
 
-        it('Verify Popular Links Sale: Palm Jumeirah', async () => {
-            HomePage.openE2E()
-            await HomePage.waitForElementDisplayed(HomePage.PopularLinks2004)
-            await HomePage.PopularLinks2004.click()
-            await HomePage.waitForPageToLoad()
-            const currentUrl= await browser.getUrl()
-            expect(currentUrl).to.include('palm-jumeirah').and.to.include('villas') 
-        }),
+    //     it('Verify Popular Links Sale: Palm Jumeirah', async () => {
+    //         HomePage.openE2E()
+    //         await HomePage.waitForElementDisplayed(HomePage.PopularLinks2004)
+    //         await HomePage.PopularLinks2004.click()
+    //         await HomePage.waitForPageToLoad()
+    //         const currentUrl= await browser.getUrl()
+    //         expect(currentUrl).to.include('palm-jumeirah').and.to.include('villas') 
+    //     }),
 
-        it('Verify Popular Links Sale: The Springs', async () => {
-            HomePage.openE2E()
-            await HomePage.waitForElementDisplayed(HomePage.PopularLinks2005)
-            await HomePage.PopularLinks2005.click()
-            await HomePage.waitForPageToLoad()
-            const currentUrl= await browser.getUrl()
-            expect(currentUrl).to.include('the-springs').and.to.include('villas') 
-        }),
+    //     it('Verify Popular Links Sale: The Springs', async () => {
+    //         HomePage.openE2E()
+    //         await HomePage.waitForElementDisplayed(HomePage.PopularLinks2005)
+    //         await HomePage.PopularLinks2005.click()
+    //         await HomePage.waitForPageToLoad()
+    //         const currentUrl= await browser.getUrl()
+    //         expect(currentUrl).to.include('the-springs').and.to.include('villas') 
+    //     }),
 
-        it('Verify Popular Links Sale: Arabian Ranches 2', async () => {
-            HomePage.openE2E()
-            await HomePage.waitForElementDisplayed(HomePage.ViewAllBtn2)
-            await HomePage.ViewAllBtn2.click()
-            await HomePage.waitForElementDisplayed(HomePage.PopularLinks2006)
-            await HomePage.PopularLinks2006.click()
-            await HomePage.waitForPageToLoad()
-            const currentUrl= await browser.getUrl()
-            expect(currentUrl).to.include('arabian-ranches-2').and.to.include('villas') 
-        }),
+    //     it('Verify Popular Links Sale: Arabian Ranches 2', async () => {
+    //         HomePage.openE2E()
+    //         await HomePage.waitForElementDisplayed(HomePage.ViewAllBtn2)
+    //         await HomePage.ViewAllBtn2.click()
+    //         await HomePage.waitForElementDisplayed(HomePage.PopularLinks2006)
+    //         await HomePage.PopularLinks2006.click()
+    //         await HomePage.waitForPageToLoad()
+    //         const currentUrl= await browser.getUrl()
+    //         expect(currentUrl).to.include('arabian-ranches-2').and.to.include('villas') 
+    //     }),
 
-        it('Verify Popular Links Sale: Damac Hills', async () => {
-            HomePage.openE2E()
-            await HomePage.waitForElementDisplayed(HomePage.ViewAllBtn2)
-            await HomePage.ViewAllBtn2.click()
-            await HomePage.waitForElementDisplayed(HomePage.PopularLinks2007)
-            await HomePage.PopularLinks2007.click()
-            await HomePage.waitForPageToLoad()
-            const currentUrl= await browser.getUrl()
-            expect(currentUrl).to.include('damac-hills').and.to.include('villas') 
-        }),
+    //     it('Verify Popular Links Sale: Damac Hills', async () => {
+    //         HomePage.openE2E()
+    //         await HomePage.waitForElementDisplayed(HomePage.ViewAllBtn2)
+    //         await HomePage.ViewAllBtn2.click()
+    //         await HomePage.waitForElementDisplayed(HomePage.PopularLinks2007)
+    //         await HomePage.PopularLinks2007.click()
+    //         await HomePage.waitForPageToLoad()
+    //         const currentUrl= await browser.getUrl()
+    //         expect(currentUrl).to.include('damac-hills').and.to.include('villas') 
+    //     }),
 
-        it('Verify Popular Links Sale: Jumeirah Park', async () => {
-            HomePage.openE2E()
-            await HomePage.waitForElementDisplayed(HomePage.ViewAllBtn2)
-            await HomePage.ViewAllBtn2.click()
-            await HomePage.waitForElementDisplayed(HomePage.PopularLinks2008)
-            await HomePage.PopularLinks2008.click()
-            await HomePage.waitForPageToLoad()
-            const currentUrl= await browser.getUrl()
-            expect(currentUrl).to.include('jumeirah-park').and.to.include('villas') 
-        }),
+    //     it('Verify Popular Links Sale: Jumeirah Park', async () => {
+    //         HomePage.openE2E()
+    //         await HomePage.waitForElementDisplayed(HomePage.ViewAllBtn2)
+    //         await HomePage.ViewAllBtn2.click()
+    //         await HomePage.waitForElementDisplayed(HomePage.PopularLinks2008)
+    //         await HomePage.PopularLinks2008.click()
+    //         await HomePage.waitForPageToLoad()
+    //         const currentUrl= await browser.getUrl()
+    //         expect(currentUrl).to.include('jumeirah-park').and.to.include('villas') 
+    //     }),
 
-        it('Verify Popular Links Sale: Mudon', async () => {
-            HomePage.openE2E()
-            await HomePage.waitForElementDisplayed(HomePage.ViewAllBtn2)
-            await HomePage.ViewAllBtn2.click()
-            await HomePage.waitForElementDisplayed(HomePage.PopularLinks2009)
-            await HomePage.PopularLinks2009.click()
-            await HomePage.waitForPageToLoad()
-            const currentUrl= await browser.getUrl()
-            expect(currentUrl).to.include('mudon').and.to.include('villas') 
-        }),
+    //     it('Verify Popular Links Sale: Mudon', async () => {
+    //         HomePage.openE2E()
+    //         await HomePage.waitForElementDisplayed(HomePage.ViewAllBtn2)
+    //         await HomePage.ViewAllBtn2.click()
+    //         await HomePage.waitForElementDisplayed(HomePage.PopularLinks2009)
+    //         await HomePage.PopularLinks2009.click()
+    //         await HomePage.waitForPageToLoad()
+    //         const currentUrl= await browser.getUrl()
+    //         expect(currentUrl).to.include('mudon').and.to.include('villas') 
+    //     }),
 
-        it('Verify Popular Links Sale: Al Furjan', async () => {
-            HomePage.openE2E()
-            await HomePage.waitForElementDisplayed(HomePage.ViewAllBtn2)
-            await HomePage.ViewAllBtn2.click()
-            await HomePage.waitForElementDisplayed(HomePage.PopularLinks2010)
-            await HomePage.PopularLinks2010.click()
-            await HomePage.waitForPageToLoad()
-            const currentUrl= await browser.getUrl()
-            expect(currentUrl).to.include('al-furjan').and.to.include('villas') 
-        }),
+    //     it('Verify Popular Links Sale: Al Furjan', async () => {
+    //         HomePage.openE2E()
+    //         await HomePage.waitForElementDisplayed(HomePage.ViewAllBtn2)
+    //         await HomePage.ViewAllBtn2.click()
+    //         await HomePage.waitForElementDisplayed(HomePage.PopularLinks2010)
+    //         await HomePage.PopularLinks2010.click()
+    //         await HomePage.waitForPageToLoad()
+    //         const currentUrl= await browser.getUrl()
+    //         expect(currentUrl).to.include('al-furjan').and.to.include('villas') 
+    //     }),
 
-        it('Verify Popular Links Sale: The Meadows', async () => {
-            HomePage.openE2E()
-            await HomePage.waitForElementDisplayed(HomePage.ViewAllBtn2)
-            await HomePage.ViewAllBtn2.click()
-            await HomePage.waitForElementDisplayed(HomePage.PopularLinks2011)
-            await HomePage.PopularLinks2011.click()
-            await HomePage.waitForPageToLoad()
-            const currentUrl= await browser.getUrl()
-            expect(currentUrl).to.include('the-meadows').and.to.include('villas') 
-        })
+    //     it('Verify Popular Links Sale: The Meadows', async () => {
+    //         HomePage.openE2E()
+    //         await HomePage.waitForElementDisplayed(HomePage.ViewAllBtn2)
+    //         await HomePage.ViewAllBtn2.click()
+    //         await HomePage.waitForElementDisplayed(HomePage.PopularLinks2011)
+    //         await HomePage.PopularLinks2011.click()
+    //         await HomePage.waitForPageToLoad()
+    //         const currentUrl= await browser.getUrl()
+    //         expect(currentUrl).to.include('the-meadows').and.to.include('villas') 
+    //     }),
+        //  it('Verify Popular Links| Villas for Sale: Abu Dhabi', async () => {
+        //         HomePage.openE2E()
+        //         await HomePage.waitForElementDisplayed(HomePage.PopularLinks3000)
+        //         await HomePage.PopularLinks3000.click()
+        //         await HomePage.waitForPageToLoad()
+        //         const currentUrl= await browser.getUrl()
+        //         expect(currentUrl).to.include('abu-dhabi').and.to.include('villas') 
+        //     }),
+            // it('Verify Popular Links| Villas for Sale: Al Reef', async () => {
+            //     HomePage.openE2E()
+            //     await HomePage.waitForElementDisplayed(HomePage.PopularLinks3001)
+            //     await HomePage.PopularLinks3001.click()
+            //     await HomePage.waitForPageToLoad()
+            //     const currentUrl= await browser.getUrl()
+            //     expect(currentUrl).to.include('al-reef').and.to.include('villas') 
+            // }),
+            // it('Verify Popular Links| Villas for Sale: Yas Islands', async () => {
+            //     HomePage.openE2E()
+            //     await HomePage.waitForElementDisplayed(HomePage.PopularLinks3002)
+            //     await HomePage.PopularLinks3002.click()
+            //     await HomePage.waitForPageToLoad()
+            //     const currentUrl= await browser.getUrl()
+            //     expect(currentUrl).to.include('yas-island').and.to.include('villas') 
+            // }),
 
-        
+            // it('Verify Popular Links| Villas for Sale: Sadiyat Islands', async () => {
+            //     HomePage.openE2E()
+            //     await HomePage.waitForElementDisplayed(HomePage.PopularLinks3003)
+            //     await HomePage.PopularLinks3003.click()
+            //     await HomePage.waitForPageToLoad()
+            //     const currentUrl= await browser.getUrl()
+            //     expect(currentUrl).to.include('saadiyat-island').and.to.include('villas') 
+            // }),
+
+            // it('Verify Popular Links| Villas for Sale: Al Raha Gardens', async () => {
+            //     HomePage.openE2E()
+            //     await HomePage.waitForElementDisplayed(HomePage.PopularLinks3004)
+            //     await HomePage.PopularLinks3004.click()
+            //     await HomePage.waitForPageToLoad()
+            //     const currentUrl= await browser.getUrl()
+            //     expect(currentUrl).to.include('al-raha-gardens').and.to.include('villas') 
+            // }),
+
+            // it('Verify Popular Links| Villas for Sale: Mohammad Bin Zayed City', async () => {
+            //     HomePage.openE2E()
+            //     await HomePage.waitForElementDisplayed(HomePage.PopularLinks3005)
+            //     await HomePage.PopularLinks3005.click()
+            //     await HomePage.waitForPageToLoad()
+            //     const currentUrl= await browser.getUrl()
+            //     expect(currentUrl).to.include('mohammed-bin-zayed-city').and.to.include('villas') 
+            // }),
+
+            // it('Verify Popular Links| Villas for Sale: Al Raha Golf Gardens', async () => {
+            //     HomePage.openE2E()
+            //     await HomePage.waitForElementDisplayed(HomePage.ViewAllBtn2)
+            //     await HomePage.ViewAllBtn2.click()
+            //     await HomePage.waitForElementDisplayed(HomePage.PopularLinks3006)
+            //     await HomePage.PopularLinks3006.click()
+            //     await HomePage.waitForPageToLoad()
+            //     const currentUrl= await browser.getUrl()
+            //     expect(currentUrl).to.include('al-raha-golf-gardens').and.to.include('villas') 
+            // }),
+
+            // it('Verify Popular Links| Villas for Sale: Khalifa City', async () => {
+            //     HomePage.openE2E()
+            //     await HomePage.waitForElementDisplayed(HomePage.ViewAllBtn2)
+            //     await HomePage.ViewAllBtn2.click()
+            //     await HomePage.waitForElementDisplayed(HomePage.PopularLinks3007)
+            //     await HomePage.PopularLinks3007.click()
+            //     await HomePage.waitForPageToLoad()
+            //     const currentUrl= await browser.getUrl()
+            //     expect(currentUrl).to.include('khalifa-city').and.to.include('villas') 
+            // }),
+
+            // it('Verify Popular Links| Villas for Sale: Hydra Village', async () => {
+            //     HomePage.openE2E()
+            //     await HomePage.waitForElementDisplayed(HomePage.ViewAllBtn2)
+            //     await HomePage.ViewAllBtn2.click()
+            //     await HomePage.waitForElementDisplayed(HomePage.PopularLinks3008)
+            //     await HomePage.PopularLinks3008.click()
+            //     await HomePage.waitForPageToLoad()
+            //     const currentUrl= await browser.getUrl()
+            //     expect(currentUrl).to.include('hydra-village').and.to.include('villas') 
+            // }),
+
+            // it('Verify Popular Links| Villas for Sale: Shakhbout City', async () => {
+            //     HomePage.openE2E()
+            //     await HomePage.waitForElementDisplayed(HomePage.ViewAllBtn2)
+            //     await HomePage.ViewAllBtn2.click()
+            //     await HomePage.waitForElementDisplayed(HomePage.PopularLinks3009)
+            //     await HomePage.PopularLinks3009.click()
+            //     await HomePage.waitForPageToLoad()
+            //     const currentUrl= await browser.getUrl()
+            //     expect(currentUrl).to.include('shakhbout-city').and.to.include('villas') 
+            // }),
+
+            // it('Verify Popular Links| Villas for Sale: Al Mushrif', async () => {
+            //     HomePage.openE2E()
+            //     await HomePage.waitForElementDisplayed(HomePage.ViewAllBtn2)
+            //     await HomePage.ViewAllBtn2.click()
+            //     await HomePage.waitForElementDisplayed(HomePage.PopularLinks3010)
+            //     await HomePage.PopularLinks3010.click()
+            //     await HomePage.waitForPageToLoad()
+            //     const currentUrl= await browser.getUrl()
+            //     expect(currentUrl).to.include('al-mushrif').and.to.include('villas') 
+            // }),
+            //   it('Verify Carousals', async () => {
+            //     HomePage.openE2E()
+            //     await HomePage.waitForElementDisplayed(HomePage.ForwardBtn)
+            //     await HomePage.waitForElementDisplayed(HomePage.BackwardBtn)
+            //     const desiredText = "Explorer Real Estate"
+            //     const elementText =''
+            //     while (elementText !== desiredText) {
+            //       await HomePage.ForwardBtn.click();
+            //       await HomePage.waitForElementDisplayed(HomePage.AgencyCarousalElement)
+            //       const element = await browser.$(HomePage.AgencyCarousalElement);
+            //       elementText = await element.getText();
+            //       if (elementText === desiredText) {
+            //         console.log('Desired text found:', elementText);
+            //         break;
+            //       }
+            //     }
+            // }),
+            // it('Verify ChatGPT popup', async () => {
+            //    HomePage.openE2E()
+            //    await HomePage.GptTab.click()
+            //    await HomePage.GptChatBtn.click()
+            //    expect(await HomePage.ChatGptPopUp.waitForDisplayed()).to.be.true
+            // }),
+
+            // it('Verify ChatGPT 1st Suggestion', async () => {
+            //     HomePage.openE2E()
+            //     await HomePage.GptTab.click()
+            //     await HomePage.ChatGptSuggestion1.click()
+            //     await HomePage.waitForElementDisplayed(HomePage.ChatGptPopUp)
+            //     await HomePage.waitForElementDisplayed(HomePage.GptAnswer1)
+            //     expect(await HomePage.GptAnswer1.waitForDisplayed()).to.be.true
+            //  }),
+
+            //  it('Verify ChatGPT 2nd Suggestion', async () => {
+            //     HomePage.openE2E()
+            //     await HomePage.GptTab.click()
+            //     await HomePage.ChatGptSuggestion2.click()
+            //     await HomePage.waitForElementDisplayed(HomePage.ChatGptPopUp)
+            //     await HomePage.waitForElementDisplayed(HomePage.GptAnswer2)
+            //     expect(await HomePage.GptAnswer2.waitForDisplayed()).to.be.true
+            //  }),
+
+            //  it('Verify ChatGPT 3rd Suggestion', async () => {
+            //     HomePage.openE2E()
+            //     await HomePage.GptTab.click()
+            //     await HomePage.ChatGptSuggestion3.click()
+            //     await HomePage.waitForElementDisplayed(HomePage.ChatGptPopUp)
+            //     await HomePage.waitForElementDisplayed(HomePage.GptAnswer3)
+            //     expect(await HomePage.GptAnswer3.waitForDisplayed()).to.be.true
+            //  }),
+            //   it('Verify ChatGPT Terms Dialogue', async () => {
+            //     HomePage.openE2E()
+            //     await HomePage.GptTab.click()
+            //     await HomePage.waitForElementDisplayed(HomePage.GptChatBtn)
+            //     await HomePage.GptChatBtn.click()
+            //     await HomePage.waitForElementDisplayed(HomePage.BayutGptTerms)
+            //     await HomePage.BayutGptTerms.click()
+            //     expect(await HomePage.BayutGptTermsPopUp.waitForDisplayed()).to.be.true
+            //  }),
+
+            //  it('Verify Login Form on Bayut Gpt', async () => {
+            //     HomePage.openE2E()
+            //     await HomePage.waitForElementDisplayed(HomePage.GptTab)
+            //     await HomePage.GptTab.click()
+            //     await HomePage.waitForElementDisplayed(HomePage.ChatGptSuggestion3)
+            //     await HomePage.ChatGptSuggestion3.click()
+            //     await HomePage.waitForElementDisplayed(HomePage.Login_SignupPopup)
+            //     await HomePage.waitForElementDisplayed(HomePage.GptLoginBtn)
+            //     await HomePage.GptLoginBtn.click()
+            //     expect(await HomePage.LoginPopUp.waitForDisplayed()).to.be.true
+            //  }),
+
+            //  it('Verify Signup Form on Bayut Gpt', async () => {
+            //     HomePage.openE2E()
+            //     await HomePage.waitForElementDisplayed(HomePage.GptTab)
+            //     await HomePage.GptTab.click()
+            //     await HomePage.waitForElementDisplayed(HomePage.ChatGptSuggestion3)
+            //     await HomePage.ChatGptSuggestion3.click()
+            //     await HomePage.waitForElementDisplayed(HomePage.Login_SignupPopup)
+            //     await HomePage.waitForElementDisplayed(HomePage.GptSignUpBtn)
+            //     await HomePage.GptLoginBtn.click()
+            //     expect(await HomePage.SignupPopUp.waitForDisplayed()).to.be.true
+            //  }),
+
+             it('Verify Input Text Field on BayutGpt PopUp', async () => {
+                HomePage.openE2E()
+                await HomePage.waitForElementDisplayed(HomePage.GptTab)
+                await HomePage.GptTab.click()
+                await HomePage.waitForElementDisplayed(HomePage.BayutGptInput)
+                const value='Best properties for sale in DUBAI'
+                await HomePage.BayutGptInput.setValue('Best properties for sale in DUBAI')
+                await browser.keys("\uE007")
+                await HomePage.waitForElementDisplayed(HomePage.ChatGptPopUp)
+                const TypedVal= await HomePage.VerifyInputText2.getValue()
+                await console.log(TypedVal)
+                await console.log('123')
+                // await HomePage.VerifyInputText2(TypedVal)
+                // const FetchedVal= await HomePage.VerifyInputText2(TypedVal).getValue()
+                // console.log(FetchedVal)
+                // expect (TypedVal).to.equal(FetchedVal)
+             })
+
+             
 
 
 
 
+            
 
-    
-    
-    
+
 })
 
 

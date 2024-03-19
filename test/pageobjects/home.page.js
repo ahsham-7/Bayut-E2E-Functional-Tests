@@ -243,7 +243,139 @@ class HomePage extends Page {
     }
 
     
+    get PopularLinks3000(){
+        return $('//a[text()="Abu Dhabi Villas" and contains(@href, "sale/villas")]')
+    }
+    get PopularLinks3001(){
+        return $('//a[text()="Al Reef" and contains(@href, "sale/villas")]')
+    }
+    get PopularLinks3002(){
+        return $('//a[text()="Yas Island" and contains(@href, "sale/villas")]')
+    }
+    get PopularLinks3003(){
+        return $('//a[text()="Saadiyat Island" and contains(@href, "sale/villas")]')
+    }
+    get PopularLinks3004(){
+        return $('//a[text()="Al Raha Gardens" and contains(@href, "sale/villas")]')
+    }
+    get PopularLinks3005(){
+        return $('//a[text()="Mohammed Bin Zayed City" and contains(@href, "sale/villas")]')
+    }
+    get PopularLinks3006(){
+        return $('//a[text()="Al Raha Golf Gardens" and contains(@href, "sale/villas")]')
+    }
+    get PopularLinks3007(){
+        return $('//a[text()="Khalifa City" and contains(@href, "sale/villas")]')
+    }
+    get PopularLinks3009(){
+        return $('//a[text()="Hydra Village" and contains(@href, "sale/villas")]')
+    }
+    get PopularLinks3010(){
+        return $('//a[text()="Shakhbout City" and contains(@href, "sale/villas")]')
+    }
+    get PopularLinks3001(){
+        return $('//a[text()="Al Mushrif" and contains(@href, "sale/villas")]')
+    }
+
+
+    get ForwardBtn(){
+        return $('//button[@aria-label="Carousel next button"]')
+    }
+
+    get BackwardBtn(){
+        return $('//button[@class="b55ba3bb _9dd6c0c3"]')
+    }
+
+    get AgencyCarousalElement(){
+        return $('//div[@class="_197a6aa3"]')
+    }
+
+    get DTLocationField(){
+        return $('//div[@aria-label="Location filter"]//input')
+    }
+    get DTRentPurposeType(){
+        return $('//button[@class="f481d4d9" and text()="Rent"]')
+    }
+    get DTPropertyType(){
+        return $('//div[@class="_3a42e70b"]//div[@aria-label="Category filter"]')
+    }
+    get DTBedsFilter(){
+        return $('//div[@aria-label="Beds filter"]')
+    }
+    get DTShowDataFor(){
+        return $('//div[@aria-label="Time interval filter"]')
+    }
+    get DTShowDataForMenu(){
+        return $('')
+    }
+    get DTShowDataForValue(){
+        return $('')
+    }
+    get GptChatBtn(){
+        return $('//button[text()="Chat"]')
+    }
+    get ChatGptSuggestion1(){
+        return $('//div[text()="Average Rental yield in Dubai"]')
+    }
+    get GptAnswer1(){
+        return $('//div[@aria-label="User message" and text()="Average Rental yield in Dubai"]')
+    }
+    get ChatGptSuggestion2(){
+        return $('//div[text()="Best areas to invest in Dubai"]')
+    }
+    get GptAnswer2(){
+        return $('//div[@aria-label="User message" and text()="Best areas to invest in Dubai"]')
+    }
+    get ChatGptSuggestion3(){
+        return $('//div[text()="Properties with swimming pool in Dubai"]')
+    }
+    get GptAnswer3(){
+        return $('//div[@aria-label="User message" and text()="Properties with swimming pool in Dubai"]')
+    }
+    get ChatGptPopUp(){
+        return $('//div[@class="ed791840" and @aria-label="Dialog"]')
+    }
+    get BayutGptTerms(){
+        return $('//button[text()="terms"]')
+    }
+    get BayutGptTermsPopUp(){
+        return $('//div[@class="_1075545d d059c029"]/ancestor::div[@aria-label="Dialog"]')
+    }
+    get Login_SignupPopup(){
+        return $('//div[@class="_1075545d _8e32ea1d d059c029"]')
+    }
+    get LoginPopUp(){
+        return $('//div[@class="_46bac131 a1ba5ced"]')
+    }
+    get GptLoginBtn(){
+        return $('//button[@class="_954aad1f"]')
+    }
+    get GptSignUpBtn(){
+        return $('//button[@class="_206ff854"]')
+    }
+    get SignupPopUp(){
+        return $('//div[@class="_46bac131 a1ba5ced"]')
+    }
+    get BayutGptInput(){
+        return $('//input[@placeholder="Ask me anything about UAE real estate."]')
+    }
+    VerifyInputText2(value){
+        return $('')
+    }
+    get VerifyInputText(){
+        return $('//div[@aria-label="User message" and text()="Best properties for sale in DUBAI"]')
+    }
+    VerifyInputText2(value){
+        return $('//div[@aria-label="User message" and text()="' + value + '"]');
+    }
+
+
+
+
     
+
+
+
     get ViewAllBtn(){
         return $('//main/div[5]/div/div[2]/div[1]/div[1]/div/div[1]/div[2]')
     }
@@ -255,7 +387,7 @@ class HomePage extends Page {
             await this.waitForElementDisplayed(this.PropertyType)
             await this.PropertyType.click()
             await this.PropertyTypeMenu.waitForVisible({ timeout: 5000 });
-        await this.PropertyTypeMenu.waitForClickable({ timeout: 5000 })
+            await this.PropertyTypeMenu.waitForClickable({ timeout: 5000 })
              await this.waitForElementDisplayed(this.PropertyTypeMenu)
               await this.Apartment.click()
         }

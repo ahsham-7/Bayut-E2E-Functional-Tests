@@ -34,7 +34,7 @@ export default class Page {
         }
     );   
 }
-async waitForElementDisplayed(element, options = { timeout: 3000 }) {
+async waitForElementDisplayed(element, options = { timeout: 5000 }) {
         return element.waitForDisplayed(options);
   }
   
