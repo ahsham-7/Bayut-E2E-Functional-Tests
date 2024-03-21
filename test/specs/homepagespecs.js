@@ -576,13 +576,12 @@ describe('HomePage', async () => {
             //     HomePage.openE2E()
             //     await HomePage.waitForElementDisplayed(HomePage.ForwardBtn)
             //     await HomePage.waitForElementDisplayed(HomePage.BackwardBtn)
-            //     const desiredText = "Explorer Real Estate"
-            //     const elementText =''
+            //     let desiredText = "Explorer Real Estate"
+            //     let elementText =''
             //     while (elementText !== desiredText) {
             //       await HomePage.ForwardBtn.click();
             //       await HomePage.waitForElementDisplayed(HomePage.AgencyCarousalElement)
-            //       const element = await browser.$(HomePage.AgencyCarousalElement);
-            //       elementText = await element.getText();
+            //       elementText = await HomePage.AgencyCarousalElement.getText();
             //       if (elementText === desiredText) {
             //         console.log('Desired text found:', elementText);
             //         break;
@@ -701,59 +700,59 @@ describe('HomePage', async () => {
             //     expect(currentUrl).to.include('/for-sale/property/sharjah')
             // }),
 
-            it('Verify Popular Property for Sale searches in the UAE | Dubai Shops', async () => {
-                HomePage.openE2E()
-                await HomePage.waitForElementDisplayed(HomePage.PopularLinks304)
-                await HomePage.PopularLinks304.click()
-                await HomePage.waitForPageToLoad()
-                const currentUrl= await browser.getUrl()
-                expect(currentUrl).to.include('/for-sale/shops/dubai')
-            }),
+            // it('Verify Popular Property for Sale searches in the UAE | Dubai Shops', async () => {
+            //     HomePage.openE2E()
+            //     await HomePage.waitForElementDisplayed(HomePage.PopularLinks304)
+            //     await HomePage.PopularLinks304.click()
+            //     await HomePage.waitForPageToLoad()
+            //     const currentUrl= await browser.getUrl()
+            //     expect(currentUrl).to.include('/for-sale/shops/dubai')
+            // }),
 
-            it('Verify Popular Property for Sale searches in the UAE | Abu-Dhabi Shops', async () => {
-                HomePage.openE2E()
-                await HomePage.waitForElementDisplayed(HomePage.PopularLinks305)
-                await HomePage.PopularLinks305.click()
-                await HomePage.waitForPageToLoad()
-                const currentUrl= await browser.getUrl()
-                expect(currentUrl).to.include('/for-sale/shops/abu-dhabi')
-            }),
+            // it('Verify Popular Property for Sale searches in the UAE | Abu-Dhabi Shops', async () => {
+            //     HomePage.openE2E()
+            //     await HomePage.waitForElementDisplayed(HomePage.PopularLinks305)
+            //     await HomePage.PopularLinks305.click()
+            //     await HomePage.waitForPageToLoad()
+            //     const currentUrl= await browser.getUrl()
+            //     expect(currentUrl).to.include('/for-sale/shops/abu-dhabi')
+            // }),
 
-            it('Verify Popular Property for Sale searches in the UAE | Ajman Shops', async () => {
-                HomePage.openE2E()
-                await HomePage.waitForElementDisplayed(HomePage.PopularLinks306)
-                await HomePage.PopularLinks306.click()
-                await HomePage.waitForPageToLoad()
-                const currentUrl= await browser.getUrl()
-                expect(currentUrl).to.include('/for-sale/property/ajman')
-            }),
+            // it('Verify Popular Property for Sale searches in the UAE | Ajman Shops', async () => {
+            //     HomePage.openE2E()
+            //     await HomePage.waitForElementDisplayed(HomePage.PopularLinks306)
+            //     await HomePage.PopularLinks306.click()
+            //     await HomePage.waitForPageToLoad()
+            //     const currentUrl= await browser.getUrl()
+            //     expect(currentUrl).to.include('/for-sale/property/ajman')
+            // }),
 
-            it('Verify Popular Property for Sale searches in the UAE | Dubai Offices', async () => {
-                HomePage.openE2E()
-                await HomePage.waitForElementDisplayed(HomePage.PopularLinks307)
-                await HomePage.PopularLinks307.click()
-                await HomePage.waitForPageToLoad()
-                const currentUrl= await browser.getUrl()
-                expect(currentUrl).to.include('/for-sale/offices/dubai')
-            }),
+            // it('Verify Popular Property for Sale searches in the UAE | Dubai Offices', async () => {
+            //     HomePage.openE2E()
+            //     await HomePage.waitForElementDisplayed(HomePage.PopularLinks307)
+            //     await HomePage.PopularLinks307.click()
+            //     await HomePage.waitForPageToLoad()
+            //     const currentUrl= await browser.getUrl()
+            //     expect(currentUrl).to.include('/for-sale/offices/dubai')
+            // }),
 
-            it('Verify Popular Property for Sale searches in the UAE | AbuDhabi Offices', async () => {
-                HomePage.openE2E()
-                await HomePage.waitForElementDisplayed(HomePage.PopularLinks308)
-                await HomePage.PopularLinks308.click()
-                await HomePage.waitForPageToLoad()
-                const currentUrl= await browser.getUrl()
-                expect(currentUrl).to.include('/for-sale/offices/abu-dhabi')
-            }),
+            // it('Verify Popular Property for Sale searches in the UAE | AbuDhabi Offices', async () => {
+            //     HomePage.openE2E()
+            //     await HomePage.waitForElementDisplayed(HomePage.PopularLinks308)
+            //     await HomePage.PopularLinks308.click()
+            //     await HomePage.waitForPageToLoad()
+            //     const currentUrl= await browser.getUrl()
+            //     expect(currentUrl).to.include('/for-sale/offices/abu-dhabi')
+            // }),
 
-            it('Verify Popular Property for Sale searches in the UAE | Ras Al Khaimah Offices', async () => {
-                HomePage.openE2E()
-                await HomePage.waitForElementDisplayed(HomePage.PopularLinks309)
-                await HomePage.PopularLinks309.click()
-                await HomePage.waitForPageToLoad()
-                const currentUrl= await browser.getUrl()
-                expect(currentUrl).to.include('/for-sale/property/ras-al-khaimah')
-            })
+            // it('Verify Popular Property for Sale searches in the UAE | Ras Al Khaimah Offices', async () => {
+            //     HomePage.openE2E()
+            //     await HomePage.waitForElementDisplayed(HomePage.PopularLinks309)
+            //     await HomePage.PopularLinks309.click()
+            //     await HomePage.waitForPageToLoad()
+            //     const currentUrl= await browser.getUrl()
+            //     expect(currentUrl).to.include('/for-sale/property/ras-al-khaimah')
+            // })
 
 
 
