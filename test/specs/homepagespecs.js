@@ -572,10 +572,9 @@ describe('HomePage', async () => {
             //     const currentUrl= await browser.getUrl()
             //     expect(currentUrl).to.include('al-mushrif').and.to.include('villas') 
             // }),
-            //   it('Verify Carousals', async () => {
+            //   it('Verify Carousals via Forward Button', async () => {
             //     HomePage.openE2E()
             //     await HomePage.waitForElementDisplayed(HomePage.ForwardBtn)
-            //     await HomePage.waitForElementDisplayed(HomePage.BackwardBtn)
             //     let desiredText = "Explorer Real Estate"
             //     let elementText =''
             //     while (elementText !== desiredText) {
@@ -588,6 +587,23 @@ describe('HomePage', async () => {
             //       }
             //     }
             // }),
+
+               it('Verify Carousals via Backward button', async () => {
+                HomePage.openE2E()
+                await HomePage.waitForElementDisplayed(HomePage.BackwardBtn)
+                let desiredText = "Explorer Real Estate"
+                let elementText =''
+                while (elementText !== desiredText) {
+                  await HomePage.BackwardBtn.click();
+                  await HomePage.waitForElementDisplayed(HomePage.AgencyCarousalElement)
+                  elementText = await HomePage.AgencyCarousalElement.getText();
+                  if (elementText === desiredText) {
+                    console.log('Desired text found:', elementText);
+                    break;
+                  }
+                }
+            })
+
             // it('Verify ChatGPT popup', async () => {
             //    HomePage.openE2E()
             //    await HomePage.GptTab.click()
