@@ -277,6 +277,35 @@ class HomePage extends Page {
         return $('//a[text()="Al Mushrif" and contains(@href, "sale/villas")]')
     }
 
+    get PopularLinks301(){
+        return $('//a[@title="Dubai properties for sale" and contains(@href, "/for-sale/property/dubai/")]')
+    }
+    get PopularLinks302(){
+        return $('//a[@title="Abu Dhabi properties for sale" and contains(@href, "/for-sale/property/abu-dhabi/")]')
+    }
+    get PopularLinks303(){
+        return $('//a[@title="Sharjah properties for sale" and contains(@href, "/for-sale/property/sharjah/")]')
+    }
+    get PopularLinks304(){
+        return $('//a[@title="Dubai shops for sale"]')
+    }
+    get PopularLinks305(){
+        return $('//a[@title="Abu Dhabi shops for sale"]')
+    }
+    get PopularLinks306(){
+        return $('//a[@title="Ajman properties for sale"]')
+    }
+    get PopularLinks307(){
+        return $('//a[@title="Dubai offices for sale"]')
+    }
+    get PopularLinks308(){
+        return $('//a[@title="Abu Dhabi offices for sale"]')
+    }
+    get PopularLinks309(){
+        return $('//a[@title="Ras Al Khaimah properties for sale"]')
+    }
+
+
 
     get ForwardBtn(){
         return $('//button[@aria-label="Carousel next button"]')
