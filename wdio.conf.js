@@ -23,7 +23,7 @@ export const config = {
     // will be called from there.
     //
     specs: [
-        './test/specs/homepagespecs.js'
+        './test/specs/truValue.specs.js'
     ],
     // Patterns to exclude.
     exclude: [
