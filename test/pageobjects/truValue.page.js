@@ -25,7 +25,10 @@ class TruValue extends Page {
         return $('//button[@aria-label="Close"]')
     }
     get LocationField(){
-        return $('//div[contains(@class, "b9e5541a") and contains(@class, "_6a3a3de9") and contains(@class, "_4f597301")]/div[@aria-label="Location filter"]//input[@type="text"]')
+        return $('//div[@aria-label="Location filter" and @class="c97c9f73 _20376027"]//input')
+    }
+    get LocationFieldDropdown(){
+        return $('//span[text() = "Business Bay"] | //span[@class="_2ef41e15"][text() = "Dubai"]')
     }
     get PropertyType(){
         return $('//div[@class="_9dc6d35d FilterDesign2022" and label[contains(text(), "property type")]]//div[@role="button"]')
@@ -55,7 +58,10 @@ class TruValue extends Page {
         return $('//li[text()="3"]')
     }
     get Area(){
-        return $('//div[@class="ad62c515 d2f17631 FilterDesign2022" and @aria-label="Area filter"]//input[@placeholder="e.g. 1078 Sq. M."]')
+        return $('//input[@class="_6bb0997d FilterDesign2022"]')
+    }
+    get GetEstimate(){
+        return $('//button[@aria-label="Get estimate"]')
     }
     async SelectRentPurpose(){
         await this.waitForElementDisplayed(this.PurposeFilter)
@@ -80,7 +86,6 @@ class TruValue extends Page {
         await this.waitForElementDisplayed(this.PropertyTypeDropdown)
         await this.waitForElementDisplayed(this.Apartment)
         await this.Apartment.click()
-        await this.Done.click()
     }
     async SelectBeds(){
         await this.Beds.click()
@@ -96,12 +101,15 @@ class TruValue extends Page {
         await this.SelectBeds_Baths_2.click()
         await this.Done.click()
     }
-    async SelectArea(){
-        await this.Area.click()
-        await this.Area.setValue('1200')
-
+    async SelectLocation(){
+        await this.LocationField.setValue('Dubai Marina')
+        await this.waitForElementDisplayed(this.LocationFieldDropdown)
+        await this.LocationFieldDropdown.click()
     }
-    
+    async SelectArea(){
+        await this.Area.setValue(1200)
+    }
+    ExpectedUrl="https://sl:getin1@bayut-e2e-development.dubizzle.dev/tru-value?category=apartments&purpose=to-rent&location=%2Fdubai%2Fdubai-marina&beds_in=2&area_min=100.3352832&area_max=122.63201280000001&baths_in=1%2C2%2C3"
     
 }
 export default new TruValue()
