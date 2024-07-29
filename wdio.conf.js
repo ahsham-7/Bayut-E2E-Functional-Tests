@@ -23,7 +23,7 @@ export const config = {
     // will be called from there.
     //
     specs: [
-        './test/specs/truValue.specs.js'
+        './test/specs/floorplan.specs.js'
     ],
     // Patterns to exclude.
     exclude: [
@@ -124,7 +124,23 @@ export const config = {
     // Test reporter for stdout.
     // The only one supported by default is 'dot'
     // see also: https://webdriver.io/docs/dot-reporter
-    reporters: ['spec'],
+    reporters: ['spec',
+        ['allure', {
+            outputDir: 'allure-results',
+            disableWebdriverStepsReporting: true,
+            disableWebdriverScreenshotsReporting: true,
+          }],
+        // ['junit',{outputDir:'./',},],
+    //     ['junit', {
+    //      outputDir: 'junit-reports',
+    //      suiteNameFormat: /[^a-zA-Z0-9@]+/,
+    //      outputFileFormat: function(options) { // optional
+    //          const date = new Date();
+    //          const timestamp = date.toISOString().replace(/[:.]/g, '-'); // Format the date and time for the file name
+    //          return `results-${options.cid}.${timestamp}.xml`;
+    //      }
+    //  }]
+     ],
 
     
     //

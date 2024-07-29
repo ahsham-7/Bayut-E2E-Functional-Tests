@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites tests="18" failures="17" errors="0" skipped="0">
+  <testsuite name="Footer Sector" timestamp="2024-07-29T12:47:55" time="46.175" tests="18" failures="17" errors="0" skipped="0">
+    <properties>
+      <property name="specId" value="0"/>
+      <property name="suiteName" value="Footer Sector"/>
+      <property name="capabilities" value="chrome.126_0_6478_185.windows"/>
+      <property name="file" value="file:///C:/Users/ahsham.khan/Desktop/WebDriver/bayutFunctionals/test/specs/footersection.js"/>
+    </properties>
+    <testcase classname="chrome.126_0_6478_185.windows.Footer_Sector" name="Verfiy Redirection of About Us Section" time="24.744">
+      <system-out><![CDATA[
+COMMAND: POST /session/6a34a86ca1a84229ba3dab9ee294a0e6/window/maximize - {}
+COMMAND: DELETE /session/6a34a86ca1a84229ba3dab9ee294a0e6/cookie - {}
+COMMAND: POST /session/6a34a86ca1a84229ba3dab9ee294a0e6/element - {"using":"xpath","value":"//a[@aria-label=\"About us\"]"}
+COMMAND: POST /session/6a34a86ca1a84229ba3dab9ee294a0e6/url - {"url":"https://sl:getin1@bayut-e2e-development.dubizzle.dev/"}
+RESULT: {}
+RESULT: {}
+RESULT: {"using":"xpath","value":"//a[@aria-label=\"About us\"]"}
+COMMAND: POST /session/6a34a86ca1a84229ba3dab9ee294a0e6/element - {"using":"xpath","value":"//a[@aria-label=\"About us\"]"}
+RESULT: {"url":"https://sl:getin1@bayut-e2e-development.dubizzle.dev/"}
+RESULT: {"using":"xpath","value":"//a[@aria-label=\"About us\"]"}
+COMMAND: POST /session/6a34a86ca1a84229ba3dab9ee294a0e6/execute/sync - {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (8097 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"f.FAC51DA44C6D5D4641D81A68D748A37D.d.EFCD2035C27E678E19B3EED1B81BC03F.e.67","ELEMENT":"f.FAC51DA44C6D5D4641D81A68D748A37D.d.EFCD2035C27E678E19B3EED1B81BC03F.e.67"}]}
+RESULT: {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (8097 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"f.FAC51DA44C6D5D4641D81A68D748A37D.d.EFCD2035C27E678E19B3EED1B81BC03F.e.67","ELEMENT":"f.FAC51DA44C6D5D4641D81A68D748A37D.d.EFCD2035C27E678E19B3EED1B81BC03F.e.67"}]}
+COMMAND: POST /session/6a34a86ca1a84229ba3dab9ee294a0e6/element - {"using":"xpath","value":"//a[@aria-label=\"About us\"]"}
+RESULT: {"using":"xpath","value":"//a[@aria-label=\"About us\"]"}
+COMMAND: POST /session/6a34a86ca1a84229ba3dab9ee294a0e6/element/f.FAC51DA44C6D5D4641D81A68D748A37D.d.EFCD2035C27E678E19B3EED1B81BC03F.e.67/click - {}
+RESULT: {}
+COMMAND: GET /session/6a34a86ca1a84229ba3dab9ee294a0e6/url - {}
+COMMAND: POST /session/6a34a86ca1a84229ba3dab9ee294a0e6/execute/sync - {"script":"return (() => document.readyState === 'complete').apply(null, arguments)","args":[]}
+RESULT: {}
+COMMAND: GET /session/6a34a86ca1a84229ba3dab9ee294a0e6/title - {}
+RESULT: {"script":"return (() => document.readyState === 'complete').apply(null, arguments)","args":[]}
+RESULT: {}
+]]></system-out>
+    </testcase>
+    <testcase classname="chrome.126_0_6478_185.windows.Footer_Sector" name="Verfiy Redirection of Careers Section" time="20.065">
+      <failure message="waitUntil condition failed with the following reason: no such window: target window already closed&#xA;from unknown error: web view not found&#xA;  (Session info: chrome=126.0.6478.185)"/>
+      <system-out><![CDATA[
+COMMAND: POST /session/6a34a86ca1a84229ba3dab9ee294a0e6/window/maximize - {}
+COMMAND: DELETE /session/6a34a86ca1a84229ba3dab9ee294a0e6/cookie - {}
+COMMAND: POST /session/6a34a86ca1a84229ba3dab9ee294a0e6/element - {"using":"xpath","value":"//a[@aria-label=\"Careers\"]"}
+COMMAND: POST /session/6a34a86ca1a84229ba3dab9ee294a0e6/url - {"url":"https://sl:getin1@bayut-e2e-development.dubizzle.dev/"}
+RESULT: {}
+RESULT: {}
+RESULT: {"using":"xpath","value":"//a[@aria-label=\"Careers\"]"}
+COMMAND: POST /session/6a34a86ca1a84229ba3dab9ee294a0e6/element - {"using":"xpath","value":"//a[@aria-label=\"Careers\"]"}
+RESULT: {"url":"https://sl:getin1@bayut-e2e-development.dubizzle.dev/"}
+RESULT: {"using":"xpath","value":"//a[@aria-label=\"Careers\"]"}
+COMMAND: POST /session/6a34a86ca1a84229ba3dab9ee294a0e6/execute/sync - {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (8097 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"f.FAC51DA44C6D5D4641D81A68D748A37D.d.5E0D5AA2DE68DCB9BFA17CE5F0EC6139.e.100","ELEMENT":"f.FAC51DA44C6D5D4641D81A68D748A37D.d.5E0D5AA2DE68DCB9BFA17CE5F0EC6139.e.100"}]}
+RESULT: {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (8097 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"f.FAC51DA44C6D5D4641D81A68D748A37D.d.5E0D5AA2DE68DCB9BFA17CE5F0EC6139.e.100","ELEMENT":"f.FAC51DA44C6D5D4641D81A68D748A37D.d.5E0D5AA2DE68DCB9BFA17CE5F0EC6139.e.100"}]}
+COMMAND: POST /session/6a34a86ca1a84229ba3dab9ee294a0e6/element - {"using":"xpath","value":"//a[@aria-label=\"Careers\"]"}
+RESULT: {"using":"xpath","value":"//a[@aria-label=\"Careers\"]"}
+COMMAND: POST /session/6a34a86ca1a84229ba3dab9ee294a0e6/element/f.FAC51DA44C6D5D4641D81A68D748A37D.d.5E0D5AA2DE68DCB9BFA17CE5F0EC6139.e.100/click - {}
+RESULT: {}
+COMMAND: GET /session/6a34a86ca1a84229ba3dab9ee294a0e6/url - {}
+COMMAND: POST /session/6a34a86ca1a84229ba3dab9ee294a0e6/execute/sync - {"script":"return (() => document.readyState === 'complete').apply(null, arguments)","args":[]}
+RESULT: {}
+COMMAND: POST /session/6a34a86ca1a84229ba3dab9ee294a0e6/window/maximize - {}
+COMMAND: DELETE /session/6a34a86ca1a84229ba3dab9ee294a0e6/cookie - {}
+COMMAND: POST /session/6a34a86ca1a84229ba3dab9ee294a0e6/element - {"using":"xpath","value":"//a[@aria-label=\"Careers\"]"}
+COMMAND: POST /session/6a34a86ca1a84229ba3dab9ee294a0e6/url - {"url":"https://www.bayut.com/"}
+RESULT: {"script":"return (() => document.readyState === 'complete').apply(null, arguments)","args":[]}
+RESULT: {}
+RESULT: {}
+RESULT: {"using":"xpath","value":"//a[@aria-label=\"Careers\"]"}
+COMMAND: POST /session/6a34a86ca1a84229ba3dab9ee294a0e6/element - {"using":"xpath","value":"//a[@aria-label=\"Careers\"]"}
+RESULT: {"url":"https://www.bayut.com/"}
+]]></system-out>
+      <system-err><![CDATA[
+Error: waitUntil condition failed with the following reason: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=126.0.6478.185)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async Context.<anonymous> (file:///C:/Users/ahsham.khan/Desktop/WebDriver/bayutFunctionals/test/specs/footersection.js?invalidateCache=0.7790659370288788:20:9)
+]]></system-err>
+    </testcase>
+    <testcase classname="chrome.126_0_6478_185.windows.Footer_Sector" name="Verfiy Redirection of Contact Us Section" time="0.123">
+      <failure message="no such window: target window already closed&#xA;from unknown error: web view not found&#xA;  (Session info: chrome=126.0.6478.185)"/>
+      <system-out><![CDATA[
+COMMAND: POST /session/6a34a86ca1a84229ba3dab9ee294a0e6/window/maximize - {}
+COMMAND: DELETE /session/6a34a86ca1a84229ba3dab9ee294a0e6/cookie - {}
+COMMAND: POST /session/6a34a86ca1a84229ba3dab9ee294a0e6/element - {"using":"xpath","value":"//a[@aria-label=\"Contact us\"]"}
+COMMAND: POST /session/6a34a86ca1a84229ba3dab9ee294a0e6/url - {"url":"https://sl:getin1@bayut-e2e-development.dubizzle.dev/"}
+]]></system-out>
+      <system-err><![CDATA[
+no such window: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=126.0.6478.185)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async Context.<anonymous> (file:///C:/Users/ahsham.khan/Desktop/WebDriver/bayutFunctionals/test/specs/footersection.js?invalidateCache=0.7790659370288788:28:9)
+]]></system-err>
+    </testcase>
+    <testcase classname="chrome.126_0_6478_185.windows.Footer_Sector" name="Verfiy Redirection of Terms Privacy Section" time="0.093">
+      <failure message="no such window: target window already closed&#xA;from unknown error: web view not found&#xA;  (Session info: chrome=126.0.6478.185)"/>
+      <system-out><![CDATA[
+COMMAND: POST /session/6a34a86ca1a84229ba3dab9ee294a0e6/window/maximize - {}
+COMMAND: DELETE /session/6a34a86ca1a84229ba3dab9ee294a0e6/cookie - {}
+COMMAND: POST /session/6a34a86ca1a84229ba3dab9ee294a0e6/element - {"using":"xpath","value":"//a[@aria-label=\"Terms and privacy policy\"]"}
+COMMAND: POST /session/6a34a86ca1a84229ba3dab9ee294a0e6/url - {"url":"https://sl:getin1@bayut-e2e-development.dubizzle.dev/"}
+]]></system-out>
+      <system-err><![CDATA[
+no such window: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=126.0.6478.185)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async Context.<anonymous> (file:///C:/Users/ahsham.khan/Desktop/WebDriver/bayutFunctionals/test/specs/footersection.js?invalidateCache=0.7790659370288788:36:9)
+]]></system-err>
+    </testcase>
+    <testcase classname="chrome.126_0_6478_185.windows.Footer_Sector" name="Verfiy Redirection of Facebook" time="0.092">
+      <failure message="no such window: target window already closed&#xA;from unknown error: web view not found&#xA;  (Session info: chrome=126.0.6478.185)"/>
+      <system-out><![CDATA[
+COMMAND: POST /session/6a34a86ca1a84229ba3dab9ee294a0e6/window/maximize - {}
+COMMAND: DELETE /session/6a34a86ca1a84229ba3dab9ee294a0e6/cookie - {}
+COMMAND: POST /session/6a34a86ca1a84229ba3dab9ee294a0e6/element - {"using":"xpath","value":"//a[@aria-label=\"Follow us on facebook\"]"}
+COMMAND: POST /session/6a34a86ca1a84229ba3dab9ee294a0e6/url - {"url":"https://sl:getin1@bayut-e2e-development.dubizzle.dev/"}
+]]></system-out>
+      <system-err><![CDATA[
+no such window: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=126.0.6478.185)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async Context.<anonymous> (file:///C:/Users/ahsham.khan/Desktop/WebDriver/bayutFunctionals/test/specs/footersection.js?invalidateCache=0.7790659370288788:44:9)
+]]></system-err>
+    </testcase>
+    <testcase classname="chrome.126_0_6478_185.windows.Footer_Sector" name="Verfiy Redirection of Twitter" time="0.082">
+      <failure message="no such window: target window already closed&#xA;from unknown error: web view not found&#xA;  (Session info: chrome=126.0.6478.185)"/>
+      <system-out><![CDATA[
+COMMAND: POST /session/6a34a86ca1a84229ba3dab9ee294a0e6/window/maximize - {}
+COMMAND: DELETE /session/6a34a86ca1a84229ba3dab9ee294a0e6/cookie - {}
+COMMAND: POST /session/6a34a86ca1a84229ba3dab9ee294a0e6/element - {"using":"xpath","value":"//a[@aria-label=\"Follow us on twitter\"]"}
+COMMAND: POST /session/6a34a86ca1a84229ba3dab9ee294a0e6/url - {"url":"https://sl:getin1@bayut-e2e-development.dubizzle.dev/"}
+]]></system-out>
+      <system-err><![CDATA[
+no such window: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=126.0.6478.185)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async Context.<anonymous> (file:///C:/Users/ahsham.khan/Desktop/WebDriver/bayutFunctionals/test/specs/footersection.js?invalidateCache=0.7790659370288788:57:9)
+]]></system-err>
+    </testcase>
+    <testcase classname="chrome.126_0_6478_185.windows.Footer_Sector" name="Verfiy Redirection of LinkedIn" time="0.089">
+      <failure message="no such window: target window already closed&#xA;from unknown error: web view not found&#xA;  (Session info: chrome=126.0.6478.185)"/>
+      <system-out><![CDATA[
+COMMAND: POST /session/6a34a86ca1a84229ba3dab9ee294a0e6/window/maximize - {}
+COMMAND: DELETE /session/6a34a86ca1a84229ba3dab9ee294a0e6/cookie - {}
+COMMAND: POST /session/6a34a86ca1a84229ba3dab9ee294a0e6/element - {"using":"xpath","value":"//a[@aria-label=\"Follow us on linkedin\"]"}
+COMMAND: POST /session/6a34a86ca1a84229ba3dab9ee294a0e6/url - {"url":"https://sl:getin1@bayut-e2e-development.dubizzle.dev/"}
+]]></system-out>
+      <system-err><![CDATA[
+no such window: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=126.0.6478.185)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async Context.<anonymous> (file:///C:/Users/ahsham.khan/Desktop/WebDriver/bayutFunctionals/test/specs/footersection.js?invalidateCache=0.7790659370288788:72:9)
+]]></system-err>
+    </testcase>
+    <testcase classname="chrome.126_0_6478_185.windows.Footer_Sector" name="Verfiy Redirection of Intagram" time="0.07">
+      <failure message="no such window: target window already closed&#xA;from unknown error: web view not found&#xA;  (Session info: chrome=126.0.6478.185)"/>
+      <system-out><![CDATA[
+COMMAND: POST /session/6a34a86ca1a84229ba3dab9ee294a0e6/window/maximize - {}
+COMMAND: DELETE /session/6a34a86ca1a84229ba3dab9ee294a0e6/cookie - {}
+COMMAND: POST /session/6a34a86ca1a84229ba3dab9ee294a0e6/element - {"using":"xpath","value":"//a[@aria-label=\"Follow us on instagram\"]"}
+COMMAND: POST /session/6a34a86ca1a84229ba3dab9ee294a0e6/url - {"url":"https://sl:getin1@bayut-e2e-development.dubizzle.dev/"}
+]]></system-out>
+      <system-err><![CDATA[
+no such window: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=126.0.6478.185)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async Context.<anonymous> (file:///C:/Users/ahsham.khan/Desktop/WebDriver/bayutFunctionals/test/specs/footersection.js?invalidateCache=0.7790659370288788:87:9)
+]]></system-err>
+    </testcase>
+    <testcase classname="chrome.126_0_6478_185.windows.Footer_Sector" name="Verfiy Redirection of YouTube" time="0.075">
+      <failure message="no such window: target window already closed&#xA;from unknown error: web view not found&#xA;  (Session info: chrome=126.0.6478.185)"/>
+      <system-out><![CDATA[
+COMMAND: POST /session/6a34a86ca1a84229ba3dab9ee294a0e6/window/maximize - {}
+COMMAND: DELETE /session/6a34a86ca1a84229ba3dab9ee294a0e6/cookie - {}
+COMMAND: POST /session/6a34a86ca1a84229ba3dab9ee294a0e6/element - {"using":"xpath","value":"//a[@aria-label=\"Follow us on youtube\"]"}
+COMMAND: POST /session/6a34a86ca1a84229ba3dab9ee294a0e6/url - {"url":"https://sl:getin1@bayut-e2e-development.dubizzle.dev/"}
+]]></system-out>
+      <system-err><![CDATA[
+no such window: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=126.0.6478.185)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async Context.<anonymous> (file:///C:/Users/ahsham.khan/Desktop/WebDriver/bayutFunctionals/test/specs/footersection.js?invalidateCache=0.7790659370288788:102:9)
+]]></system-err>
+    </testcase>
+    <testcase classname="chrome.126_0_6478_185.windows.Footer_Sector" name="Verfiy Redirection of Apple Store" time="0.068">
+      <failure message="no such window: target window already closed&#xA;from unknown error: web view not found&#xA;  (Session info: chrome=126.0.6478.185)"/>
+      <system-out><![CDATA[
+COMMAND: POST /session/6a34a86ca1a84229ba3dab9ee294a0e6/window/maximize - {}
+COMMAND: DELETE /session/6a34a86ca1a84229ba3dab9ee294a0e6/cookie - {}
+COMMAND: POST /session/6a34a86ca1a84229ba3dab9ee294a0e6/element - {"using":"xpath","value":"//div[@class=\"e6a18ca9 en\"]"}
+COMMAND: POST /session/6a34a86ca1a84229ba3dab9ee294a0e6/url - {"url":"https://sl:getin1@bayut-e2e-development.dubizzle.dev/"}
+]]></system-out>
+      <system-err><![CDATA[
+no such window: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=126.0.6478.185)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async Context.<anonymous> (file:///C:/Users/ahsham.khan/Desktop/WebDriver/bayutFunctionals/test/specs/footersection.js?invalidateCache=0.7790659370288788:117:9)
+]]></system-err>
+    </testcase>
+    <testcase classname="chrome.126_0_6478_185.windows.Footer_Sector" name="Verfiy Redirection of Google Play Store" time="0.066">
+      <failure message="no such window: target window already closed&#xA;from unknown error: web view not found&#xA;  (Session info: chrome=126.0.6478.185)"/>
+      <system-out><![CDATA[
+COMMAND: POST /session/6a34a86ca1a84229ba3dab9ee294a0e6/window/maximize - {}
+COMMAND: DELETE /session/6a34a86ca1a84229ba3dab9ee294a0e6/cookie - {}
+COMMAND: POST /session/6a34a86ca1a84229ba3dab9ee294a0e6/element - {"using":"xpath","value":"//div[@class=\"e6a18ca9 en\"]"}
+COMMAND: POST /session/6a34a86ca1a84229ba3dab9ee294a0e6/url - {"url":"https://sl:getin1@bayut-e2e-development.dubizzle.dev/"}
+]]></system-out>
+      <system-err><![CDATA[
+no such window: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=126.0.6478.185)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async Context.<anonymous> (file:///C:/Users/ahsham.khan/Desktop/WebDriver/bayutFunctionals/test/specs/footersection.js?invalidateCache=0.7790659370288788:132:9)
+]]></system-err>
+    </testcase>
+    <testcase classname="chrome.126_0_6478_185.windows.Footer_Sector" name="Verfiy Redirection of Huawei App Gallery" time="0.06">
+      <failure message="no such window: target window already closed&#xA;from unknown error: web view not found&#xA;  (Session info: chrome=126.0.6478.185)"/>
+      <system-out><![CDATA[
+COMMAND: POST /session/6a34a86ca1a84229ba3dab9ee294a0e6/window/maximize - {}
+COMMAND: DELETE /session/6a34a86ca1a84229ba3dab9ee294a0e6/cookie - {}
+COMMAND: POST /session/6a34a86ca1a84229ba3dab9ee294a0e6/element - {"using":"xpath","value":"//div[@class=\"_1f072239 en\"]"}
+COMMAND: POST /session/6a34a86ca1a84229ba3dab9ee294a0e6/url - {"url":"https://sl:getin1@bayut-e2e-development.dubizzle.dev/"}
+]]></system-out>
+      <system-err><![CDATA[
+no such window: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=126.0.6478.185)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async Context.<anonymous> (file:///C:/Users/ahsham.khan/Desktop/WebDriver/bayutFunctionals/test/specs/footersection.js?invalidateCache=0.7790659370288788:147:9)
+]]></system-err>
+    </testcase>
+    <testcase classname="chrome.126_0_6478_185.windows.Footer_Sector" name="Verfiy Zameen Redirection" time="0.07">
+      <failure message="no such window: target window already closed&#xA;from unknown error: web view not found&#xA;  (Session info: chrome=126.0.6478.185)"/>
+      <system-out><![CDATA[
+COMMAND: POST /session/6a34a86ca1a84229ba3dab9ee294a0e6/window/maximize - {}
+COMMAND: DELETE /session/6a34a86ca1a84229ba3dab9ee294a0e6/cookie - {}
+COMMAND: POST /session/6a34a86ca1a84229ba3dab9ee294a0e6/element - {"using":"xpath","value":"//button[@aria-label=\"Select country\"]"}
+COMMAND: POST /session/6a34a86ca1a84229ba3dab9ee294a0e6/url - {"url":"https://sl:getin1@bayut-e2e-development.dubizzle.dev/"}
+]]></system-out>
+      <system-err><![CDATA[
+no such window: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=126.0.6478.185)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async Context.<anonymous> (file:///C:/Users/ahsham.khan/Desktop/WebDriver/bayutFunctionals/test/specs/footersection.js?invalidateCache=0.7790659370288788:162:9)
+]]></system-err>
+    </testcase>
+    <testcase classname="chrome.126_0_6478_185.windows.Footer_Sector" name="Verfiy BayutKSA Redirection" time="0.066">
+      <failure message="no such window: target window already closed&#xA;from unknown error: web view not found&#xA;  (Session info: chrome=126.0.6478.185)"/>
+      <system-out><![CDATA[
+COMMAND: POST /session/6a34a86ca1a84229ba3dab9ee294a0e6/window/maximize - {}
+COMMAND: DELETE /session/6a34a86ca1a84229ba3dab9ee294a0e6/cookie - {}
+COMMAND: POST /session/6a34a86ca1a84229ba3dab9ee294a0e6/element - {"using":"xpath","value":"//button[@aria-label=\"Select country\"]"}
+COMMAND: POST /session/6a34a86ca1a84229ba3dab9ee294a0e6/url - {"url":"https://sl:getin1@bayut-e2e-development.dubizzle.dev/"}
+]]></system-out>
+      <system-err><![CDATA[
+no such window: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=126.0.6478.185)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async Context.<anonymous> (file:///C:/Users/ahsham.khan/Desktop/WebDriver/bayutFunctionals/test/specs/footersection.js?invalidateCache=0.7790659370288788:183:9)
+]]></system-err>
+    </testcase>
+    <testcase classname="chrome.126_0_6478_185.windows.Footer_Sector" name="Verfiy BayutJO Redirection" time="0.128">
+      <failure message="no such window: target window already closed&#xA;from unknown error: web view not found&#xA;  (Session info: chrome=126.0.6478.185)"/>
+      <system-out><![CDATA[
+COMMAND: POST /session/6a34a86ca1a84229ba3dab9ee294a0e6/window/maximize - {}
+COMMAND: DELETE /session/6a34a86ca1a84229ba3dab9ee294a0e6/cookie - {}
+COMMAND: POST /session/6a34a86ca1a84229ba3dab9ee294a0e6/element - {"using":"xpath","value":"//button[@aria-label=\"Select country\"]"}
+COMMAND: POST /session/6a34a86ca1a84229ba3dab9ee294a0e6/url - {"url":"https://sl:getin1@bayut-e2e-development.dubizzle.dev/"}
+]]></system-out>
+      <system-err><![CDATA[
+no such window: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=126.0.6478.185)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async Context.<anonymous> (file:///C:/Users/ahsham.khan/Desktop/WebDriver/bayutFunctionals/test/specs/footersection.js?invalidateCache=0.7790659370288788:204:9)
+]]></system-err>
+    </testcase>
+    <testcase classname="chrome.126_0_6478_185.windows.Footer_Sector" name="Verfiy LamudiPH Redirection" time="0.078">
+      <failure message="no such window: target window already closed&#xA;from unknown error: web view not found&#xA;  (Session info: chrome=126.0.6478.185)"/>
+      <system-out><![CDATA[
+COMMAND: POST /session/6a34a86ca1a84229ba3dab9ee294a0e6/window/maximize - {}
+COMMAND: DELETE /session/6a34a86ca1a84229ba3dab9ee294a0e6/cookie - {}
+COMMAND: POST /session/6a34a86ca1a84229ba3dab9ee294a0e6/element - {"using":"xpath","value":"//button[@aria-label=\"Select country\"]"}
+COMMAND: POST /session/6a34a86ca1a84229ba3dab9ee294a0e6/url - {"url":"https://sl:getin1@bayut-e2e-development.dubizzle.dev/"}
+]]></system-out>
+      <system-err><![CDATA[
+no such window: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=126.0.6478.185)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async Context.<anonymous> (file:///C:/Users/ahsham.khan/Desktop/WebDriver/bayutFunctionals/test/specs/footersection.js?invalidateCache=0.7790659370288788:225:9)
+]]></system-err>
+    </testcase>
+    <testcase classname="chrome.126_0_6478_185.windows.Footer_Sector" name="Verfiy LamudiID Redirection" time="0.061">
+      <failure message="no such window: target window already closed&#xA;from unknown error: web view not found&#xA;  (Session info: chrome=126.0.6478.185)"/>
+      <system-out><![CDATA[
+COMMAND: POST /session/6a34a86ca1a84229ba3dab9ee294a0e6/window/maximize - {}
+COMMAND: DELETE /session/6a34a86ca1a84229ba3dab9ee294a0e6/cookie - {}
+COMMAND: POST /session/6a34a86ca1a84229ba3dab9ee294a0e6/element - {"using":"xpath","value":"//button[@aria-label=\"Select country\"]"}
+COMMAND: POST /session/6a34a86ca1a84229ba3dab9ee294a0e6/url - {"url":"https://sl:getin1@bayut-e2e-development.dubizzle.dev/"}
+]]></system-out>
+      <system-err><![CDATA[
+no such window: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=126.0.6478.185)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async Context.<anonymous> (file:///C:/Users/ahsham.khan/Desktop/WebDriver/bayutFunctionals/test/specs/footersection.js?invalidateCache=0.7790659370288788:246:9)
+]]></system-err>
+    </testcase>
+    <testcase classname="chrome.126_0_6478_185.windows.Footer_Sector" name="Verfiy BayutEG Redirection" time="0.08">
+      <failure message="no such window: target window already closed&#xA;from unknown error: web view not found&#xA;  (Session info: chrome=126.0.6478.185)"/>
+      <system-out><![CDATA[
+COMMAND: POST /session/6a34a86ca1a84229ba3dab9ee294a0e6/window/maximize - {}
+COMMAND: DELETE /session/6a34a86ca1a84229ba3dab9ee294a0e6/cookie - {}
+COMMAND: POST /session/6a34a86ca1a84229ba3dab9ee294a0e6/element - {"using":"xpath","value":"//button[@aria-label=\"Select country\"]"}
+COMMAND: POST /session/6a34a86ca1a84229ba3dab9ee294a0e6/url - {"url":"https://sl:getin1@bayut-e2e-development.dubizzle.dev/"}
+COMMAND: DELETE /session/6a34a86ca1a84229ba3dab9ee294a0e6 - {}
+RESULT: {}
+]]></system-out>
+      <system-err><![CDATA[
+no such window: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=126.0.6478.185)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async Context.<anonymous> (file:///C:/Users/ahsham.khan/Desktop/WebDriver/bayutFunctionals/test/specs/footersection.js?invalidateCache=0.7790659370288788:267:9)
+]]></system-err>
+    </testcase>
+  </testsuite>
+</testsuites>

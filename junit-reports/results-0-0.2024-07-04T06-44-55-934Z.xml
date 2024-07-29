@@ -1,0 +1,777 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites tests="18" failures="10" errors="0" skipped="0">
+  <testsuite name="Footer Sector" timestamp="2024-07-04T11:44:56" time="213.857" tests="18" failures="10" errors="0" skipped="0">
+    <properties>
+      <property name="specId" value="0"/>
+      <property name="suiteName" value="Footer Sector"/>
+      <property name="capabilities" value="chrome.126_0_6478_127.windows"/>
+      <property name="file" value="file:///C:/Users/ahsham.khan/Desktop/WebDriver/bayutFunctionals/test/specs/footersection.js"/>
+    </properties>
+    <testcase classname="chrome.126_0_6478_127.windows.Footer_Sector" name="Verfiy Redirection of About Us Section" time="11.885">
+      <system-out><![CDATA[
+COMMAND: POST /session/8433ec3be7a822349839fd53628fe966/window/maximize - {}
+COMMAND: DELETE /session/8433ec3be7a822349839fd53628fe966/cookie - {}
+COMMAND: POST /session/8433ec3be7a822349839fd53628fe966/element - {"using":"xpath","value":"//a[@aria-label=\"About us\"]"}
+COMMAND: POST /session/8433ec3be7a822349839fd53628fe966/url - {"url":"https://sl:getin1@bayut-e2e-development.dubizzle.dev/"}
+RESULT: {}
+RESULT: {}
+RESULT: {"using":"xpath","value":"//a[@aria-label=\"About us\"]"}
+COMMAND: POST /session/8433ec3be7a822349839fd53628fe966/element - {"using":"xpath","value":"//a[@aria-label=\"About us\"]"}
+RESULT: {"url":"https://sl:getin1@bayut-e2e-development.dubizzle.dev/"}
+RESULT: {"using":"xpath","value":"//a[@aria-label=\"About us\"]"}
+COMMAND: POST /session/8433ec3be7a822349839fd53628fe966/execute/sync - {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7807 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"f.BD4E11BCF39B63722044D7B794467DFA.d.4C4025509F62A3E4B66876572C6931E6.e.58","ELEMENT":"f.BD4E11BCF39B63722044D7B794467DFA.d.4C4025509F62A3E4B66876572C6931E6.e.58"}]}
+RESULT: {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7807 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"f.BD4E11BCF39B63722044D7B794467DFA.d.4C4025509F62A3E4B66876572C6931E6.e.58","ELEMENT":"f.BD4E11BCF39B63722044D7B794467DFA.d.4C4025509F62A3E4B66876572C6931E6.e.58"}]}
+COMMAND: POST /session/8433ec3be7a822349839fd53628fe966/element - {"using":"xpath","value":"//a[@aria-label=\"About us\"]"}
+RESULT: {"using":"xpath","value":"//a[@aria-label=\"About us\"]"}
+COMMAND: POST /session/8433ec3be7a822349839fd53628fe966/element/f.BD4E11BCF39B63722044D7B794467DFA.d.4C4025509F62A3E4B66876572C6931E6.e.58/click - {}
+RESULT: {}
+COMMAND: GET /session/8433ec3be7a822349839fd53628fe966/url - {}
+COMMAND: POST /session/8433ec3be7a822349839fd53628fe966/execute/sync - {"script":"return (() => document.readyState === 'complete').apply(null, arguments)","args":[]}
+RESULT: {}
+COMMAND: GET /session/8433ec3be7a822349839fd53628fe966/title - {}
+RESULT: {"script":"return (() => document.readyState === 'complete').apply(null, arguments)","args":[]}
+RESULT: {}
+]]></system-out>
+    </testcase>
+    <testcase classname="chrome.126_0_6478_127.windows.Footer_Sector" name="Verfiy Redirection of Careers Section" time="24.869">
+      <system-out><![CDATA[
+COMMAND: POST /session/8433ec3be7a822349839fd53628fe966/window/maximize - {}
+COMMAND: DELETE /session/8433ec3be7a822349839fd53628fe966/cookie - {}
+COMMAND: POST /session/8433ec3be7a822349839fd53628fe966/element - {"using":"xpath","value":"//a[@aria-label=\"Careers\"]"}
+COMMAND: POST /session/8433ec3be7a822349839fd53628fe966/url - {"url":"https://sl:getin1@bayut-e2e-development.dubizzle.dev/"}
+RESULT: {}
+RESULT: {}
+RESULT: {"using":"xpath","value":"//a[@aria-label=\"Careers\"]"}
+COMMAND: POST /session/8433ec3be7a822349839fd53628fe966/element - {"using":"xpath","value":"//a[@aria-label=\"Careers\"]"}
+RESULT: {"url":"https://sl:getin1@bayut-e2e-development.dubizzle.dev/"}
+RESULT: {"using":"xpath","value":"//a[@aria-label=\"Careers\"]"}
+COMMAND: POST /session/8433ec3be7a822349839fd53628fe966/execute/sync - {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7807 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"f.BD4E11BCF39B63722044D7B794467DFA.d.A6F33907043070DE1B429BF9F3647B59.e.94","ELEMENT":"f.BD4E11BCF39B63722044D7B794467DFA.d.A6F33907043070DE1B429BF9F3647B59.e.94"}]}
+RESULT: {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7807 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"f.BD4E11BCF39B63722044D7B794467DFA.d.A6F33907043070DE1B429BF9F3647B59.e.94","ELEMENT":"f.BD4E11BCF39B63722044D7B794467DFA.d.A6F33907043070DE1B429BF9F3647B59.e.94"}]}
+COMMAND: POST /session/8433ec3be7a822349839fd53628fe966/element - {"using":"xpath","value":"//a[@aria-label=\"Careers\"]"}
+RESULT: {"using":"xpath","value":"//a[@aria-label=\"Careers\"]"}
+COMMAND: POST /session/8433ec3be7a822349839fd53628fe966/element/f.BD4E11BCF39B63722044D7B794467DFA.d.A6F33907043070DE1B429BF9F3647B59.e.94/click - {}
+RESULT: {}
+COMMAND: GET /session/8433ec3be7a822349839fd53628fe966/url - {}
+COMMAND: POST /session/8433ec3be7a822349839fd53628fe966/execute/sync - {"script":"return (() => document.readyState === 'complete').apply(null, arguments)","args":[]}
+RESULT: {}
+COMMAND: POST /session/8433ec3be7a822349839fd53628fe966/window/maximize - {}
+COMMAND: DELETE /session/8433ec3be7a822349839fd53628fe966/cookie - {}
+COMMAND: POST /session/8433ec3be7a822349839fd53628fe966/element - {"using":"xpath","value":"//a[@aria-label=\"Careers\"]"}
+COMMAND: POST /session/8433ec3be7a822349839fd53628fe966/url - {"url":"https://www.bayut.com/"}
+RESULT: {"script":"return (() => document.readyState === 'complete').apply(null, arguments)","args":[]}
+RESULT: {}
+RESULT: {}
+RESULT: {"using":"xpath","value":"//a[@aria-label=\"Careers\"]"}
+COMMAND: POST /session/8433ec3be7a822349839fd53628fe966/element - {"using":"xpath","value":"//a[@aria-label=\"Careers\"]"}
+RESULT: {"url":"https://www.bayut.com/"}
+RESULT: {"using":"xpath","value":"//a[@aria-label=\"Careers\"]"}
+COMMAND: POST /session/8433ec3be7a822349839fd53628fe966/execute/sync - {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7807 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"f.BD4E11BCF39B63722044D7B794467DFA.d.E36ABD365DC932B83761F9CB4EB0EE9C.e.61","ELEMENT":"f.BD4E11BCF39B63722044D7B794467DFA.d.E36ABD365DC932B83761F9CB4EB0EE9C.e.61"}]}
+RESULT: {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7807 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"f.BD4E11BCF39B63722044D7B794467DFA.d.E36ABD365DC932B83761F9CB4EB0EE9C.e.61","ELEMENT":"f.BD4E11BCF39B63722044D7B794467DFA.d.E36ABD365DC932B83761F9CB4EB0EE9C.e.61"}]}
+COMMAND: POST /session/8433ec3be7a822349839fd53628fe966/element - {"using":"xpath","value":"//a[@aria-label=\"Careers\"]"}
+RESULT: {"using":"xpath","value":"//a[@aria-label=\"Careers\"]"}
+COMMAND: POST /session/8433ec3be7a822349839fd53628fe966/element/f.BD4E11BCF39B63722044D7B794467DFA.d.E36ABD365DC932B83761F9CB4EB0EE9C.e.61/click - {}
+RESULT: {}
+COMMAND: GET /session/8433ec3be7a822349839fd53628fe966/url - {}
+COMMAND: POST /session/8433ec3be7a822349839fd53628fe966/execute/sync - {"script":"return (() => document.readyState === 'complete').apply(null, arguments)","args":[]}
+RESULT: {}
+]]></system-out>
+    </testcase>
+    <testcase classname="chrome.126_0_6478_127.windows.Footer_Sector" name="Verfiy Redirection of Contact Us Section" time="2.107">
+      <system-out><![CDATA[
+COMMAND: POST /session/8433ec3be7a822349839fd53628fe966/window/maximize - {}
+COMMAND: DELETE /session/8433ec3be7a822349839fd53628fe966/cookie - {}
+COMMAND: POST /session/8433ec3be7a822349839fd53628fe966/element - {"using":"xpath","value":"//a[@aria-label=\"Contact us\"]"}
+COMMAND: POST /session/8433ec3be7a822349839fd53628fe966/url - {"url":"https://sl:getin1@bayut-e2e-development.dubizzle.dev/"}
+RESULT: {"script":"return (() => document.readyState === 'complete').apply(null, arguments)","args":[]}
+RESULT: {}
+RESULT: {}
+RESULT: {"using":"xpath","value":"//a[@aria-label=\"Contact us\"]"}
+COMMAND: POST /session/8433ec3be7a822349839fd53628fe966/element - {"using":"xpath","value":"//a[@aria-label=\"Contact us\"]"}
+RESULT: {"url":"https://sl:getin1@bayut-e2e-development.dubizzle.dev/"}
+RESULT: {"using":"xpath","value":"//a[@aria-label=\"Contact us\"]"}
+COMMAND: POST /session/8433ec3be7a822349839fd53628fe966/execute/sync - {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7807 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"f.BD4E11BCF39B63722044D7B794467DFA.d.9F8E99299375317EF71985516DAB48B2.e.57","ELEMENT":"f.BD4E11BCF39B63722044D7B794467DFA.d.9F8E99299375317EF71985516DAB48B2.e.57"}]}
+RESULT: {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7807 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"f.BD4E11BCF39B63722044D7B794467DFA.d.9F8E99299375317EF71985516DAB48B2.e.57","ELEMENT":"f.BD4E11BCF39B63722044D7B794467DFA.d.9F8E99299375317EF71985516DAB48B2.e.57"}]}
+COMMAND: POST /session/8433ec3be7a822349839fd53628fe966/element - {"using":"xpath","value":"//a[@aria-label=\"Contact us\"]"}
+RESULT: {"using":"xpath","value":"//a[@aria-label=\"Contact us\"]"}
+COMMAND: POST /session/8433ec3be7a822349839fd53628fe966/element/f.BD4E11BCF39B63722044D7B794467DFA.d.9F8E99299375317EF71985516DAB48B2.e.57/click - {}
+RESULT: {}
+COMMAND: GET /session/8433ec3be7a822349839fd53628fe966/url - {}
+COMMAND: POST /session/8433ec3be7a822349839fd53628fe966/execute/sync - {"script":"return (() => document.readyState === 'complete').apply(null, arguments)","args":[]}
+RESULT: {}
+]]></system-out>
+    </testcase>
+    <testcase classname="chrome.126_0_6478_127.windows.Footer_Sector" name="Verfiy Redirection of Terms Privacy Section" time="1.992">
+      <system-out><![CDATA[
+COMMAND: POST /session/8433ec3be7a822349839fd53628fe966/window/maximize - {}
+COMMAND: DELETE /session/8433ec3be7a822349839fd53628fe966/cookie - {}
+COMMAND: POST /session/8433ec3be7a822349839fd53628fe966/element - {"using":"xpath","value":"//a[@aria-label=\"Terms and privacy policy\"]"}
+COMMAND: POST /session/8433ec3be7a822349839fd53628fe966/url - {"url":"https://sl:getin1@bayut-e2e-development.dubizzle.dev/"}
+RESULT: {"script":"return (() => document.readyState === 'complete').apply(null, arguments)","args":[]}
+RESULT: {}
+RESULT: {}
+RESULT: {"using":"xpath","value":"//a[@aria-label=\"Terms and privacy policy\"]"}
+COMMAND: POST /session/8433ec3be7a822349839fd53628fe966/element - {"using":"xpath","value":"//a[@aria-label=\"Terms and privacy policy\"]"}
+RESULT: {"url":"https://sl:getin1@bayut-e2e-development.dubizzle.dev/"}
+RESULT: {"using":"xpath","value":"//a[@aria-label=\"Terms and privacy policy\"]"}
+COMMAND: POST /session/8433ec3be7a822349839fd53628fe966/execute/sync - {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7807 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"f.BD4E11BCF39B63722044D7B794467DFA.d.735236A891DB5D42ECBC63FFE35CEA00.e.78","ELEMENT":"f.BD4E11BCF39B63722044D7B794467DFA.d.735236A891DB5D42ECBC63FFE35CEA00.e.78"}]}
+RESULT: {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7807 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"f.BD4E11BCF39B63722044D7B794467DFA.d.735236A891DB5D42ECBC63FFE35CEA00.e.78","ELEMENT":"f.BD4E11BCF39B63722044D7B794467DFA.d.735236A891DB5D42ECBC63FFE35CEA00.e.78"}]}
+COMMAND: POST /session/8433ec3be7a822349839fd53628fe966/element - {"using":"xpath","value":"//a[@aria-label=\"Terms and privacy policy\"]"}
+RESULT: {"using":"xpath","value":"//a[@aria-label=\"Terms and privacy policy\"]"}
+COMMAND: POST /session/8433ec3be7a822349839fd53628fe966/element/f.BD4E11BCF39B63722044D7B794467DFA.d.735236A891DB5D42ECBC63FFE35CEA00.e.78/click - {}
+RESULT: {}
+COMMAND: GET /session/8433ec3be7a822349839fd53628fe966/url - {}
+COMMAND: POST /session/8433ec3be7a822349839fd53628fe966/execute/sync - {"script":"return (() => document.readyState === 'complete').apply(null, arguments)","args":[]}
+RESULT: {}
+]]></system-out>
+    </testcase>
+    <testcase classname="chrome.126_0_6478_127.windows.Footer_Sector" name="Verfiy Redirection of Facebook" time="7.905">
+      <system-out><![CDATA[
+COMMAND: POST /session/8433ec3be7a822349839fd53628fe966/window/maximize - {}
+COMMAND: DELETE /session/8433ec3be7a822349839fd53628fe966/cookie - {}
+COMMAND: POST /session/8433ec3be7a822349839fd53628fe966/element - {"using":"xpath","value":"//a[@aria-label=\"Follow us on facebook\"]"}
+COMMAND: POST /session/8433ec3be7a822349839fd53628fe966/url - {"url":"https://sl:getin1@bayut-e2e-development.dubizzle.dev/"}
+RESULT: {"script":"return (() => document.readyState === 'complete').apply(null, arguments)","args":[]}
+RESULT: {}
+RESULT: {}
+RESULT: {"using":"xpath","value":"//a[@aria-label=\"Follow us on facebook\"]"}
+COMMAND: POST /session/8433ec3be7a822349839fd53628fe966/element - {"using":"xpath","value":"//a[@aria-label=\"Follow us on facebook\"]"}
+RESULT: {"url":"https://sl:getin1@bayut-e2e-development.dubizzle.dev/"}
+RESULT: {"using":"xpath","value":"//a[@aria-label=\"Follow us on facebook\"]"}
+COMMAND: POST /session/8433ec3be7a822349839fd53628fe966/execute/sync - {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7807 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"f.BD4E11BCF39B63722044D7B794467DFA.d.C37AA18F4363055EE23BBB27E945F153.e.100","ELEMENT":"f.BD4E11BCF39B63722044D7B794467DFA.d.C37AA18F4363055EE23BBB27E945F153.e.100"}]}
+RESULT: {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7807 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"f.BD4E11BCF39B63722044D7B794467DFA.d.C37AA18F4363055EE23BBB27E945F153.e.100","ELEMENT":"f.BD4E11BCF39B63722044D7B794467DFA.d.C37AA18F4363055EE23BBB27E945F153.e.100"}]}
+COMMAND: POST /session/8433ec3be7a822349839fd53628fe966/element - {"using":"xpath","value":"//a[@aria-label=\"Follow us on facebook\"]"}
+RESULT: {"using":"xpath","value":"//a[@aria-label=\"Follow us on facebook\"]"}
+COMMAND: POST /session/8433ec3be7a822349839fd53628fe966/element/f.BD4E11BCF39B63722044D7B794467DFA.d.C37AA18F4363055EE23BBB27E945F153.e.100/click - {}
+RESULT: {}
+COMMAND: GET /session/8433ec3be7a822349839fd53628fe966/url - {}
+COMMAND: POST /session/8433ec3be7a822349839fd53628fe966/execute/sync - {"script":"return (() => document.readyState === 'complete').apply(null, arguments)","args":[]}
+RESULT: {}
+COMMAND: POST /session/8433ec3be7a822349839fd53628fe966/window/maximize - {}
+COMMAND: DELETE /session/8433ec3be7a822349839fd53628fe966/cookie - {}
+COMMAND: POST /session/8433ec3be7a822349839fd53628fe966/element - {"using":"xpath","value":"//a[@aria-label=\"Follow us on facebook\"]"}
+COMMAND: POST /session/8433ec3be7a822349839fd53628fe966/url - {"url":"https://www.bayut.com/"}
+RESULT: {"script":"return (() => document.readyState === 'complete').apply(null, arguments)","args":[]}
+RESULT: {}
+RESULT: {}
+RESULT: {"using":"xpath","value":"//a[@aria-label=\"Follow us on facebook\"]"}
+COMMAND: POST /session/8433ec3be7a822349839fd53628fe966/element - {"using":"xpath","value":"//a[@aria-label=\"Follow us on facebook\"]"}
+RESULT: {"url":"https://www.bayut.com/"}
+RESULT: {"using":"xpath","value":"//a[@aria-label=\"Follow us on facebook\"]"}
+COMMAND: POST /session/8433ec3be7a822349839fd53628fe966/execute/sync - {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7807 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"f.BD4E11BCF39B63722044D7B794467DFA.d.B0E66281BF6A5A0E30C07D8B76D582D9.e.61","ELEMENT":"f.BD4E11BCF39B63722044D7B794467DFA.d.B0E66281BF6A5A0E30C07D8B76D582D9.e.61"}]}
+RESULT: {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7807 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"f.BD4E11BCF39B63722044D7B794467DFA.d.B0E66281BF6A5A0E30C07D8B76D582D9.e.61","ELEMENT":"f.BD4E11BCF39B63722044D7B794467DFA.d.B0E66281BF6A5A0E30C07D8B76D582D9.e.61"}]}
+COMMAND: POST /session/8433ec3be7a822349839fd53628fe966/element - {"using":"xpath","value":"//a[@aria-label=\"Follow us on facebook\"]"}
+RESULT: {"using":"xpath","value":"//a[@aria-label=\"Follow us on facebook\"]"}
+COMMAND: POST /session/8433ec3be7a822349839fd53628fe966/element/f.BD4E11BCF39B63722044D7B794467DFA.d.B0E66281BF6A5A0E30C07D8B76D582D9.e.61/click - {}
+RESULT: {}
+COMMAND: GET /session/8433ec3be7a822349839fd53628fe966/url - {}
+COMMAND: POST /session/8433ec3be7a822349839fd53628fe966/execute/sync - {"script":"return (() => document.readyState === 'complete').apply(null, arguments)","args":[]}
+RESULT: {}
+]]></system-out>
+    </testcase>
+    <testcase classname="chrome.126_0_6478_127.windows.Footer_Sector" name="Verfiy Redirection of Twitter" time="60.019">
+      <failure message="Timeout of 60000ms exceeded. The execution in the test &quot;Footer Sector Verfiy Redirection of Twitter &quot; took too long. Try to reduce the run time or increase your timeout for test specs (https://webdriver.io/docs/timeouts). (C:\Users\ahsham.khan\Desktop\WebDriver\bayutFunctionals\test\specs\footersection.js)"/>
+      <system-out><![CDATA[
+COMMAND: POST /session/8433ec3be7a822349839fd53628fe966/window/maximize - {}
+COMMAND: DELETE /session/8433ec3be7a822349839fd53628fe966/cookie - {}
+COMMAND: POST /session/8433ec3be7a822349839fd53628fe966/element - {"using":"xpath","value":"//a[@aria-label=\"Follow us on twitter\"]"}
+COMMAND: POST /session/8433ec3be7a822349839fd53628fe966/url - {"url":"https://sl:getin1@bayut-e2e-development.dubizzle.dev/"}
+RESULT: {"script":"return (() => document.readyState === 'complete').apply(null, arguments)","args":[]}
+RESULT: {}
+RESULT: {}
+RESULT: {"using":"xpath","value":"//a[@aria-label=\"Follow us on twitter\"]"}
+COMMAND: POST /session/8433ec3be7a822349839fd53628fe966/element - {"using":"xpath","value":"//a[@aria-label=\"Follow us on twitter\"]"}
+RESULT: {"url":"https://sl:getin1@bayut-e2e-development.dubizzle.dev/"}
+RESULT: {"using":"xpath","value":"//a[@aria-label=\"Follow us on twitter\"]"}
+COMMAND: POST /session/8433ec3be7a822349839fd53628fe966/execute/sync - {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7807 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"f.BD4E11BCF39B63722044D7B794467DFA.d.2BBABC1C9551A58EBFE2FED3F0427C77.e.57","ELEMENT":"f.BD4E11BCF39B63722044D7B794467DFA.d.2BBABC1C9551A58EBFE2FED3F0427C77.e.57"}]}
+RESULT: {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7807 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"f.BD4E11BCF39B63722044D7B794467DFA.d.2BBABC1C9551A58EBFE2FED3F0427C77.e.57","ELEMENT":"f.BD4E11BCF39B63722044D7B794467DFA.d.2BBABC1C9551A58EBFE2FED3F0427C77.e.57"}]}
+COMMAND: POST /session/8433ec3be7a822349839fd53628fe966/element - {"using":"xpath","value":"//a[@aria-label=\"Follow us on twitter\"]"}
+RESULT: {"using":"xpath","value":"//a[@aria-label=\"Follow us on twitter\"]"}
+COMMAND: POST /session/8433ec3be7a822349839fd53628fe966/element/f.BD4E11BCF39B63722044D7B794467DFA.d.2BBABC1C9551A58EBFE2FED3F0427C77.e.57/click - {}
+]]></system-out>
+      <system-err><![CDATA[
+Error: Timeout of 60000ms exceeded. The execution in the test "Footer Sector Verfiy Redirection of Twitter " took too long. Try to reduce the run time or increase your timeout for test specs (https://webdriver.io/docs/timeouts). (C:\Users\ahsham.khan\Desktop\WebDriver\bayutFunctionals\test\specs\footersection.js)
+    at createTimeoutError (C:\Users\ahsham.khan\node_modules\mocha\lib\errors.js:498:15)
+    at Runnable._timeoutError (C:\Users\ahsham.khan\node_modules\mocha\lib\runnable.js:431:10)
+    at Timeout.<anonymous> (C:\Users\ahsham.khan\node_modules\mocha\lib\runnable.js:246:24)
+    at listOnTimeout (node:internal/timers:569:17)
+    at process.processTimers (node:internal/timers:512:7)
+]]></system-err>
+    </testcase>
+    <testcase classname="chrome.126_0_6478_127.windows.Footer_Sector" name="Verfiy Redirection of LinkedIn" time="19.157">
+      <system-out><![CDATA[
+COMMAND: POST /session/8433ec3be7a822349839fd53628fe966/window/maximize - {}
+COMMAND: DELETE /session/8433ec3be7a822349839fd53628fe966/cookie - {}
+COMMAND: POST /session/8433ec3be7a822349839fd53628fe966/element - {"using":"xpath","value":"//a[@aria-label=\"Follow us on linkedin\"]"}
+COMMAND: POST /session/8433ec3be7a822349839fd53628fe966/url - {"url":"https://sl:getin1@bayut-e2e-development.dubizzle.dev/"}
+RESULT: {}
+COMMAND: GET /session/8433ec3be7a822349839fd53628fe966/url - {}
+COMMAND: POST /session/8433ec3be7a822349839fd53628fe966/execute/sync - {"script":"return (() => document.readyState === 'complete').apply(null, arguments)","args":[]}
+RESULT: {}
+RESULT: {}
+RESULT: {"using":"xpath","value":"//a[@aria-label=\"Follow us on linkedin\"]"}
+COMMAND: POST /session/8433ec3be7a822349839fd53628fe966/element - {"using":"xpath","value":"//a[@aria-label=\"Follow us on linkedin\"]"}
+RESULT: {"url":"https://sl:getin1@bayut-e2e-development.dubizzle.dev/"}
+RESULT: {}
+COMMAND: POST /session/8433ec3be7a822349839fd53628fe966/window/maximize - {}
+COMMAND: DELETE /session/8433ec3be7a822349839fd53628fe966/cookie - {}
+COMMAND: POST /session/8433ec3be7a822349839fd53628fe966/element - {"using":"xpath","value":"//a[@aria-label=\"Follow us on twitter\"]"}
+COMMAND: POST /session/8433ec3be7a822349839fd53628fe966/url - {"url":"https://www.bayut.com/"}
+RESULT: {"script":"return (() => document.readyState === 'complete').apply(null, arguments)","args":[]}
+RESULT: {"using":"xpath","value":"//a[@aria-label=\"Follow us on linkedin\"]"}
+COMMAND: POST /session/8433ec3be7a822349839fd53628fe966/execute/sync - {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7807 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"f.BD4E11BCF39B63722044D7B794467DFA.d.DBCEFC27EC396475588FFC39B9721088.e.40","ELEMENT":"f.BD4E11BCF39B63722044D7B794467DFA.d.DBCEFC27EC396475588FFC39B9721088.e.40"}]}
+RESULT: {}
+RESULT: {}
+RESULT: {"using":"xpath","value":"//a[@aria-label=\"Follow us on twitter\"]"}
+COMMAND: POST /session/8433ec3be7a822349839fd53628fe966/execute/sync - {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7807 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"f.BD4E11BCF39B63722044D7B794467DFA.d.DBCEFC27EC396475588FFC39B9721088.e.41","ELEMENT":"f.BD4E11BCF39B63722044D7B794467DFA.d.DBCEFC27EC396475588FFC39B9721088.e.41"}]}
+RESULT: {"url":"https://www.bayut.com/"}
+COMMAND: POST /session/8433ec3be7a822349839fd53628fe966/element - {"using":"xpath","value":"//a[@aria-label=\"Follow us on linkedin\"]"}
+COMMAND: POST /session/8433ec3be7a822349839fd53628fe966/element - {"using":"xpath","value":"//a[@aria-label=\"Follow us on twitter\"]"}
+RESULT: {"using":"xpath","value":"//a[@aria-label=\"Follow us on linkedin\"]"}
+COMMAND: POST /session/8433ec3be7a822349839fd53628fe966/execute/sync - {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7807 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"f.BD4E11BCF39B63722044D7B794467DFA.d.9A0E602ACF154501B83E87F195E58A36.e.61","ELEMENT":"f.BD4E11BCF39B63722044D7B794467DFA.d.9A0E602ACF154501B83E87F195E58A36.e.61"}]}
+RESULT: {"using":"xpath","value":"//a[@aria-label=\"Follow us on twitter\"]"}
+COMMAND: POST /session/8433ec3be7a822349839fd53628fe966/execute/sync - {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7807 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"f.BD4E11BCF39B63722044D7B794467DFA.d.9A0E602ACF154501B83E87F195E58A36.e.62","ELEMENT":"f.BD4E11BCF39B63722044D7B794467DFA.d.9A0E602ACF154501B83E87F195E58A36.e.62"}]}
+RESULT: {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7807 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"f.BD4E11BCF39B63722044D7B794467DFA.d.9A0E602ACF154501B83E87F195E58A36.e.61","ELEMENT":"f.BD4E11BCF39B63722044D7B794467DFA.d.9A0E602ACF154501B83E87F195E58A36.e.61"}]}
+COMMAND: POST /session/8433ec3be7a822349839fd53628fe966/element - {"using":"xpath","value":"//a[@aria-label=\"Follow us on linkedin\"]"}
+RESULT: {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7807 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"f.BD4E11BCF39B63722044D7B794467DFA.d.9A0E602ACF154501B83E87F195E58A36.e.62","ELEMENT":"f.BD4E11BCF39B63722044D7B794467DFA.d.9A0E602ACF154501B83E87F195E58A36.e.62"}]}
+COMMAND: POST /session/8433ec3be7a822349839fd53628fe966/element - {"using":"xpath","value":"//a[@aria-label=\"Follow us on twitter\"]"}
+RESULT: {"using":"xpath","value":"//a[@aria-label=\"Follow us on linkedin\"]"}
+COMMAND: POST /session/8433ec3be7a822349839fd53628fe966/element/f.BD4E11BCF39B63722044D7B794467DFA.d.9A0E602ACF154501B83E87F195E58A36.e.61/click - {}
+RESULT: {"using":"xpath","value":"//a[@aria-label=\"Follow us on twitter\"]"}
+COMMAND: POST /session/8433ec3be7a822349839fd53628fe966/element/f.BD4E11BCF39B63722044D7B794467DFA.d.9A0E602ACF154501B83E87F195E58A36.e.62/click - {}
+RESULT: {}
+COMMAND: GET /session/8433ec3be7a822349839fd53628fe966/url - {}
+COMMAND: POST /session/8433ec3be7a822349839fd53628fe966/execute/sync - {"script":"return (() => document.readyState === 'complete').apply(null, arguments)","args":[]}
+COMMAND: POST /session/8433ec3be7a822349839fd53628fe966/element - {"using":"xpath","value":"//a[@aria-label=\"Follow us on twitter\"]"}
+RESULT: {}
+COMMAND: POST /session/8433ec3be7a822349839fd53628fe966/window/maximize - {}
+COMMAND: DELETE /session/8433ec3be7a822349839fd53628fe966/cookie - {}
+COMMAND: POST /session/8433ec3be7a822349839fd53628fe966/element - {"using":"xpath","value":"//a[@aria-label=\"Follow us on linkedin\"]"}
+COMMAND: POST /session/8433ec3be7a822349839fd53628fe966/url - {"url":"https://www.bayut.com/"}
+RESULT: {"script":"return (() => document.readyState === 'complete').apply(null, arguments)","args":[]}
+RESULT: {"using":"xpath","value":"//a[@aria-label=\"Follow us on twitter\"]"}
+COMMAND: POST /session/8433ec3be7a822349839fd53628fe966/elements - {"using":"xpath","value":"//a[@aria-label=\"Follow us on twitter\"]"}
+RESULT: {}
+RESULT: {}
+RESULT: {"using":"xpath","value":"//a[@aria-label=\"Follow us on linkedin\"]"}
+COMMAND: POST /session/8433ec3be7a822349839fd53628fe966/element - {"using":"xpath","value":"//a[@aria-label=\"Follow us on linkedin\"]"}
+RESULT: {"url":"https://www.bayut.com/"}
+RESULT: {"using":"xpath","value":"//a[@aria-label=\"Follow us on twitter\"]"}
+COMMAND: POST /session/8433ec3be7a822349839fd53628fe966/element - {"using":"xpath","value":"//a[@aria-label=\"Follow us on twitter\"]"}
+RESULT: {"using":"xpath","value":"//a[@aria-label=\"Follow us on linkedin\"]"}
+COMMAND: POST /session/8433ec3be7a822349839fd53628fe966/execute/sync - {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7807 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"f.BD4E11BCF39B63722044D7B794467DFA.d.9767F4B9E7D2E71852BCA4CDA637BD8E.e.62","ELEMENT":"f.BD4E11BCF39B63722044D7B794467DFA.d.9767F4B9E7D2E71852BCA4CDA637BD8E.e.62"}]}
+RESULT: {"using":"xpath","value":"//a[@aria-label=\"Follow us on twitter\"]"}
+COMMAND: POST /session/8433ec3be7a822349839fd53628fe966/element/f.BD4E11BCF39B63722044D7B794467DFA.d.9A0E602ACF154501B83E87F195E58A36.e.62/click - {}
+RESULT: {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7807 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"f.BD4E11BCF39B63722044D7B794467DFA.d.9767F4B9E7D2E71852BCA4CDA637BD8E.e.62","ELEMENT":"f.BD4E11BCF39B63722044D7B794467DFA.d.9767F4B9E7D2E71852BCA4CDA637BD8E.e.62"}]}
+COMMAND: POST /session/8433ec3be7a822349839fd53628fe966/element - {"using":"xpath","value":"//a[@aria-label=\"Follow us on linkedin\"]"}
+COMMAND: POST /session/8433ec3be7a822349839fd53628fe966/element - {"using":"xpath","value":"//a[@aria-label=\"Follow us on twitter\"]"}
+RESULT: {"using":"xpath","value":"//a[@aria-label=\"Follow us on linkedin\"]"}
+COMMAND: POST /session/8433ec3be7a822349839fd53628fe966/element/f.BD4E11BCF39B63722044D7B794467DFA.d.9767F4B9E7D2E71852BCA4CDA637BD8E.e.62/click - {}
+RESULT: {"using":"xpath","value":"//a[@aria-label=\"Follow us on twitter\"]"}
+COMMAND: POST /session/8433ec3be7a822349839fd53628fe966/element/f.BD4E11BCF39B63722044D7B794467DFA.d.9767F4B9E7D2E71852BCA4CDA637BD8E.e.61/click - {}
+RESULT: {}
+COMMAND: GET /session/8433ec3be7a822349839fd53628fe966/url - {}
+COMMAND: POST /session/8433ec3be7a822349839fd53628fe966/execute/sync - {"script":"return (() => document.readyState === 'complete').apply(null, arguments)","args":[]}
+COMMAND: POST /session/8433ec3be7a822349839fd53628fe966/element - {"using":"xpath","value":"//a[@aria-label=\"Follow us on twitter\"]"}
+RESULT: {}
+]]></system-out>
+    </testcase>
+    <testcase classname="chrome.126_0_6478_127.windows.Footer_Sector" name="Verfiy Redirection of Intagram" time="11.385">
+      <system-out><![CDATA[
+COMMAND: POST /session/8433ec3be7a822349839fd53628fe966/window/maximize - {}
+COMMAND: DELETE /session/8433ec3be7a822349839fd53628fe966/cookie - {}
+COMMAND: POST /session/8433ec3be7a822349839fd53628fe966/element - {"using":"xpath","value":"//a[@aria-label=\"Follow us on instagram\"]"}
+COMMAND: POST /session/8433ec3be7a822349839fd53628fe966/url - {"url":"https://sl:getin1@bayut-e2e-development.dubizzle.dev/"}
+RESULT: {"script":"return (() => document.readyState === 'complete').apply(null, arguments)","args":[]}
+RESULT: {"using":"xpath","value":"//a[@aria-label=\"Follow us on twitter\"]"}
+COMMAND: POST /session/8433ec3be7a822349839fd53628fe966/elements - {"using":"xpath","value":"//a[@aria-label=\"Follow us on twitter\"]"}
+RESULT: {}
+RESULT: {}
+RESULT: {"using":"xpath","value":"//a[@aria-label=\"Follow us on instagram\"]"}
+COMMAND: POST /session/8433ec3be7a822349839fd53628fe966/element - {"using":"xpath","value":"//a[@aria-label=\"Follow us on instagram\"]"}
+RESULT: {"url":"https://sl:getin1@bayut-e2e-development.dubizzle.dev/"}
+RESULT: {"using":"xpath","value":"//a[@aria-label=\"Follow us on twitter\"]"}
+COMMAND: POST /session/8433ec3be7a822349839fd53628fe966/element - {"using":"xpath","value":"//a[@aria-label=\"Follow us on twitter\"]"}
+RESULT: {"using":"xpath","value":"//a[@aria-label=\"Follow us on instagram\"]"}
+COMMAND: POST /session/8433ec3be7a822349839fd53628fe966/execute/sync - {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7807 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"f.BD4E11BCF39B63722044D7B794467DFA.d.EFAAEC357A848A61F1C86F601BD6C18F.e.45","ELEMENT":"f.BD4E11BCF39B63722044D7B794467DFA.d.EFAAEC357A848A61F1C86F601BD6C18F.e.45"}]}
+RESULT: {"using":"xpath","value":"//a[@aria-label=\"Follow us on twitter\"]"}
+COMMAND: POST /session/8433ec3be7a822349839fd53628fe966/element/f.BD4E11BCF39B63722044D7B794467DFA.d.9767F4B9E7D2E71852BCA4CDA637BD8E.e.61/click - {}
+RESULT: {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7807 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"f.BD4E11BCF39B63722044D7B794467DFA.d.EFAAEC357A848A61F1C86F601BD6C18F.e.45","ELEMENT":"f.BD4E11BCF39B63722044D7B794467DFA.d.EFAAEC357A848A61F1C86F601BD6C18F.e.45"}]}
+COMMAND: POST /session/8433ec3be7a822349839fd53628fe966/element - {"using":"xpath","value":"//a[@aria-label=\"Follow us on instagram\"]"}
+RESULT: {"using":"xpath","value":"//a[@aria-label=\"Follow us on instagram\"]"}
+COMMAND: POST /session/8433ec3be7a822349839fd53628fe966/element/f.BD4E11BCF39B63722044D7B794467DFA.d.EFAAEC357A848A61F1C86F601BD6C18F.e.45/click - {}
+RESULT: {}
+COMMAND: GET /session/8433ec3be7a822349839fd53628fe966/url - {}
+COMMAND: POST /session/8433ec3be7a822349839fd53628fe966/execute/sync - {"script":"return (() => document.readyState === 'complete').apply(null, arguments)","args":[]}
+RESULT: {}
+COMMAND: POST /session/8433ec3be7a822349839fd53628fe966/window/maximize - {}
+COMMAND: DELETE /session/8433ec3be7a822349839fd53628fe966/cookie - {}
+COMMAND: POST /session/8433ec3be7a822349839fd53628fe966/element - {"using":"xpath","value":"//a[@aria-label=\"Follow us on instagram\"]"}
+COMMAND: POST /session/8433ec3be7a822349839fd53628fe966/url - {"url":"https://www.bayut.com/"}
+RESULT: {"script":"return (() => document.readyState === 'complete').apply(null, arguments)","args":[]}
+RESULT: {}
+RESULT: {}
+RESULT: {"using":"xpath","value":"//a[@aria-label=\"Follow us on instagram\"]"}
+COMMAND: POST /session/8433ec3be7a822349839fd53628fe966/element - {"using":"xpath","value":"//a[@aria-label=\"Follow us on instagram\"]"}
+RESULT: {"url":"https://www.bayut.com/"}
+RESULT: {"using":"xpath","value":"//a[@aria-label=\"Follow us on instagram\"]"}
+COMMAND: POST /session/8433ec3be7a822349839fd53628fe966/execute/sync - {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7807 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"f.BD4E11BCF39B63722044D7B794467DFA.d.D020ED97928DD063F4E2D06F6685110B.e.60","ELEMENT":"f.BD4E11BCF39B63722044D7B794467DFA.d.D020ED97928DD063F4E2D06F6685110B.e.60"}]}
+RESULT: {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7807 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"f.BD4E11BCF39B63722044D7B794467DFA.d.D020ED97928DD063F4E2D06F6685110B.e.60","ELEMENT":"f.BD4E11BCF39B63722044D7B794467DFA.d.D020ED97928DD063F4E2D06F6685110B.e.60"}]}
+COMMAND: POST /session/8433ec3be7a822349839fd53628fe966/element - {"using":"xpath","value":"//a[@aria-label=\"Follow us on instagram\"]"}
+RESULT: {"using":"xpath","value":"//a[@aria-label=\"Follow us on instagram\"]"}
+COMMAND: POST /session/8433ec3be7a822349839fd53628fe966/element/f.BD4E11BCF39B63722044D7B794467DFA.d.D020ED97928DD063F4E2D06F6685110B.e.60/click - {}
+RESULT: {}
+COMMAND: GET /session/8433ec3be7a822349839fd53628fe966/url - {}
+COMMAND: POST /session/8433ec3be7a822349839fd53628fe966/execute/sync - {"script":"return (() => document.readyState === 'complete').apply(null, arguments)","args":[]}
+RESULT: {}
+]]></system-out>
+    </testcase>
+    <testcase classname="chrome.126_0_6478_127.windows.Footer_Sector" name="Verfiy Redirection of YouTube" time="21.119">
+      <system-out><![CDATA[
+COMMAND: POST /session/8433ec3be7a822349839fd53628fe966/window/maximize - {}
+COMMAND: DELETE /session/8433ec3be7a822349839fd53628fe966/cookie - {}
+COMMAND: POST /session/8433ec3be7a822349839fd53628fe966/element - {"using":"xpath","value":"//a[@aria-label=\"Follow us on youtube\"]"}
+COMMAND: POST /session/8433ec3be7a822349839fd53628fe966/url - {"url":"https://sl:getin1@bayut-e2e-development.dubizzle.dev/"}
+RESULT: {"script":"return (() => document.readyState === 'complete').apply(null, arguments)","args":[]}
+RESULT: {}
+RESULT: {}
+RESULT: {"using":"xpath","value":"//a[@aria-label=\"Follow us on youtube\"]"}
+COMMAND: POST /session/8433ec3be7a822349839fd53628fe966/element - {"using":"xpath","value":"//a[@aria-label=\"Follow us on youtube\"]"}
+RESULT: {"url":"https://sl:getin1@bayut-e2e-development.dubizzle.dev/"}
+RESULT: {"using":"xpath","value":"//a[@aria-label=\"Follow us on youtube\"]"}
+COMMAND: POST /session/8433ec3be7a822349839fd53628fe966/execute/sync - {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7807 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"f.BD4E11BCF39B63722044D7B794467DFA.d.5DCA145B3DD424F846C1BD7E3E663346.e.39","ELEMENT":"f.BD4E11BCF39B63722044D7B794467DFA.d.5DCA145B3DD424F846C1BD7E3E663346.e.39"}]}
+RESULT: {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7807 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"f.BD4E11BCF39B63722044D7B794467DFA.d.5DCA145B3DD424F846C1BD7E3E663346.e.39","ELEMENT":"f.BD4E11BCF39B63722044D7B794467DFA.d.5DCA145B3DD424F846C1BD7E3E663346.e.39"}]}
+COMMAND: POST /session/8433ec3be7a822349839fd53628fe966/element - {"using":"xpath","value":"//a[@aria-label=\"Follow us on youtube\"]"}
+RESULT: {"using":"xpath","value":"//a[@aria-label=\"Follow us on youtube\"]"}
+COMMAND: POST /session/8433ec3be7a822349839fd53628fe966/element/f.BD4E11BCF39B63722044D7B794467DFA.d.5DCA145B3DD424F846C1BD7E3E663346.e.39/click - {}
+RESULT: {}
+COMMAND: GET /session/8433ec3be7a822349839fd53628fe966/url - {}
+COMMAND: POST /session/8433ec3be7a822349839fd53628fe966/execute/sync - {"script":"return (() => document.readyState === 'complete').apply(null, arguments)","args":[]}
+RESULT: {}
+COMMAND: POST /session/8433ec3be7a822349839fd53628fe966/window/maximize - {}
+COMMAND: DELETE /session/8433ec3be7a822349839fd53628fe966/cookie - {}
+COMMAND: POST /session/8433ec3be7a822349839fd53628fe966/element - {"using":"xpath","value":"//a[@aria-label=\"Follow us on youtube\"]"}
+COMMAND: POST /session/8433ec3be7a822349839fd53628fe966/url - {"url":"https://www.bayut.com/"}
+RESULT: {"script":"return (() => document.readyState === 'complete').apply(null, arguments)","args":[]}
+RESULT: {}
+RESULT: {}
+RESULT: {"using":"xpath","value":"//a[@aria-label=\"Follow us on youtube\"]"}
+COMMAND: POST /session/8433ec3be7a822349839fd53628fe966/element - {"using":"xpath","value":"//a[@aria-label=\"Follow us on youtube\"]"}
+RESULT: {"url":"https://www.bayut.com/"}
+RESULT: {"using":"xpath","value":"//a[@aria-label=\"Follow us on youtube\"]"}
+COMMAND: POST /session/8433ec3be7a822349839fd53628fe966/execute/sync - {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7807 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"f.BD4E11BCF39B63722044D7B794467DFA.d.5AF0919802873618CDACDEC07AD481ED.e.60","ELEMENT":"f.BD4E11BCF39B63722044D7B794467DFA.d.5AF0919802873618CDACDEC07AD481ED.e.60"}]}
+RESULT: {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7807 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"f.BD4E11BCF39B63722044D7B794467DFA.d.5AF0919802873618CDACDEC07AD481ED.e.60","ELEMENT":"f.BD4E11BCF39B63722044D7B794467DFA.d.5AF0919802873618CDACDEC07AD481ED.e.60"}]}
+COMMAND: POST /session/8433ec3be7a822349839fd53628fe966/element - {"using":"xpath","value":"//a[@aria-label=\"Follow us on youtube\"]"}
+RESULT: {"using":"xpath","value":"//a[@aria-label=\"Follow us on youtube\"]"}
+COMMAND: POST /session/8433ec3be7a822349839fd53628fe966/element/f.BD4E11BCF39B63722044D7B794467DFA.d.5AF0919802873618CDACDEC07AD481ED.e.60/click - {}
+RESULT: {}
+COMMAND: GET /session/8433ec3be7a822349839fd53628fe966/url - {}
+COMMAND: POST /session/8433ec3be7a822349839fd53628fe966/execute/sync - {"script":"return (() => document.readyState === 'complete').apply(null, arguments)","args":[]}
+RESULT: {}
+]]></system-out>
+    </testcase>
+    <testcase classname="chrome.126_0_6478_127.windows.Footer_Sector" name="Verfiy Redirection of Apple Store" time="7.972">
+      <failure message="element (&quot;//div[@class=&quot;e6a18ca9 en&quot;]&quot;) still not displayed after 5000ms"/>
+      <system-out><![CDATA[
+COMMAND: POST /session/8433ec3be7a822349839fd53628fe966/window/maximize - {}
+COMMAND: DELETE /session/8433ec3be7a822349839fd53628fe966/cookie - {}
+COMMAND: POST /session/8433ec3be7a822349839fd53628fe966/element - {"using":"xpath","value":"//div[@class=\"e6a18ca9 en\"]"}
+COMMAND: POST /session/8433ec3be7a822349839fd53628fe966/url - {"url":"https://sl:getin1@bayut-e2e-development.dubizzle.dev/"}
+RESULT: {"script":"return (() => document.readyState === 'complete').apply(null, arguments)","args":[]}
+RESULT: {}
+RESULT: {}
+RESULT: {"url":"https://sl:getin1@bayut-e2e-development.dubizzle.dev/"}
+RESULT: {"using":"xpath","value":"//div[@class=\"e6a18ca9 en\"]"}
+COMMAND: POST /session/8433ec3be7a822349839fd53628fe966/element - {"using":"xpath","value":"//div[@class=\"e6a18ca9 en\"]"}
+RESULT: {"using":"xpath","value":"//div[@class=\"e6a18ca9 en\"]"}
+COMMAND: POST /session/8433ec3be7a822349839fd53628fe966/element - {"using":"xpath","value":"//div[@class=\"e6a18ca9 en\"]"}
+RESULT: {"using":"xpath","value":"//div[@class=\"e6a18ca9 en\"]"}
+COMMAND: POST /session/8433ec3be7a822349839fd53628fe966/element - {"using":"xpath","value":"//div[@class=\"e6a18ca9 en\"]"}
+RESULT: {"using":"xpath","value":"//div[@class=\"e6a18ca9 en\"]"}
+COMMAND: POST /session/8433ec3be7a822349839fd53628fe966/element - {"using":"xpath","value":"//div[@class=\"e6a18ca9 en\"]"}
+RESULT: {"using":"xpath","value":"//div[@class=\"e6a18ca9 en\"]"}
+COMMAND: POST /session/8433ec3be7a822349839fd53628fe966/element - {"using":"xpath","value":"//div[@class=\"e6a18ca9 en\"]"}
+RESULT: {"using":"xpath","value":"//div[@class=\"e6a18ca9 en\"]"}
+COMMAND: POST /session/8433ec3be7a822349839fd53628fe966/element - {"using":"xpath","value":"//div[@class=\"e6a18ca9 en\"]"}
+RESULT: {"using":"xpath","value":"//div[@class=\"e6a18ca9 en\"]"}
+COMMAND: POST /session/8433ec3be7a822349839fd53628fe966/element - {"using":"xpath","value":"//div[@class=\"e6a18ca9 en\"]"}
+RESULT: {"using":"xpath","value":"//div[@class=\"e6a18ca9 en\"]"}
+COMMAND: POST /session/8433ec3be7a822349839fd53628fe966/element - {"using":"xpath","value":"//div[@class=\"e6a18ca9 en\"]"}
+RESULT: {"using":"xpath","value":"//div[@class=\"e6a18ca9 en\"]"}
+COMMAND: POST /session/8433ec3be7a822349839fd53628fe966/element - {"using":"xpath","value":"//div[@class=\"e6a18ca9 en\"]"}
+RESULT: {"using":"xpath","value":"//div[@class=\"e6a18ca9 en\"]"}
+COMMAND: POST /session/8433ec3be7a822349839fd53628fe966/element - {"using":"xpath","value":"//div[@class=\"e6a18ca9 en\"]"}
+RESULT: {"using":"xpath","value":"//div[@class=\"e6a18ca9 en\"]"}
+]]></system-out>
+      <system-err><![CDATA[
+Error: element ("//div[@class="e6a18ca9 en"]") still not displayed after 5000ms
+    at async Context.<anonymous> (file:///C:/Users/ahsham.khan/Desktop/WebDriver/bayutFunctionals/test/specs/footersection.js:117:9)
+]]></system-err>
+    </testcase>
+    <testcase classname="chrome.126_0_6478_127.windows.Footer_Sector" name="Verfiy Redirection of Google Play Store" time="5.15">
+      <failure message="element (&quot;//div[@class=&quot;e6a18ca9 en&quot;]&quot;) still not displayed after 5000ms"/>
+      <system-out><![CDATA[
+COMMAND: POST /session/8433ec3be7a822349839fd53628fe966/window/maximize - {}
+COMMAND: DELETE /session/8433ec3be7a822349839fd53628fe966/cookie - {}
+COMMAND: POST /session/8433ec3be7a822349839fd53628fe966/element - {"using":"xpath","value":"//div[@class=\"e6a18ca9 en\"]"}
+COMMAND: POST /session/8433ec3be7a822349839fd53628fe966/url - {"url":"https://sl:getin1@bayut-e2e-development.dubizzle.dev/"}
+RESULT: {}
+RESULT: {}
+RESULT: {"using":"xpath","value":"//div[@class=\"e6a18ca9 en\"]"}
+COMMAND: POST /session/8433ec3be7a822349839fd53628fe966/element - {"using":"xpath","value":"//div[@class=\"e6a18ca9 en\"]"}
+RESULT: {"url":"https://sl:getin1@bayut-e2e-development.dubizzle.dev/"}
+RESULT: {"using":"xpath","value":"//div[@class=\"e6a18ca9 en\"]"}
+COMMAND: POST /session/8433ec3be7a822349839fd53628fe966/element - {"using":"xpath","value":"//div[@class=\"e6a18ca9 en\"]"}
+RESULT: {"using":"xpath","value":"//div[@class=\"e6a18ca9 en\"]"}
+COMMAND: POST /session/8433ec3be7a822349839fd53628fe966/element - {"using":"xpath","value":"//div[@class=\"e6a18ca9 en\"]"}
+RESULT: {"using":"xpath","value":"//div[@class=\"e6a18ca9 en\"]"}
+COMMAND: POST /session/8433ec3be7a822349839fd53628fe966/element - {"using":"xpath","value":"//div[@class=\"e6a18ca9 en\"]"}
+RESULT: {"using":"xpath","value":"//div[@class=\"e6a18ca9 en\"]"}
+COMMAND: POST /session/8433ec3be7a822349839fd53628fe966/element - {"using":"xpath","value":"//div[@class=\"e6a18ca9 en\"]"}
+RESULT: {"using":"xpath","value":"//div[@class=\"e6a18ca9 en\"]"}
+COMMAND: POST /session/8433ec3be7a822349839fd53628fe966/element - {"using":"xpath","value":"//div[@class=\"e6a18ca9 en\"]"}
+RESULT: {"using":"xpath","value":"//div[@class=\"e6a18ca9 en\"]"}
+COMMAND: POST /session/8433ec3be7a822349839fd53628fe966/element - {"using":"xpath","value":"//div[@class=\"e6a18ca9 en\"]"}
+RESULT: {"using":"xpath","value":"//div[@class=\"e6a18ca9 en\"]"}
+COMMAND: POST /session/8433ec3be7a822349839fd53628fe966/element - {"using":"xpath","value":"//div[@class=\"e6a18ca9 en\"]"}
+RESULT: {"using":"xpath","value":"//div[@class=\"e6a18ca9 en\"]"}
+COMMAND: POST /session/8433ec3be7a822349839fd53628fe966/element - {"using":"xpath","value":"//div[@class=\"e6a18ca9 en\"]"}
+RESULT: {"using":"xpath","value":"//div[@class=\"e6a18ca9 en\"]"}
+COMMAND: POST /session/8433ec3be7a822349839fd53628fe966/element - {"using":"xpath","value":"//div[@class=\"e6a18ca9 en\"]"}
+RESULT: {"using":"xpath","value":"//div[@class=\"e6a18ca9 en\"]"}
+]]></system-out>
+      <system-err><![CDATA[
+Error: element ("//div[@class="e6a18ca9 en"]") still not displayed after 5000ms
+    at async Context.<anonymous> (file:///C:/Users/ahsham.khan/Desktop/WebDriver/bayutFunctionals/test/specs/footersection.js:132:9)
+]]></system-err>
+    </testcase>
+    <testcase classname="chrome.126_0_6478_127.windows.Footer_Sector" name="Verfiy Redirection of Huawei App Gallery" time="5.115">
+      <failure message="element (&quot;//div[@class=&quot;_1f072239 en&quot;]&quot;) still not displayed after 5000ms"/>
+      <system-out><![CDATA[
+COMMAND: POST /session/8433ec3be7a822349839fd53628fe966/window/maximize - {}
+COMMAND: DELETE /session/8433ec3be7a822349839fd53628fe966/cookie - {}
+COMMAND: POST /session/8433ec3be7a822349839fd53628fe966/element - {"using":"xpath","value":"//div[@class=\"_1f072239 en\"]"}
+COMMAND: POST /session/8433ec3be7a822349839fd53628fe966/url - {"url":"https://sl:getin1@bayut-e2e-development.dubizzle.dev/"}
+RESULT: {}
+RESULT: {}
+RESULT: {"using":"xpath","value":"//div[@class=\"_1f072239 en\"]"}
+COMMAND: POST /session/8433ec3be7a822349839fd53628fe966/element - {"using":"xpath","value":"//div[@class=\"_1f072239 en\"]"}
+RESULT: {"url":"https://sl:getin1@bayut-e2e-development.dubizzle.dev/"}
+RESULT: {"using":"xpath","value":"//div[@class=\"_1f072239 en\"]"}
+COMMAND: POST /session/8433ec3be7a822349839fd53628fe966/element - {"using":"xpath","value":"//div[@class=\"_1f072239 en\"]"}
+RESULT: {"using":"xpath","value":"//div[@class=\"_1f072239 en\"]"}
+COMMAND: POST /session/8433ec3be7a822349839fd53628fe966/element - {"using":"xpath","value":"//div[@class=\"_1f072239 en\"]"}
+RESULT: {"using":"xpath","value":"//div[@class=\"_1f072239 en\"]"}
+COMMAND: POST /session/8433ec3be7a822349839fd53628fe966/element - {"using":"xpath","value":"//div[@class=\"_1f072239 en\"]"}
+RESULT: {"using":"xpath","value":"//div[@class=\"_1f072239 en\"]"}
+COMMAND: POST /session/8433ec3be7a822349839fd53628fe966/element - {"using":"xpath","value":"//div[@class=\"_1f072239 en\"]"}
+RESULT: {"using":"xpath","value":"//div[@class=\"_1f072239 en\"]"}
+COMMAND: POST /session/8433ec3be7a822349839fd53628fe966/element - {"using":"xpath","value":"//div[@class=\"_1f072239 en\"]"}
+RESULT: {"using":"xpath","value":"//div[@class=\"_1f072239 en\"]"}
+COMMAND: POST /session/8433ec3be7a822349839fd53628fe966/element - {"using":"xpath","value":"//div[@class=\"_1f072239 en\"]"}
+RESULT: {"using":"xpath","value":"//div[@class=\"_1f072239 en\"]"}
+COMMAND: POST /session/8433ec3be7a822349839fd53628fe966/element - {"using":"xpath","value":"//div[@class=\"_1f072239 en\"]"}
+RESULT: {"using":"xpath","value":"//div[@class=\"_1f072239 en\"]"}
+COMMAND: POST /session/8433ec3be7a822349839fd53628fe966/element - {"using":"xpath","value":"//div[@class=\"_1f072239 en\"]"}
+RESULT: {"using":"xpath","value":"//div[@class=\"_1f072239 en\"]"}
+COMMAND: POST /session/8433ec3be7a822349839fd53628fe966/element - {"using":"xpath","value":"//div[@class=\"_1f072239 en\"]"}
+RESULT: {"using":"xpath","value":"//div[@class=\"_1f072239 en\"]"}
+]]></system-out>
+      <system-err><![CDATA[
+Error: element ("//div[@class="_1f072239 en"]") still not displayed after 5000ms
+    at async Context.<anonymous> (file:///C:/Users/ahsham.khan/Desktop/WebDriver/bayutFunctionals/test/specs/footersection.js:147:9)
+]]></system-err>
+    </testcase>
+    <testcase classname="chrome.126_0_6478_127.windows.Footer_Sector" name="Verfiy Zameen Redirection" time="5.858">
+      <failure message="element (&quot;//ul[@class=&quot;ab17c37c _8fd21802&quot;]&quot;) still not displayed after 5000ms"/>
+      <system-out><![CDATA[
+COMMAND: POST /session/8433ec3be7a822349839fd53628fe966/window/maximize - {}
+COMMAND: DELETE /session/8433ec3be7a822349839fd53628fe966/cookie - {}
+COMMAND: POST /session/8433ec3be7a822349839fd53628fe966/element - {"using":"xpath","value":"//button[@aria-label=\"Select country\"]"}
+COMMAND: POST /session/8433ec3be7a822349839fd53628fe966/url - {"url":"https://sl:getin1@bayut-e2e-development.dubizzle.dev/"}
+RESULT: {}
+RESULT: {}
+RESULT: {"using":"xpath","value":"//button[@aria-label=\"Select country\"]"}
+COMMAND: POST /session/8433ec3be7a822349839fd53628fe966/execute/sync - {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7807 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"f.BD4E11BCF39B63722044D7B794467DFA.d.C4737DD001FC05A1326A39ACDBE2CC37.e.94","ELEMENT":"f.BD4E11BCF39B63722044D7B794467DFA.d.C4737DD001FC05A1326A39ACDBE2CC37.e.94"}]}
+RESULT: {"url":"https://sl:getin1@bayut-e2e-development.dubizzle.dev/"}
+COMMAND: POST /session/8433ec3be7a822349839fd53628fe966/element - {"using":"xpath","value":"//button[@aria-label=\"Select country\"]"}
+RESULT: {"using":"xpath","value":"//button[@aria-label=\"Select country\"]"}
+COMMAND: POST /session/8433ec3be7a822349839fd53628fe966/execute/sync - {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7807 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"f.BD4E11BCF39B63722044D7B794467DFA.d.91052827A94F64F85FA1E1BA9F5ABBFE.e.113","ELEMENT":"f.BD4E11BCF39B63722044D7B794467DFA.d.91052827A94F64F85FA1E1BA9F5ABBFE.e.113"}]}
+RESULT: {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7807 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"f.BD4E11BCF39B63722044D7B794467DFA.d.91052827A94F64F85FA1E1BA9F5ABBFE.e.113","ELEMENT":"f.BD4E11BCF39B63722044D7B794467DFA.d.91052827A94F64F85FA1E1BA9F5ABBFE.e.113"}]}
+COMMAND: POST /session/8433ec3be7a822349839fd53628fe966/element - {"using":"xpath","value":"//button[@aria-label=\"Select country\"]"}
+RESULT: {"using":"xpath","value":"//button[@aria-label=\"Select country\"]"}
+COMMAND: POST /session/8433ec3be7a822349839fd53628fe966/element/f.BD4E11BCF39B63722044D7B794467DFA.d.91052827A94F64F85FA1E1BA9F5ABBFE.e.113/click - {}
+RESULT: {}
+COMMAND: POST /session/8433ec3be7a822349839fd53628fe966/element - {"using":"xpath","value":"//ul[@class=\"ab17c37c _8fd21802\"]"}
+RESULT: {"using":"xpath","value":"//ul[@class=\"ab17c37c _8fd21802\"]"}
+COMMAND: POST /session/8433ec3be7a822349839fd53628fe966/element - {"using":"xpath","value":"//ul[@class=\"ab17c37c _8fd21802\"]"}
+RESULT: {"using":"xpath","value":"//ul[@class=\"ab17c37c _8fd21802\"]"}
+COMMAND: POST /session/8433ec3be7a822349839fd53628fe966/element - {"using":"xpath","value":"//ul[@class=\"ab17c37c _8fd21802\"]"}
+RESULT: {"using":"xpath","value":"//ul[@class=\"ab17c37c _8fd21802\"]"}
+COMMAND: POST /session/8433ec3be7a822349839fd53628fe966/element - {"using":"xpath","value":"//ul[@class=\"ab17c37c _8fd21802\"]"}
+RESULT: {"using":"xpath","value":"//ul[@class=\"ab17c37c _8fd21802\"]"}
+COMMAND: POST /session/8433ec3be7a822349839fd53628fe966/element - {"using":"xpath","value":"//ul[@class=\"ab17c37c _8fd21802\"]"}
+RESULT: {"using":"xpath","value":"//ul[@class=\"ab17c37c _8fd21802\"]"}
+COMMAND: POST /session/8433ec3be7a822349839fd53628fe966/element - {"using":"xpath","value":"//ul[@class=\"ab17c37c _8fd21802\"]"}
+RESULT: {"using":"xpath","value":"//ul[@class=\"ab17c37c _8fd21802\"]"}
+COMMAND: POST /session/8433ec3be7a822349839fd53628fe966/element - {"using":"xpath","value":"//ul[@class=\"ab17c37c _8fd21802\"]"}
+RESULT: {"using":"xpath","value":"//ul[@class=\"ab17c37c _8fd21802\"]"}
+COMMAND: POST /session/8433ec3be7a822349839fd53628fe966/element - {"using":"xpath","value":"//ul[@class=\"ab17c37c _8fd21802\"]"}
+RESULT: {"using":"xpath","value":"//ul[@class=\"ab17c37c _8fd21802\"]"}
+COMMAND: POST /session/8433ec3be7a822349839fd53628fe966/element - {"using":"xpath","value":"//ul[@class=\"ab17c37c _8fd21802\"]"}
+RESULT: {"using":"xpath","value":"//ul[@class=\"ab17c37c _8fd21802\"]"}
+COMMAND: POST /session/8433ec3be7a822349839fd53628fe966/element - {"using":"xpath","value":"//ul[@class=\"ab17c37c _8fd21802\"]"}
+RESULT: {"using":"xpath","value":"//ul[@class=\"ab17c37c _8fd21802\"]"}
+COMMAND: POST /session/8433ec3be7a822349839fd53628fe966/element - {"using":"xpath","value":"//ul[@class=\"ab17c37c _8fd21802\"]"}
+RESULT: {"using":"xpath","value":"//ul[@class=\"ab17c37c _8fd21802\"]"}
+]]></system-out>
+      <system-err><![CDATA[
+Error: element ("//ul[@class="ab17c37c _8fd21802"]") still not displayed after 5000ms
+    at async Context.<anonymous> (file:///C:/Users/ahsham.khan/Desktop/WebDriver/bayutFunctionals/test/specs/footersection.js:164:9)
+]]></system-err>
+    </testcase>
+    <testcase classname="chrome.126_0_6478_127.windows.Footer_Sector" name="Verfiy BayutKSA Redirection" time="5.803">
+      <failure message="element (&quot;//ul[@class=&quot;ab17c37c _8fd21802&quot;]&quot;) still not displayed after 5000ms"/>
+      <system-out><![CDATA[
+COMMAND: POST /session/8433ec3be7a822349839fd53628fe966/window/maximize - {}
+COMMAND: DELETE /session/8433ec3be7a822349839fd53628fe966/cookie - {}
+COMMAND: POST /session/8433ec3be7a822349839fd53628fe966/element - {"using":"xpath","value":"//button[@aria-label=\"Select country\"]"}
+COMMAND: POST /session/8433ec3be7a822349839fd53628fe966/url - {"url":"https://sl:getin1@bayut-e2e-development.dubizzle.dev/"}
+RESULT: {}
+RESULT: {}
+RESULT: {"using":"xpath","value":"//button[@aria-label=\"Select country\"]"}
+COMMAND: POST /session/8433ec3be7a822349839fd53628fe966/execute/sync - {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7807 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"f.BD4E11BCF39B63722044D7B794467DFA.d.91052827A94F64F85FA1E1BA9F5ABBFE.e.113","ELEMENT":"f.BD4E11BCF39B63722044D7B794467DFA.d.91052827A94F64F85FA1E1BA9F5ABBFE.e.113"}]}
+RESULT: {"url":"https://sl:getin1@bayut-e2e-development.dubizzle.dev/"}
+COMMAND: POST /session/8433ec3be7a822349839fd53628fe966/element - {"using":"xpath","value":"//button[@aria-label=\"Select country\"]"}
+RESULT: {"using":"xpath","value":"//button[@aria-label=\"Select country\"]"}
+COMMAND: POST /session/8433ec3be7a822349839fd53628fe966/execute/sync - {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7807 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"f.BD4E11BCF39B63722044D7B794467DFA.d.469F259760D67CA97843A2804985FC69.e.182","ELEMENT":"f.BD4E11BCF39B63722044D7B794467DFA.d.469F259760D67CA97843A2804985FC69.e.182"}]}
+RESULT: {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7807 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"f.BD4E11BCF39B63722044D7B794467DFA.d.469F259760D67CA97843A2804985FC69.e.182","ELEMENT":"f.BD4E11BCF39B63722044D7B794467DFA.d.469F259760D67CA97843A2804985FC69.e.182"}]}
+COMMAND: POST /session/8433ec3be7a822349839fd53628fe966/element - {"using":"xpath","value":"//button[@aria-label=\"Select country\"]"}
+RESULT: {"using":"xpath","value":"//button[@aria-label=\"Select country\"]"}
+COMMAND: POST /session/8433ec3be7a822349839fd53628fe966/element/f.BD4E11BCF39B63722044D7B794467DFA.d.469F259760D67CA97843A2804985FC69.e.182/click - {}
+RESULT: {}
+COMMAND: POST /session/8433ec3be7a822349839fd53628fe966/element - {"using":"xpath","value":"//ul[@class=\"ab17c37c _8fd21802\"]"}
+RESULT: {"using":"xpath","value":"//ul[@class=\"ab17c37c _8fd21802\"]"}
+COMMAND: POST /session/8433ec3be7a822349839fd53628fe966/element - {"using":"xpath","value":"//ul[@class=\"ab17c37c _8fd21802\"]"}
+RESULT: {"using":"xpath","value":"//ul[@class=\"ab17c37c _8fd21802\"]"}
+COMMAND: POST /session/8433ec3be7a822349839fd53628fe966/element - {"using":"xpath","value":"//ul[@class=\"ab17c37c _8fd21802\"]"}
+RESULT: {"using":"xpath","value":"//ul[@class=\"ab17c37c _8fd21802\"]"}
+COMMAND: POST /session/8433ec3be7a822349839fd53628fe966/element - {"using":"xpath","value":"//ul[@class=\"ab17c37c _8fd21802\"]"}
+RESULT: {"using":"xpath","value":"//ul[@class=\"ab17c37c _8fd21802\"]"}
+COMMAND: POST /session/8433ec3be7a822349839fd53628fe966/element - {"using":"xpath","value":"//ul[@class=\"ab17c37c _8fd21802\"]"}
+RESULT: {"using":"xpath","value":"//ul[@class=\"ab17c37c _8fd21802\"]"}
+COMMAND: POST /session/8433ec3be7a822349839fd53628fe966/element - {"using":"xpath","value":"//ul[@class=\"ab17c37c _8fd21802\"]"}
+RESULT: {"using":"xpath","value":"//ul[@class=\"ab17c37c _8fd21802\"]"}
+COMMAND: POST /session/8433ec3be7a822349839fd53628fe966/element - {"using":"xpath","value":"//ul[@class=\"ab17c37c _8fd21802\"]"}
+RESULT: {"using":"xpath","value":"//ul[@class=\"ab17c37c _8fd21802\"]"}
+COMMAND: POST /session/8433ec3be7a822349839fd53628fe966/element - {"using":"xpath","value":"//ul[@class=\"ab17c37c _8fd21802\"]"}
+RESULT: {"using":"xpath","value":"//ul[@class=\"ab17c37c _8fd21802\"]"}
+COMMAND: POST /session/8433ec3be7a822349839fd53628fe966/element - {"using":"xpath","value":"//ul[@class=\"ab17c37c _8fd21802\"]"}
+RESULT: {"using":"xpath","value":"//ul[@class=\"ab17c37c _8fd21802\"]"}
+COMMAND: POST /session/8433ec3be7a822349839fd53628fe966/element - {"using":"xpath","value":"//ul[@class=\"ab17c37c _8fd21802\"]"}
+RESULT: {"using":"xpath","value":"//ul[@class=\"ab17c37c _8fd21802\"]"}
+COMMAND: POST /session/8433ec3be7a822349839fd53628fe966/element - {"using":"xpath","value":"//ul[@class=\"ab17c37c _8fd21802\"]"}
+RESULT: {"using":"xpath","value":"//ul[@class=\"ab17c37c _8fd21802\"]"}
+]]></system-out>
+      <system-err><![CDATA[
+Error: element ("//ul[@class="ab17c37c _8fd21802"]") still not displayed after 5000ms
+    at async Context.<anonymous> (file:///C:/Users/ahsham.khan/Desktop/WebDriver/bayutFunctionals/test/specs/footersection.js:185:9)
+]]></system-err>
+    </testcase>
+    <testcase classname="chrome.126_0_6478_127.windows.Footer_Sector" name="Verfiy BayutJO Redirection" time="5.892">
+      <failure message="element (&quot;//ul[@class=&quot;ab17c37c _8fd21802&quot;]&quot;) still not displayed after 5000ms"/>
+      <system-out><![CDATA[
+COMMAND: POST /session/8433ec3be7a822349839fd53628fe966/window/maximize - {}
+COMMAND: DELETE /session/8433ec3be7a822349839fd53628fe966/cookie - {}
+COMMAND: POST /session/8433ec3be7a822349839fd53628fe966/element - {"using":"xpath","value":"//button[@aria-label=\"Select country\"]"}
+COMMAND: POST /session/8433ec3be7a822349839fd53628fe966/url - {"url":"https://sl:getin1@bayut-e2e-development.dubizzle.dev/"}
+RESULT: {}
+RESULT: {}
+RESULT: {"using":"xpath","value":"//button[@aria-label=\"Select country\"]"}
+COMMAND: POST /session/8433ec3be7a822349839fd53628fe966/execute/sync - {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7807 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"f.BD4E11BCF39B63722044D7B794467DFA.d.469F259760D67CA97843A2804985FC69.e.182","ELEMENT":"f.BD4E11BCF39B63722044D7B794467DFA.d.469F259760D67CA97843A2804985FC69.e.182"}]}
+RESULT: {"url":"https://sl:getin1@bayut-e2e-development.dubizzle.dev/"}
+COMMAND: POST /session/8433ec3be7a822349839fd53628fe966/element - {"using":"xpath","value":"//button[@aria-label=\"Select country\"]"}
+RESULT: {"using":"xpath","value":"//button[@aria-label=\"Select country\"]"}
+COMMAND: POST /session/8433ec3be7a822349839fd53628fe966/execute/sync - {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7807 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"f.BD4E11BCF39B63722044D7B794467DFA.d.9DA04E872DD1A661470942F5449CF1B0.e.233","ELEMENT":"f.BD4E11BCF39B63722044D7B794467DFA.d.9DA04E872DD1A661470942F5449CF1B0.e.233"}]}
+RESULT: {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7807 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"f.BD4E11BCF39B63722044D7B794467DFA.d.9DA04E872DD1A661470942F5449CF1B0.e.233","ELEMENT":"f.BD4E11BCF39B63722044D7B794467DFA.d.9DA04E872DD1A661470942F5449CF1B0.e.233"}]}
+COMMAND: POST /session/8433ec3be7a822349839fd53628fe966/element - {"using":"xpath","value":"//button[@aria-label=\"Select country\"]"}
+RESULT: {"using":"xpath","value":"//button[@aria-label=\"Select country\"]"}
+COMMAND: POST /session/8433ec3be7a822349839fd53628fe966/element/f.BD4E11BCF39B63722044D7B794467DFA.d.9DA04E872DD1A661470942F5449CF1B0.e.233/click - {}
+RESULT: {}
+COMMAND: POST /session/8433ec3be7a822349839fd53628fe966/element - {"using":"xpath","value":"//ul[@class=\"ab17c37c _8fd21802\"]"}
+RESULT: {"using":"xpath","value":"//ul[@class=\"ab17c37c _8fd21802\"]"}
+COMMAND: POST /session/8433ec3be7a822349839fd53628fe966/element - {"using":"xpath","value":"//ul[@class=\"ab17c37c _8fd21802\"]"}
+RESULT: {"using":"xpath","value":"//ul[@class=\"ab17c37c _8fd21802\"]"}
+COMMAND: POST /session/8433ec3be7a822349839fd53628fe966/element - {"using":"xpath","value":"//ul[@class=\"ab17c37c _8fd21802\"]"}
+RESULT: {"using":"xpath","value":"//ul[@class=\"ab17c37c _8fd21802\"]"}
+COMMAND: POST /session/8433ec3be7a822349839fd53628fe966/element - {"using":"xpath","value":"//ul[@class=\"ab17c37c _8fd21802\"]"}
+RESULT: {"using":"xpath","value":"//ul[@class=\"ab17c37c _8fd21802\"]"}
+COMMAND: POST /session/8433ec3be7a822349839fd53628fe966/element - {"using":"xpath","value":"//ul[@class=\"ab17c37c _8fd21802\"]"}
+RESULT: {"using":"xpath","value":"//ul[@class=\"ab17c37c _8fd21802\"]"}
+COMMAND: POST /session/8433ec3be7a822349839fd53628fe966/element - {"using":"xpath","value":"//ul[@class=\"ab17c37c _8fd21802\"]"}
+RESULT: {"using":"xpath","value":"//ul[@class=\"ab17c37c _8fd21802\"]"}
+COMMAND: POST /session/8433ec3be7a822349839fd53628fe966/element - {"using":"xpath","value":"//ul[@class=\"ab17c37c _8fd21802\"]"}
+RESULT: {"using":"xpath","value":"//ul[@class=\"ab17c37c _8fd21802\"]"}
+COMMAND: POST /session/8433ec3be7a822349839fd53628fe966/element - {"using":"xpath","value":"//ul[@class=\"ab17c37c _8fd21802\"]"}
+RESULT: {"using":"xpath","value":"//ul[@class=\"ab17c37c _8fd21802\"]"}
+COMMAND: POST /session/8433ec3be7a822349839fd53628fe966/element - {"using":"xpath","value":"//ul[@class=\"ab17c37c _8fd21802\"]"}
+RESULT: {"using":"xpath","value":"//ul[@class=\"ab17c37c _8fd21802\"]"}
+COMMAND: POST /session/8433ec3be7a822349839fd53628fe966/element - {"using":"xpath","value":"//ul[@class=\"ab17c37c _8fd21802\"]"}
+RESULT: {"using":"xpath","value":"//ul[@class=\"ab17c37c _8fd21802\"]"}
+COMMAND: POST /session/8433ec3be7a822349839fd53628fe966/element - {"using":"xpath","value":"//ul[@class=\"ab17c37c _8fd21802\"]"}
+RESULT: {"using":"xpath","value":"//ul[@class=\"ab17c37c _8fd21802\"]"}
+]]></system-out>
+      <system-err><![CDATA[
+Error: element ("//ul[@class="ab17c37c _8fd21802"]") still not displayed after 5000ms
+    at async Context.<anonymous> (file:///C:/Users/ahsham.khan/Desktop/WebDriver/bayutFunctionals/test/specs/footersection.js:206:9)
+]]></system-err>
+    </testcase>
+    <testcase classname="chrome.126_0_6478_127.windows.Footer_Sector" name="Verfiy LamudiPH Redirection" time="5.809">
+      <failure message="element (&quot;//ul[@class=&quot;ab17c37c _8fd21802&quot;]&quot;) still not displayed after 5000ms"/>
+      <system-out><![CDATA[
+COMMAND: POST /session/8433ec3be7a822349839fd53628fe966/window/maximize - {}
+COMMAND: DELETE /session/8433ec3be7a822349839fd53628fe966/cookie - {}
+COMMAND: POST /session/8433ec3be7a822349839fd53628fe966/element - {"using":"xpath","value":"//button[@aria-label=\"Select country\"]"}
+COMMAND: POST /session/8433ec3be7a822349839fd53628fe966/url - {"url":"https://sl:getin1@bayut-e2e-development.dubizzle.dev/"}
+RESULT: {}
+RESULT: {}
+RESULT: {"using":"xpath","value":"//button[@aria-label=\"Select country\"]"}
+COMMAND: POST /session/8433ec3be7a822349839fd53628fe966/execute/sync - {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7807 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"f.BD4E11BCF39B63722044D7B794467DFA.d.9DA04E872DD1A661470942F5449CF1B0.e.233","ELEMENT":"f.BD4E11BCF39B63722044D7B794467DFA.d.9DA04E872DD1A661470942F5449CF1B0.e.233"}]}
+RESULT: {"url":"https://sl:getin1@bayut-e2e-development.dubizzle.dev/"}
+COMMAND: POST /session/8433ec3be7a822349839fd53628fe966/element - {"using":"xpath","value":"//button[@aria-label=\"Select country\"]"}
+RESULT: {"using":"xpath","value":"//button[@aria-label=\"Select country\"]"}
+COMMAND: POST /session/8433ec3be7a822349839fd53628fe966/execute/sync - {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7807 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"f.BD4E11BCF39B63722044D7B794467DFA.d.F2B701EC79E3042348AB127635B42BFF.e.285","ELEMENT":"f.BD4E11BCF39B63722044D7B794467DFA.d.F2B701EC79E3042348AB127635B42BFF.e.285"}]}
+RESULT: {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7807 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"f.BD4E11BCF39B63722044D7B794467DFA.d.F2B701EC79E3042348AB127635B42BFF.e.285","ELEMENT":"f.BD4E11BCF39B63722044D7B794467DFA.d.F2B701EC79E3042348AB127635B42BFF.e.285"}]}
+COMMAND: POST /session/8433ec3be7a822349839fd53628fe966/element - {"using":"xpath","value":"//button[@aria-label=\"Select country\"]"}
+RESULT: {"using":"xpath","value":"//button[@aria-label=\"Select country\"]"}
+COMMAND: POST /session/8433ec3be7a822349839fd53628fe966/element/f.BD4E11BCF39B63722044D7B794467DFA.d.F2B701EC79E3042348AB127635B42BFF.e.285/click - {}
+RESULT: {}
+COMMAND: POST /session/8433ec3be7a822349839fd53628fe966/element - {"using":"xpath","value":"//ul[@class=\"ab17c37c _8fd21802\"]"}
+RESULT: {"using":"xpath","value":"//ul[@class=\"ab17c37c _8fd21802\"]"}
+COMMAND: POST /session/8433ec3be7a822349839fd53628fe966/element - {"using":"xpath","value":"//ul[@class=\"ab17c37c _8fd21802\"]"}
+RESULT: {"using":"xpath","value":"//ul[@class=\"ab17c37c _8fd21802\"]"}
+COMMAND: POST /session/8433ec3be7a822349839fd53628fe966/element - {"using":"xpath","value":"//ul[@class=\"ab17c37c _8fd21802\"]"}
+RESULT: {"using":"xpath","value":"//ul[@class=\"ab17c37c _8fd21802\"]"}
+COMMAND: POST /session/8433ec3be7a822349839fd53628fe966/element - {"using":"xpath","value":"//ul[@class=\"ab17c37c _8fd21802\"]"}
+RESULT: {"using":"xpath","value":"//ul[@class=\"ab17c37c _8fd21802\"]"}
+COMMAND: POST /session/8433ec3be7a822349839fd53628fe966/element - {"using":"xpath","value":"//ul[@class=\"ab17c37c _8fd21802\"]"}
+RESULT: {"using":"xpath","value":"//ul[@class=\"ab17c37c _8fd21802\"]"}
+COMMAND: POST /session/8433ec3be7a822349839fd53628fe966/element - {"using":"xpath","value":"//ul[@class=\"ab17c37c _8fd21802\"]"}
+RESULT: {"using":"xpath","value":"//ul[@class=\"ab17c37c _8fd21802\"]"}
+COMMAND: POST /session/8433ec3be7a822349839fd53628fe966/element - {"using":"xpath","value":"//ul[@class=\"ab17c37c _8fd21802\"]"}
+RESULT: {"using":"xpath","value":"//ul[@class=\"ab17c37c _8fd21802\"]"}
+COMMAND: POST /session/8433ec3be7a822349839fd53628fe966/element - {"using":"xpath","value":"//ul[@class=\"ab17c37c _8fd21802\"]"}
+RESULT: {"using":"xpath","value":"//ul[@class=\"ab17c37c _8fd21802\"]"}
+COMMAND: POST /session/8433ec3be7a822349839fd53628fe966/element - {"using":"xpath","value":"//ul[@class=\"ab17c37c _8fd21802\"]"}
+RESULT: {"using":"xpath","value":"//ul[@class=\"ab17c37c _8fd21802\"]"}
+COMMAND: POST /session/8433ec3be7a822349839fd53628fe966/element - {"using":"xpath","value":"//ul[@class=\"ab17c37c _8fd21802\"]"}
+RESULT: {"using":"xpath","value":"//ul[@class=\"ab17c37c _8fd21802\"]"}
+COMMAND: POST /session/8433ec3be7a822349839fd53628fe966/element - {"using":"xpath","value":"//ul[@class=\"ab17c37c _8fd21802\"]"}
+RESULT: {"using":"xpath","value":"//ul[@class=\"ab17c37c _8fd21802\"]"}
+]]></system-out>
+      <system-err><![CDATA[
+Error: element ("//ul[@class="ab17c37c _8fd21802"]") still not displayed after 5000ms
+    at async Context.<anonymous> (file:///C:/Users/ahsham.khan/Desktop/WebDriver/bayutFunctionals/test/specs/footersection.js:227:9)
+]]></system-err>
+    </testcase>
+    <testcase classname="chrome.126_0_6478_127.windows.Footer_Sector" name="Verfiy LamudiID Redirection" time="5.842">
+      <failure message="element (&quot;//ul[@class=&quot;ab17c37c _8fd21802&quot;]&quot;) still not displayed after 5000ms"/>
+      <system-out><![CDATA[
+COMMAND: POST /session/8433ec3be7a822349839fd53628fe966/window/maximize - {}
+COMMAND: DELETE /session/8433ec3be7a822349839fd53628fe966/cookie - {}
+COMMAND: POST /session/8433ec3be7a822349839fd53628fe966/element - {"using":"xpath","value":"//button[@aria-label=\"Select country\"]"}
+COMMAND: POST /session/8433ec3be7a822349839fd53628fe966/url - {"url":"https://sl:getin1@bayut-e2e-development.dubizzle.dev/"}
+RESULT: {}
+RESULT: {}
+RESULT: {"using":"xpath","value":"//button[@aria-label=\"Select country\"]"}
+COMMAND: POST /session/8433ec3be7a822349839fd53628fe966/execute/sync - {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7807 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"f.BD4E11BCF39B63722044D7B794467DFA.d.F2B701EC79E3042348AB127635B42BFF.e.285","ELEMENT":"f.BD4E11BCF39B63722044D7B794467DFA.d.F2B701EC79E3042348AB127635B42BFF.e.285"}]}
+RESULT: {"url":"https://sl:getin1@bayut-e2e-development.dubizzle.dev/"}
+COMMAND: POST /session/8433ec3be7a822349839fd53628fe966/element - {"using":"xpath","value":"//button[@aria-label=\"Select country\"]"}
+RESULT: {"using":"xpath","value":"//button[@aria-label=\"Select country\"]"}
+COMMAND: POST /session/8433ec3be7a822349839fd53628fe966/execute/sync - {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7807 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"f.BD4E11BCF39B63722044D7B794467DFA.d.ADDE2A5E9184B003B879107231495221.e.335","ELEMENT":"f.BD4E11BCF39B63722044D7B794467DFA.d.ADDE2A5E9184B003B879107231495221.e.335"}]}
+RESULT: {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7807 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"f.BD4E11BCF39B63722044D7B794467DFA.d.ADDE2A5E9184B003B879107231495221.e.335","ELEMENT":"f.BD4E11BCF39B63722044D7B794467DFA.d.ADDE2A5E9184B003B879107231495221.e.335"}]}
+COMMAND: POST /session/8433ec3be7a822349839fd53628fe966/element - {"using":"xpath","value":"//button[@aria-label=\"Select country\"]"}
+RESULT: {"using":"xpath","value":"//button[@aria-label=\"Select country\"]"}
+COMMAND: POST /session/8433ec3be7a822349839fd53628fe966/element/f.BD4E11BCF39B63722044D7B794467DFA.d.ADDE2A5E9184B003B879107231495221.e.335/click - {}
+RESULT: {}
+COMMAND: POST /session/8433ec3be7a822349839fd53628fe966/element - {"using":"xpath","value":"//ul[@class=\"ab17c37c _8fd21802\"]"}
+RESULT: {"using":"xpath","value":"//ul[@class=\"ab17c37c _8fd21802\"]"}
+COMMAND: POST /session/8433ec3be7a822349839fd53628fe966/element - {"using":"xpath","value":"//ul[@class=\"ab17c37c _8fd21802\"]"}
+RESULT: {"using":"xpath","value":"//ul[@class=\"ab17c37c _8fd21802\"]"}
+COMMAND: POST /session/8433ec3be7a822349839fd53628fe966/element - {"using":"xpath","value":"//ul[@class=\"ab17c37c _8fd21802\"]"}
+RESULT: {"using":"xpath","value":"//ul[@class=\"ab17c37c _8fd21802\"]"}
+COMMAND: POST /session/8433ec3be7a822349839fd53628fe966/element - {"using":"xpath","value":"//ul[@class=\"ab17c37c _8fd21802\"]"}
+RESULT: {"using":"xpath","value":"//ul[@class=\"ab17c37c _8fd21802\"]"}
+COMMAND: POST /session/8433ec3be7a822349839fd53628fe966/element - {"using":"xpath","value":"//ul[@class=\"ab17c37c _8fd21802\"]"}
+RESULT: {"using":"xpath","value":"//ul[@class=\"ab17c37c _8fd21802\"]"}
+COMMAND: POST /session/8433ec3be7a822349839fd53628fe966/element - {"using":"xpath","value":"//ul[@class=\"ab17c37c _8fd21802\"]"}
+RESULT: {"using":"xpath","value":"//ul[@class=\"ab17c37c _8fd21802\"]"}
+COMMAND: POST /session/8433ec3be7a822349839fd53628fe966/element - {"using":"xpath","value":"//ul[@class=\"ab17c37c _8fd21802\"]"}
+RESULT: {"using":"xpath","value":"//ul[@class=\"ab17c37c _8fd21802\"]"}
+COMMAND: POST /session/8433ec3be7a822349839fd53628fe966/element - {"using":"xpath","value":"//ul[@class=\"ab17c37c _8fd21802\"]"}
+RESULT: {"using":"xpath","value":"//ul[@class=\"ab17c37c _8fd21802\"]"}
+COMMAND: POST /session/8433ec3be7a822349839fd53628fe966/element - {"using":"xpath","value":"//ul[@class=\"ab17c37c _8fd21802\"]"}
+RESULT: {"using":"xpath","value":"//ul[@class=\"ab17c37c _8fd21802\"]"}
+COMMAND: POST /session/8433ec3be7a822349839fd53628fe966/element - {"using":"xpath","value":"//ul[@class=\"ab17c37c _8fd21802\"]"}
+RESULT: {"using":"xpath","value":"//ul[@class=\"ab17c37c _8fd21802\"]"}
+COMMAND: POST /session/8433ec3be7a822349839fd53628fe966/element - {"using":"xpath","value":"//ul[@class=\"ab17c37c _8fd21802\"]"}
+RESULT: {"using":"xpath","value":"//ul[@class=\"ab17c37c _8fd21802\"]"}
+COMMAND: POST /session/8433ec3be7a822349839fd53628fe966/element - {"using":"xpath","value":"//ul[@class=\"ab17c37c _8fd21802\"]"}
+]]></system-out>
+      <system-err><![CDATA[
+Error: element ("//ul[@class="ab17c37c _8fd21802"]") still not displayed after 5000ms
+    at async Context.<anonymous> (file:///C:/Users/ahsham.khan/Desktop/WebDriver/bayutFunctionals/test/specs/footersection.js:248:9)
+]]></system-err>
+    </testcase>
+    <testcase classname="chrome.126_0_6478_127.windows.Footer_Sector" name="Verfiy BayutEG Redirection" time="5.97">
+      <failure message="element (&quot;//ul[@class=&quot;ab17c37c _8fd21802&quot;]&quot;) still not displayed after 5000ms"/>
+      <system-out><![CDATA[
+COMMAND: POST /session/8433ec3be7a822349839fd53628fe966/window/maximize - {}
+COMMAND: DELETE /session/8433ec3be7a822349839fd53628fe966/cookie - {}
+COMMAND: POST /session/8433ec3be7a822349839fd53628fe966/element - {"using":"xpath","value":"//button[@aria-label=\"Select country\"]"}
+COMMAND: POST /session/8433ec3be7a822349839fd53628fe966/url - {"url":"https://sl:getin1@bayut-e2e-development.dubizzle.dev/"}
+RESULT: {"using":"xpath","value":"//ul[@class=\"ab17c37c _8fd21802\"]"}
+RESULT: {}
+RESULT: {}
+RESULT: {"using":"xpath","value":"//button[@aria-label=\"Select country\"]"}
+COMMAND: POST /session/8433ec3be7a822349839fd53628fe966/execute/sync - {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7807 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"f.BD4E11BCF39B63722044D7B794467DFA.d.ADDE2A5E9184B003B879107231495221.e.335","ELEMENT":"f.BD4E11BCF39B63722044D7B794467DFA.d.ADDE2A5E9184B003B879107231495221.e.335"}]}
+RESULT: {"url":"https://sl:getin1@bayut-e2e-development.dubizzle.dev/"}
+COMMAND: POST /session/8433ec3be7a822349839fd53628fe966/element - {"using":"xpath","value":"//button[@aria-label=\"Select country\"]"}
+RESULT: {"using":"xpath","value":"//button[@aria-label=\"Select country\"]"}
+COMMAND: POST /session/8433ec3be7a822349839fd53628fe966/execute/sync - {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7807 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"f.BD4E11BCF39B63722044D7B794467DFA.d.01F71EB835007976C3EBE49E1BC3B4AE.e.384","ELEMENT":"f.BD4E11BCF39B63722044D7B794467DFA.d.01F71EB835007976C3EBE49E1BC3B4AE.e.384"}]}
+RESULT: {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7807 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"f.BD4E11BCF39B63722044D7B794467DFA.d.01F71EB835007976C3EBE49E1BC3B4AE.e.384","ELEMENT":"f.BD4E11BCF39B63722044D7B794467DFA.d.01F71EB835007976C3EBE49E1BC3B4AE.e.384"}]}
+COMMAND: POST /session/8433ec3be7a822349839fd53628fe966/element - {"using":"xpath","value":"//button[@aria-label=\"Select country\"]"}
+RESULT: {"using":"xpath","value":"//button[@aria-label=\"Select country\"]"}
+COMMAND: POST /session/8433ec3be7a822349839fd53628fe966/element/f.BD4E11BCF39B63722044D7B794467DFA.d.01F71EB835007976C3EBE49E1BC3B4AE.e.384/click - {}
+RESULT: {}
+COMMAND: POST /session/8433ec3be7a822349839fd53628fe966/element - {"using":"xpath","value":"//ul[@class=\"ab17c37c _8fd21802\"]"}
+RESULT: {"using":"xpath","value":"//ul[@class=\"ab17c37c _8fd21802\"]"}
+COMMAND: POST /session/8433ec3be7a822349839fd53628fe966/element - {"using":"xpath","value":"//ul[@class=\"ab17c37c _8fd21802\"]"}
+RESULT: {"using":"xpath","value":"//ul[@class=\"ab17c37c _8fd21802\"]"}
+COMMAND: POST /session/8433ec3be7a822349839fd53628fe966/element - {"using":"xpath","value":"//ul[@class=\"ab17c37c _8fd21802\"]"}
+RESULT: {"using":"xpath","value":"//ul[@class=\"ab17c37c _8fd21802\"]"}
+COMMAND: POST /session/8433ec3be7a822349839fd53628fe966/element - {"using":"xpath","value":"//ul[@class=\"ab17c37c _8fd21802\"]"}
+RESULT: {"using":"xpath","value":"//ul[@class=\"ab17c37c _8fd21802\"]"}
+COMMAND: POST /session/8433ec3be7a822349839fd53628fe966/element - {"using":"xpath","value":"//ul[@class=\"ab17c37c _8fd21802\"]"}
+RESULT: {"using":"xpath","value":"//ul[@class=\"ab17c37c _8fd21802\"]"}
+COMMAND: POST /session/8433ec3be7a822349839fd53628fe966/element - {"using":"xpath","value":"//ul[@class=\"ab17c37c _8fd21802\"]"}
+RESULT: {"using":"xpath","value":"//ul[@class=\"ab17c37c _8fd21802\"]"}
+COMMAND: POST /session/8433ec3be7a822349839fd53628fe966/element - {"using":"xpath","value":"//ul[@class=\"ab17c37c _8fd21802\"]"}
+RESULT: {"using":"xpath","value":"//ul[@class=\"ab17c37c _8fd21802\"]"}
+COMMAND: POST /session/8433ec3be7a822349839fd53628fe966/element - {"using":"xpath","value":"//ul[@class=\"ab17c37c _8fd21802\"]"}
+RESULT: {"using":"xpath","value":"//ul[@class=\"ab17c37c _8fd21802\"]"}
+COMMAND: POST /session/8433ec3be7a822349839fd53628fe966/element - {"using":"xpath","value":"//ul[@class=\"ab17c37c _8fd21802\"]"}
+RESULT: {"using":"xpath","value":"//ul[@class=\"ab17c37c _8fd21802\"]"}
+COMMAND: POST /session/8433ec3be7a822349839fd53628fe966/element - {"using":"xpath","value":"//ul[@class=\"ab17c37c _8fd21802\"]"}
+RESULT: {"using":"xpath","value":"//ul[@class=\"ab17c37c _8fd21802\"]"}
+COMMAND: POST /session/8433ec3be7a822349839fd53628fe966/element - {"using":"xpath","value":"//ul[@class=\"ab17c37c _8fd21802\"]"}
+RESULT: {"using":"xpath","value":"//ul[@class=\"ab17c37c _8fd21802\"]"}
+COMMAND: DELETE /session/8433ec3be7a822349839fd53628fe966 - {}
+RESULT: {}
+]]></system-out>
+      <system-err><![CDATA[
+Error: element ("//ul[@class="ab17c37c _8fd21802"]") still not displayed after 5000ms
+    at async Context.<anonymous> (file:///C:/Users/ahsham.khan/Desktop/WebDriver/bayutFunctionals/test/specs/footersection.js:269:9)
+]]></system-err>
+    </testcase>
+  </testsuite>
+</testsuites>

@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites tests="6" failures="2" errors="0" skipped="0">
+  <testsuite name="Footer Sector" timestamp="2024-07-29T13:03:40" time="58.199" tests="6" failures="2" errors="0" skipped="0">
+    <properties>
+      <property name="specId" value="0"/>
+      <property name="suiteName" value="Footer Sector"/>
+      <property name="capabilities" value="chrome.126_0_6478_185.windows"/>
+      <property name="file" value="file:///C:/Users/ahsham.khan/Desktop/WebDriver/bayutFunctionals/test/specs/footersection.js"/>
+    </properties>
+    <testcase classname="chrome.126_0_6478_185.windows.Footer_Sector" name="Verfiy Redirection of About Us Section" time="18.69">
+      <system-out><![CDATA[
+COMMAND: POST /session/1f7c052e54a1a3b4c0247e4bc8a37b12/window/maximize - {}
+COMMAND: DELETE /session/1f7c052e54a1a3b4c0247e4bc8a37b12/cookie - {}
+COMMAND: POST /session/1f7c052e54a1a3b4c0247e4bc8a37b12/element - {"using":"xpath","value":"//a[@aria-label=\"About us\"]"}
+COMMAND: POST /session/1f7c052e54a1a3b4c0247e4bc8a37b12/url - {"url":"https://sl:getin1@bayut-e2e-development.dubizzle.dev/"}
+RESULT: {}
+RESULT: {}
+RESULT: {"using":"xpath","value":"//a[@aria-label=\"About us\"]"}
+COMMAND: POST /session/1f7c052e54a1a3b4c0247e4bc8a37b12/element - {"using":"xpath","value":"//a[@aria-label=\"About us\"]"}
+RESULT: {"url":"https://sl:getin1@bayut-e2e-development.dubizzle.dev/"}
+RESULT: {"using":"xpath","value":"//a[@aria-label=\"About us\"]"}
+COMMAND: POST /session/1f7c052e54a1a3b4c0247e4bc8a37b12/execute/sync - {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (8097 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"f.AF5DC851DACBF2012E39B7160BB7E182.d.D9F9A777464C12A6751E024707EA8E3F.e.68","ELEMENT":"f.AF5DC851DACBF2012E39B7160BB7E182.d.D9F9A777464C12A6751E024707EA8E3F.e.68"}]}
+RESULT: {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (8097 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"f.AF5DC851DACBF2012E39B7160BB7E182.d.D9F9A777464C12A6751E024707EA8E3F.e.68","ELEMENT":"f.AF5DC851DACBF2012E39B7160BB7E182.d.D9F9A777464C12A6751E024707EA8E3F.e.68"}]}
+COMMAND: POST /session/1f7c052e54a1a3b4c0247e4bc8a37b12/element - {"using":"xpath","value":"//a[@aria-label=\"About us\"]"}
+RESULT: {"using":"xpath","value":"//a[@aria-label=\"About us\"]"}
+COMMAND: POST /session/1f7c052e54a1a3b4c0247e4bc8a37b12/element/f.AF5DC851DACBF2012E39B7160BB7E182.d.D9F9A777464C12A6751E024707EA8E3F.e.68/click - {}
+RESULT: {}
+COMMAND: GET /session/1f7c052e54a1a3b4c0247e4bc8a37b12/url - {}
+COMMAND: POST /session/1f7c052e54a1a3b4c0247e4bc8a37b12/execute/sync - {"script":"return (() => document.readyState === 'complete').apply(null, arguments)","args":[]}
+RESULT: {"script":"return (() => document.readyState === 'complete').apply(null, arguments)","args":[]}
+RESULT: {}
+COMMAND: GET /session/1f7c052e54a1a3b4c0247e4bc8a37b12/title - {}
+RESULT: {}
+]]></system-out>
+    </testcase>
+    <testcase classname="chrome.126_0_6478_185.windows.Footer_Sector" name="Verfiy Redirection of Careers Section" time="19.378">
+      <system-out><![CDATA[
+COMMAND: POST /session/1f7c052e54a1a3b4c0247e4bc8a37b12/window/maximize - {}
+COMMAND: DELETE /session/1f7c052e54a1a3b4c0247e4bc8a37b12/cookie - {}
+COMMAND: POST /session/1f7c052e54a1a3b4c0247e4bc8a37b12/element - {"using":"xpath","value":"//a[@aria-label=\"Careers\"]"}
+COMMAND: POST /session/1f7c052e54a1a3b4c0247e4bc8a37b12/url - {"url":"https://sl:getin1@bayut-e2e-development.dubizzle.dev/"}
+RESULT: {}
+RESULT: {}
+RESULT: {"using":"xpath","value":"//a[@aria-label=\"Careers\"]"}
+COMMAND: POST /session/1f7c052e54a1a3b4c0247e4bc8a37b12/element - {"using":"xpath","value":"//a[@aria-label=\"Careers\"]"}
+RESULT: {"url":"https://sl:getin1@bayut-e2e-development.dubizzle.dev/"}
+RESULT: {"using":"xpath","value":"//a[@aria-label=\"Careers\"]"}
+COMMAND: POST /session/1f7c052e54a1a3b4c0247e4bc8a37b12/execute/sync - {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (8097 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"f.AF5DC851DACBF2012E39B7160BB7E182.d.A436D10EC84B203858CB8EAB827ECD98.e.102","ELEMENT":"f.AF5DC851DACBF2012E39B7160BB7E182.d.A436D10EC84B203858CB8EAB827ECD98.e.102"}]}
+RESULT: {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (8097 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"f.AF5DC851DACBF2012E39B7160BB7E182.d.A436D10EC84B203858CB8EAB827ECD98.e.102","ELEMENT":"f.AF5DC851DACBF2012E39B7160BB7E182.d.A436D10EC84B203858CB8EAB827ECD98.e.102"}]}
+COMMAND: POST /session/1f7c052e54a1a3b4c0247e4bc8a37b12/element - {"using":"xpath","value":"//a[@aria-label=\"Careers\"]"}
+RESULT: {"using":"xpath","value":"//a[@aria-label=\"Careers\"]"}
+COMMAND: POST /session/1f7c052e54a1a3b4c0247e4bc8a37b12/element/f.AF5DC851DACBF2012E39B7160BB7E182.d.A436D10EC84B203858CB8EAB827ECD98.e.102/click - {}
+RESULT: {}
+COMMAND: GET /session/1f7c052e54a1a3b4c0247e4bc8a37b12/url - {}
+COMMAND: POST /session/1f7c052e54a1a3b4c0247e4bc8a37b12/execute/sync - {"script":"return (() => document.readyState === 'complete').apply(null, arguments)","args":[]}
+RESULT: {}
+COMMAND: POST /session/1f7c052e54a1a3b4c0247e4bc8a37b12/window/maximize - {}
+COMMAND: DELETE /session/1f7c052e54a1a3b4c0247e4bc8a37b12/cookie - {}
+COMMAND: POST /session/1f7c052e54a1a3b4c0247e4bc8a37b12/element - {"using":"xpath","value":"//a[@aria-label=\"Careers\"]"}
+COMMAND: POST /session/1f7c052e54a1a3b4c0247e4bc8a37b12/url - {"url":"https://www.bayut.com/"}
+RESULT: {"script":"return (() => document.readyState === 'complete').apply(null, arguments)","args":[]}
+RESULT: {}
+RESULT: {}
+RESULT: {"using":"xpath","value":"//a[@aria-label=\"Careers\"]"}
+COMMAND: POST /session/1f7c052e54a1a3b4c0247e4bc8a37b12/element - {"using":"xpath","value":"//a[@aria-label=\"Careers\"]"}
+RESULT: {"url":"https://www.bayut.com/"}
+RESULT: {"using":"xpath","value":"//a[@aria-label=\"Careers\"]"}
+COMMAND: POST /session/1f7c052e54a1a3b4c0247e4bc8a37b12/execute/sync - {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (8097 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"f.AF5DC851DACBF2012E39B7160BB7E182.d.7CE8D3260AF42375F9A5F680DA741519.e.61","ELEMENT":"f.AF5DC851DACBF2012E39B7160BB7E182.d.7CE8D3260AF42375F9A5F680DA741519.e.61"}]}
+RESULT: {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (8097 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"f.AF5DC851DACBF2012E39B7160BB7E182.d.7CE8D3260AF42375F9A5F680DA741519.e.61","ELEMENT":"f.AF5DC851DACBF2012E39B7160BB7E182.d.7CE8D3260AF42375F9A5F680DA741519.e.61"}]}
+COMMAND: POST /session/1f7c052e54a1a3b4c0247e4bc8a37b12/element - {"using":"xpath","value":"//a[@aria-label=\"Careers\"]"}
+RESULT: {"using":"xpath","value":"//a[@aria-label=\"Careers\"]"}
+COMMAND: POST /session/1f7c052e54a1a3b4c0247e4bc8a37b12/element/f.AF5DC851DACBF2012E39B7160BB7E182.d.7CE8D3260AF42375F9A5F680DA741519.e.61/click - {}
+RESULT: {}
+COMMAND: GET /session/1f7c052e54a1a3b4c0247e4bc8a37b12/url - {}
+COMMAND: POST /session/1f7c052e54a1a3b4c0247e4bc8a37b12/execute/sync - {"script":"return (() => document.readyState === 'complete').apply(null, arguments)","args":[]}
+RESULT: {}
+]]></system-out>
+    </testcase>
+    <testcase classname="chrome.126_0_6478_185.windows.Footer_Sector" name="Verfiy Redirection of Contact Us Section" time="3.757">
+      <system-out><![CDATA[
+COMMAND: POST /session/1f7c052e54a1a3b4c0247e4bc8a37b12/window/maximize - {}
+COMMAND: DELETE /session/1f7c052e54a1a3b4c0247e4bc8a37b12/cookie - {}
+COMMAND: POST /session/1f7c052e54a1a3b4c0247e4bc8a37b12/element - {"using":"xpath","value":"//a[@aria-label=\"Contact us\"]"}
+COMMAND: POST /session/1f7c052e54a1a3b4c0247e4bc8a37b12/url - {"url":"https://sl:getin1@bayut-e2e-development.dubizzle.dev/"}
+RESULT: {"script":"return (() => document.readyState === 'complete').apply(null, arguments)","args":[]}
+RESULT: {"url":"https://sl:getin1@bayut-e2e-development.dubizzle.dev/"}
+RESULT: {"using":"xpath","value":"//a[@aria-label=\"Contact us\"]"}
+COMMAND: POST /session/1f7c052e54a1a3b4c0247e4bc8a37b12/execute/sync - {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (8097 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"f.AF5DC851DACBF2012E39B7160BB7E182.d.7241146211988AAA6B2694A8B95D2168.e.57","ELEMENT":"f.AF5DC851DACBF2012E39B7160BB7E182.d.7241146211988AAA6B2694A8B95D2168.e.57"}]}
+RESULT: {}
+RESULT: {}
+RESULT: {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (8097 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"f.AF5DC851DACBF2012E39B7160BB7E182.d.7241146211988AAA6B2694A8B95D2168.e.57","ELEMENT":"f.AF5DC851DACBF2012E39B7160BB7E182.d.7241146211988AAA6B2694A8B95D2168.e.57"}]}
+COMMAND: POST /session/1f7c052e54a1a3b4c0247e4bc8a37b12/element - {"using":"xpath","value":"//a[@aria-label=\"Contact us\"]"}
+RESULT: {"using":"xpath","value":"//a[@aria-label=\"Contact us\"]"}
+COMMAND: POST /session/1f7c052e54a1a3b4c0247e4bc8a37b12/element/f.AF5DC851DACBF2012E39B7160BB7E182.d.7241146211988AAA6B2694A8B95D2168.e.57/click - {}
+RESULT: {}
+COMMAND: GET /session/1f7c052e54a1a3b4c0247e4bc8a37b12/url - {}
+COMMAND: POST /session/1f7c052e54a1a3b4c0247e4bc8a37b12/execute/sync - {"script":"return (() => document.readyState === 'complete').apply(null, arguments)","args":[]}
+RESULT: {}
+]]></system-out>
+    </testcase>
+    <testcase classname="chrome.126_0_6478_185.windows.Footer_Sector" name="Verfiy Redirection of Terms Privacy Section" time="3.319">
+      <system-out><![CDATA[
+COMMAND: POST /session/1f7c052e54a1a3b4c0247e4bc8a37b12/window/maximize - {}
+COMMAND: DELETE /session/1f7c052e54a1a3b4c0247e4bc8a37b12/cookie - {}
+COMMAND: POST /session/1f7c052e54a1a3b4c0247e4bc8a37b12/element - {"using":"xpath","value":"//a[@aria-label=\"Terms and privacy policy\"]"}
+COMMAND: POST /session/1f7c052e54a1a3b4c0247e4bc8a37b12/url - {"url":"https://sl:getin1@bayut-e2e-development.dubizzle.dev/"}
+RESULT: {"script":"return (() => document.readyState === 'complete').apply(null, arguments)","args":[]}
+RESULT: {}
+RESULT: {}
+RESULT: {"using":"xpath","value":"//a[@aria-label=\"Terms and privacy policy\"]"}
+COMMAND: POST /session/1f7c052e54a1a3b4c0247e4bc8a37b12/element - {"using":"xpath","value":"//a[@aria-label=\"Terms and privacy policy\"]"}
+RESULT: {"url":"https://sl:getin1@bayut-e2e-development.dubizzle.dev/"}
+RESULT: {"using":"xpath","value":"//a[@aria-label=\"Terms and privacy policy\"]"}
+COMMAND: POST /session/1f7c052e54a1a3b4c0247e4bc8a37b12/execute/sync - {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (8097 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"f.AF5DC851DACBF2012E39B7160BB7E182.d.A8E259CF546FD4217D9E24C124D731F5.e.79","ELEMENT":"f.AF5DC851DACBF2012E39B7160BB7E182.d.A8E259CF546FD4217D9E24C124D731F5.e.79"}]}
+RESULT: {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (8097 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"f.AF5DC851DACBF2012E39B7160BB7E182.d.A8E259CF546FD4217D9E24C124D731F5.e.79","ELEMENT":"f.AF5DC851DACBF2012E39B7160BB7E182.d.A8E259CF546FD4217D9E24C124D731F5.e.79"}]}
+COMMAND: POST /session/1f7c052e54a1a3b4c0247e4bc8a37b12/element - {"using":"xpath","value":"//a[@aria-label=\"Terms and privacy policy\"]"}
+RESULT: {"using":"xpath","value":"//a[@aria-label=\"Terms and privacy policy\"]"}
+COMMAND: POST /session/1f7c052e54a1a3b4c0247e4bc8a37b12/element/f.AF5DC851DACBF2012E39B7160BB7E182.d.A8E259CF546FD4217D9E24C124D731F5.e.79/click - {}
+RESULT: {}
+COMMAND: GET /session/1f7c052e54a1a3b4c0247e4bc8a37b12/url - {}
+COMMAND: POST /session/1f7c052e54a1a3b4c0247e4bc8a37b12/execute/sync - {"script":"return (() => document.readyState === 'complete').apply(null, arguments)","args":[]}
+RESULT: {}
+]]></system-out>
+    </testcase>
+    <testcase classname="chrome.126_0_6478_185.windows.Footer_Sector" name="Verfiy Redirection of Google Play Store" time="6.146">
+      <failure message="element (&quot;//div[@class=&quot;e6a18ca9 en&quot;]&quot;) still not displayed after 5000ms"/>
+      <system-out><![CDATA[
+COMMAND: POST /session/1f7c052e54a1a3b4c0247e4bc8a37b12/window/maximize - {}
+COMMAND: DELETE /session/1f7c052e54a1a3b4c0247e4bc8a37b12/cookie - {}
+COMMAND: POST /session/1f7c052e54a1a3b4c0247e4bc8a37b12/element - {"using":"xpath","value":"//div[@class=\"e6a18ca9 en\"]"}
+COMMAND: POST /session/1f7c052e54a1a3b4c0247e4bc8a37b12/url - {"url":"https://sl:getin1@bayut-e2e-development.dubizzle.dev/"}
+RESULT: {"script":"return (() => document.readyState === 'complete').apply(null, arguments)","args":[]}
+RESULT: {}
+RESULT: {}
+RESULT: {"url":"https://sl:getin1@bayut-e2e-development.dubizzle.dev/"}
+RESULT: {"using":"xpath","value":"//div[@class=\"e6a18ca9 en\"]"}
+COMMAND: POST /session/1f7c052e54a1a3b4c0247e4bc8a37b12/element - {"using":"xpath","value":"//div[@class=\"e6a18ca9 en\"]"}
+RESULT: {"using":"xpath","value":"//div[@class=\"e6a18ca9 en\"]"}
+COMMAND: POST /session/1f7c052e54a1a3b4c0247e4bc8a37b12/element - {"using":"xpath","value":"//div[@class=\"e6a18ca9 en\"]"}
+RESULT: {"using":"xpath","value":"//div[@class=\"e6a18ca9 en\"]"}
+COMMAND: POST /session/1f7c052e54a1a3b4c0247e4bc8a37b12/element - {"using":"xpath","value":"//div[@class=\"e6a18ca9 en\"]"}
+RESULT: {"using":"xpath","value":"//div[@class=\"e6a18ca9 en\"]"}
+COMMAND: POST /session/1f7c052e54a1a3b4c0247e4bc8a37b12/element - {"using":"xpath","value":"//div[@class=\"e6a18ca9 en\"]"}
+RESULT: {"using":"xpath","value":"//div[@class=\"e6a18ca9 en\"]"}
+COMMAND: POST /session/1f7c052e54a1a3b4c0247e4bc8a37b12/element - {"using":"xpath","value":"//div[@class=\"e6a18ca9 en\"]"}
+RESULT: {"using":"xpath","value":"//div[@class=\"e6a18ca9 en\"]"}
+COMMAND: POST /session/1f7c052e54a1a3b4c0247e4bc8a37b12/element - {"using":"xpath","value":"//div[@class=\"e6a18ca9 en\"]"}
+RESULT: {"using":"xpath","value":"//div[@class=\"e6a18ca9 en\"]"}
+COMMAND: POST /session/1f7c052e54a1a3b4c0247e4bc8a37b12/element - {"using":"xpath","value":"//div[@class=\"e6a18ca9 en\"]"}
+RESULT: {"using":"xpath","value":"//div[@class=\"e6a18ca9 en\"]"}
+COMMAND: POST /session/1f7c052e54a1a3b4c0247e4bc8a37b12/element - {"using":"xpath","value":"//div[@class=\"e6a18ca9 en\"]"}
+RESULT: {"using":"xpath","value":"//div[@class=\"e6a18ca9 en\"]"}
+COMMAND: POST /session/1f7c052e54a1a3b4c0247e4bc8a37b12/element - {"using":"xpath","value":"//div[@class=\"e6a18ca9 en\"]"}
+RESULT: {"using":"xpath","value":"//div[@class=\"e6a18ca9 en\"]"}
+COMMAND: POST /session/1f7c052e54a1a3b4c0247e4bc8a37b12/element - {"using":"xpath","value":"//div[@class=\"e6a18ca9 en\"]"}
+RESULT: {"using":"xpath","value":"//div[@class=\"e6a18ca9 en\"]"}
+]]></system-out>
+      <system-err><![CDATA[
+Error: element ("//div[@class="e6a18ca9 en"]") still not displayed after 5000ms
+    at async Context.<anonymous> (file:///C:/Users/ahsham.khan/Desktop/WebDriver/bayutFunctionals/test/specs/footersection.js?invalidateCache=0.21292010679529438:132:9)
+]]></system-err>
+    </testcase>
+    <testcase classname="chrome.126_0_6478_185.windows.Footer_Sector" name="Verfiy BayutEG Redirection" time="6.885">
+      <failure message="element (&quot;//ul[@class=&quot;ab17c37c _8fd21802&quot;]&quot;) still not displayed after 5000ms"/>
+      <system-out><![CDATA[
+COMMAND: POST /session/1f7c052e54a1a3b4c0247e4bc8a37b12/window/maximize - {}
+COMMAND: DELETE /session/1f7c052e54a1a3b4c0247e4bc8a37b12/cookie - {}
+COMMAND: POST /session/1f7c052e54a1a3b4c0247e4bc8a37b12/element - {"using":"xpath","value":"//button[@aria-label=\"Select country\"]"}
+COMMAND: POST /session/1f7c052e54a1a3b4c0247e4bc8a37b12/url - {"url":"https://sl:getin1@bayut-e2e-development.dubizzle.dev/"}
+RESULT: {}
+RESULT: {}
+RESULT: {"using":"xpath","value":"//button[@aria-label=\"Select country\"]"}
+COMMAND: POST /session/1f7c052e54a1a3b4c0247e4bc8a37b12/execute/sync - {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (8097 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"f.AF5DC851DACBF2012E39B7160BB7E182.d.29CAD7DCA860B7F7E40ED740BAEFA33A.e.104","ELEMENT":"f.AF5DC851DACBF2012E39B7160BB7E182.d.29CAD7DCA860B7F7E40ED740BAEFA33A.e.104"}]}
+RESULT: {"url":"https://sl:getin1@bayut-e2e-development.dubizzle.dev/"}
+COMMAND: POST /session/1f7c052e54a1a3b4c0247e4bc8a37b12/element - {"using":"xpath","value":"//button[@aria-label=\"Select country\"]"}
+RESULT: {"using":"xpath","value":"//button[@aria-label=\"Select country\"]"}
+COMMAND: POST /session/1f7c052e54a1a3b4c0247e4bc8a37b12/execute/sync - {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (8097 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"f.AF5DC851DACBF2012E39B7160BB7E182.d.D9E050E2A2E48295EDEE3F04CF8E4BAF.e.122","ELEMENT":"f.AF5DC851DACBF2012E39B7160BB7E182.d.D9E050E2A2E48295EDEE3F04CF8E4BAF.e.122"}]}
+RESULT: {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (8097 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"f.AF5DC851DACBF2012E39B7160BB7E182.d.D9E050E2A2E48295EDEE3F04CF8E4BAF.e.122","ELEMENT":"f.AF5DC851DACBF2012E39B7160BB7E182.d.D9E050E2A2E48295EDEE3F04CF8E4BAF.e.122"}]}
+COMMAND: POST /session/1f7c052e54a1a3b4c0247e4bc8a37b12/element - {"using":"xpath","value":"//button[@aria-label=\"Select country\"]"}
+RESULT: {"using":"xpath","value":"//button[@aria-label=\"Select country\"]"}
+COMMAND: POST /session/1f7c052e54a1a3b4c0247e4bc8a37b12/element/f.AF5DC851DACBF2012E39B7160BB7E182.d.D9E050E2A2E48295EDEE3F04CF8E4BAF.e.122/click - {}
+RESULT: {}
+COMMAND: POST /session/1f7c052e54a1a3b4c0247e4bc8a37b12/element - {"using":"xpath","value":"//ul[@class=\"ab17c37c _8fd21802\"]"}
+RESULT: {"using":"xpath","value":"//ul[@class=\"ab17c37c _8fd21802\"]"}
+COMMAND: POST /session/1f7c052e54a1a3b4c0247e4bc8a37b12/element - {"using":"xpath","value":"//ul[@class=\"ab17c37c _8fd21802\"]"}
+RESULT: {"using":"xpath","value":"//ul[@class=\"ab17c37c _8fd21802\"]"}
+COMMAND: POST /session/1f7c052e54a1a3b4c0247e4bc8a37b12/element - {"using":"xpath","value":"//ul[@class=\"ab17c37c _8fd21802\"]"}
+RESULT: {"using":"xpath","value":"//ul[@class=\"ab17c37c _8fd21802\"]"}
+COMMAND: POST /session/1f7c052e54a1a3b4c0247e4bc8a37b12/element - {"using":"xpath","value":"//ul[@class=\"ab17c37c _8fd21802\"]"}
+RESULT: {"using":"xpath","value":"//ul[@class=\"ab17c37c _8fd21802\"]"}
+COMMAND: POST /session/1f7c052e54a1a3b4c0247e4bc8a37b12/element - {"using":"xpath","value":"//ul[@class=\"ab17c37c _8fd21802\"]"}
+RESULT: {"using":"xpath","value":"//ul[@class=\"ab17c37c _8fd21802\"]"}
+COMMAND: POST /session/1f7c052e54a1a3b4c0247e4bc8a37b12/element - {"using":"xpath","value":"//ul[@class=\"ab17c37c _8fd21802\"]"}
+RESULT: {"using":"xpath","value":"//ul[@class=\"ab17c37c _8fd21802\"]"}
+COMMAND: POST /session/1f7c052e54a1a3b4c0247e4bc8a37b12/element - {"using":"xpath","value":"//ul[@class=\"ab17c37c _8fd21802\"]"}
+RESULT: {"using":"xpath","value":"//ul[@class=\"ab17c37c _8fd21802\"]"}
+COMMAND: POST /session/1f7c052e54a1a3b4c0247e4bc8a37b12/element - {"using":"xpath","value":"//ul[@class=\"ab17c37c _8fd21802\"]"}
+RESULT: {"using":"xpath","value":"//ul[@class=\"ab17c37c _8fd21802\"]"}
+COMMAND: POST /session/1f7c052e54a1a3b4c0247e4bc8a37b12/element - {"using":"xpath","value":"//ul[@class=\"ab17c37c _8fd21802\"]"}
+RESULT: {"using":"xpath","value":"//ul[@class=\"ab17c37c _8fd21802\"]"}
+COMMAND: POST /session/1f7c052e54a1a3b4c0247e4bc8a37b12/element - {"using":"xpath","value":"//ul[@class=\"ab17c37c _8fd21802\"]"}
+RESULT: {"using":"xpath","value":"//ul[@class=\"ab17c37c _8fd21802\"]"}
+COMMAND: POST /session/1f7c052e54a1a3b4c0247e4bc8a37b12/element - {"using":"xpath","value":"//ul[@class=\"ab17c37c _8fd21802\"]"}
+RESULT: {"using":"xpath","value":"//ul[@class=\"ab17c37c _8fd21802\"]"}
+COMMAND: DELETE /session/1f7c052e54a1a3b4c0247e4bc8a37b12 - {}
+RESULT: {}
+]]></system-out>
+      <system-err><![CDATA[
+Error: element ("//ul[@class="ab17c37c _8fd21802"]") still not displayed after 5000ms
+    at async Context.<anonymous> (file:///C:/Users/ahsham.khan/Desktop/WebDriver/bayutFunctionals/test/specs/footersection.js?invalidateCache=0.21292010679529438:269:9)
+]]></system-err>
+    </testcase>
+  </testsuite>
+</testsuites>

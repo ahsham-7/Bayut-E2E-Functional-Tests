@@ -63,6 +63,15 @@ class TruValue extends Page {
     get GetEstimate(){
         return $('//button[@aria-label="Get estimate"]')
     }
+    get AgencyLocation(){
+        return $('//div[@name="property type"]/following::div[@aria-label="Location filter"]/input[@placeholder="Enter location"]')
+    }
+    get SearchAgencyBtn(){
+        return $('//a[text()="Search agencies"]')
+    }
+    get AgencyLocationDropdown(){
+        return $('//div[@class="_3eb9be10 _9a03d150 FilterDesign2022 e3e8565c"]')
+    }
     async SelectRentPurpose(){
         await this.waitForElementDisplayed(this.PurposeFilter)
         await this.PurposeFilter.click()
@@ -109,6 +118,13 @@ class TruValue extends Page {
     async SelectArea(){
         await this.Area.setValue(1200)
     }
+    async SelectAgencyField(loc_name){
+        await this.AgencyLocation.waitForClickable();
+        await this.AgencyLocation.setValue(loc_name)
+        await this.waitForElementDisplayed(this.AgencyLocationDropdown)
+        await this.SearchAgencyBtn.click()
+    }
+    
     ExpectedUrl="https://sl:getin1@bayut-e2e-development.dubizzle.dev/tru-value?category=apartments&purpose=to-rent&location=%2Fdubai%2Fdubai-marina&beds_in=2&area_min=100.3352832&area_max=122.63201280000001&baths_in=1%2C2%2C3"
     
 }
