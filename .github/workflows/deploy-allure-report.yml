@@ -24,10 +24,10 @@ jobs:
 
     - name: Run tests and generate Allure report
       run: |
-        npx wdio run wdio.conf.js
-        allure generate allure-results -o allure-report
+        npm test
+        npm run allure:generate
 
-    - name: Prepare deployment branch
+    - name: Deploy Allure report to gh-pages
       run: |
         git config user.name "github-actions"
         git config user.email "github-actions@github.com"
