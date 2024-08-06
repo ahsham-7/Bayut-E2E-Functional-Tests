@@ -1,0 +1,41 @@
+name: Deploy Allure Report
+
+on:
+  push:
+    branches:
+      - master
+  workflow_dispatch:  # Allows manual triggering
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Set up Node.js
+      uses: actions/setup-node@v2
+      with:
+        node-version: '14'
+
+    - name: Install dependencies
+      run: npm install
+
+    - name: Run tests and generate Allure report
+      run: |
+        npx wdio run wdio.conf.js
+        allure generate allure-results -o allure-report
+
+    - name: Prepare deployment branch
+      run: |
+        git config user.name "github-actions"
+        git config user.email "github-actions@github.com"
+        git checkout gh-pages || git checkout -b gh-pages
+        rm -rf *
+        cp -r ../allure-report/* .
+        git add .
+        git commit -m "Update Allure report"
+        git push origin gh-pages
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
