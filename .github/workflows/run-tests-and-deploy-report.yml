@@ -41,11 +41,11 @@ jobs:
         # Move the new Allure report outside the repository temporarily
         mv allure-report ../allure-report-temp
 
-        # Clean the branch
-        git rm -rf .
+        # Remove only the old Allure report
+        rm -rf allure-report
 
-        # Move the Allure report files back
-        mv ../allure-report-temp/* .
+        # Move the new Allure report files back
+        mv ../allure-report-temp allure-report
         
         # Clean up the temporary directory
         rmdir ../allure-report-temp
