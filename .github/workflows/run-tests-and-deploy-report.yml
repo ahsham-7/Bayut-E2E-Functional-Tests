@@ -1,10 +1,10 @@
 name: Run Tests and Deploy Allure Report
 
 on:
+  workflow_dispatch:  # Allows manual triggering
   push:
     branches:
       - master
-  workflow_dispatch:  # Allows manual triggering
 
 jobs:
   build:
@@ -27,12 +27,6 @@ jobs:
 
     - name: Install Allure CLI
       run: npm install -g allure-commandline
-
-    - name: Print global npm binary path
-      run: echo $(npm bin -g)
-
-    - name: List global npm binaries
-      run: ls -l $(npm bin -g)
 
     - name: Run tests and generate Allure report
       run: |
