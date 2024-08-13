@@ -24,7 +24,7 @@ jobs:
 
     - name: Run tests and generate Allure report
       run: |
-        npm run wdio
+        npx wdio run ./wdio.conf.js
         npm run allure:generate
 
     - name: Deploy Allure report to GitHub Pages
