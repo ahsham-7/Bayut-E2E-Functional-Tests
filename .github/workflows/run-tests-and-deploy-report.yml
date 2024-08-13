@@ -1,55 +1,36 @@
-name: Run Tests and Deploy Report
+name: Run Tests and Deploy Allure Report
 
 on:
   push:
     branches:
-      - master
-  workflow_dispatch:
+      - main  # Change this to your default branch if it's not main
+  workflow_dispatch:  # Allows manual triggering of the workflow
 
 jobs:
-  build:
+  build-and-deploy:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout code
-      uses: actions/checkout@v3
+      - name: Checkout code
+        uses: actions/checkout@v3
 
-    - name: Set up Node.js
-      uses: actions/setup-node@v3
-      with:
-        node-version: '16'
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '16'  # Set this to your Node.js version if needed
 
-    - name: Install dependencies
-      run: npm install
+      - name: Install dependencies
+        run: npm install  # or yarn install if you use Yarn
 
-    - name: Add execute permissions for wdio
-      run: chmod +x ./node_modules/.bin/wdio
+      - name: Run Tests
+        run: npm test  # This will use the "test" script defined in package.json
 
-    - name: Run WebdriverIO Tests
-      run: npx wdio ./wdio.conf.js
+      - name: Generate Allure report
+        run: npm run allure-report  # This will use the "allure-report" script defined in package.json
 
-    - name: Deploy Allure Report
-      run: |
-        git config --global user.name 'Your Name'
-        git config --global user.email 'your.email@example.com'
-
-        # Switch to gh-pages branch
-        git fetch origin gh-pages || git checkout --orphan gh-pages
-        git checkout gh-pages || git checkout --orphan gh-pages
-        git reset --hard
-
-        # Move the new Allure report outside the repository temporarily
-        mv allure-report ../allure-report-temp
-
-        # Remove only the old Allure report
-        rm -rf allure-report
-
-        # Move the new Allure report files back
-        mv ../allure-report-temp allure-report
-        
-        # Clean up the temporary directory
-        rmdir ../allure-report-temp
-
-        git add .
-        git commit -m 'Update Allure report'
-        git push origin gh-pages --force
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./allure-report
+          publish_branch: gh-pages

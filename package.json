@@ -5,11 +5,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-  "test": "echo \"Error: no test specified\" && exit 1",
-  "wdio": "wdio run ./wdio.conf.js",
-  "allure:generate": "allure generate allure-results -o allure-report",
-  "allure:open": "allure open allure-report",
-  "test:allure": "npm run wdio && npm run allure:generate"
+  "test": "wdio run ./wdio.conf.js",
+  "allure-report": "allure generate --clean -o allure-report"
 }
 ,
   "keywords": [],
