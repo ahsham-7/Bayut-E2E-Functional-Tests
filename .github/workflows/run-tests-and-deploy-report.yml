@@ -3,8 +3,8 @@ name: Run Tests and Deploy Report
 on:
   push:
     branches:
-      - master  # Triggers the workflow on pushes to the master branch
-  workflow_dispatch:  # Allows manual triggering of this workflow
+      - master
+  workflow_dispatch:
 
 jobs:
   build:
@@ -26,14 +26,16 @@ jobs:
       run: chmod +x ./node_modules/.bin/wdio
 
     - name: Run WebdriverIO Tests
-      run: npx wdio ./wdio.conf.js  # Explicitly running wdio
+      run: npx wdio ./wdio.conf.js
 
     - name: Deploy Allure Report
       run: |
         git config --global user.name 'Your Name'
         git config --global user.email 'your.email@example.com'
-        git checkout gh-pages
+        git fetch origin gh-pages || git checkout --orphan gh-pages
+        git checkout gh-pages || git checkout --orphan gh-pages
+        git rm -rf .
         cp -r allure-report/* .
         git add .
         git commit -m 'Update Allure report'
-        git push origin gh-pages
+        git push origin gh-pages --force
