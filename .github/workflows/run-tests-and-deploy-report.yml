@@ -19,8 +19,11 @@ jobs:
     - name: Install dependencies
       run: npm install
 
+    - name: Add execute permissions for wdio
+      run: chmod +x ./node_modules/.bin/wdio
+
     - name: Run WebdriverIO Tests
-      run: npm test  # Ensure this runs your WebdriverIO tests and generates the Allure report
+      run: npx wdio ./wdio.conf.js  # Explicitly running wdio
 
     - name: Deploy Allure Report
       run: |
