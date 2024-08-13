@@ -31,6 +31,9 @@ jobs:
     - name: Install Allure CLI
       run: npm install -g allure-commandline --save-dev
 
+    - name: Add execute permissions to Allure
+      run: chmod +x $(npm bin -g)/allure
+
     - name: Add execute permissions to wdio
       run: chmod +x ./node_modules/.bin/wdio
 
@@ -50,11 +53,12 @@ jobs:
       run: |
         git config user.name "github-actions"
         git config user.email "github-actions@github.com"
-        git checkout gh-pages || git checkout -b gh-pages
+        git fetch origin gh-pages || git checkout -b gh-pages
+        git reset --hard origin/gh-pages
         rm -rf *
         cp -r allure-report/* .
         git add .
-        git commit -m "Update Allure report"
+        git commit -m "Update Allure report" || echo "No changes to commit"
         git push origin gh-pages --force
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
