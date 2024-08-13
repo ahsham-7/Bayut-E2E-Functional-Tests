@@ -31,8 +31,14 @@ jobs:
     - name: Install Allure CLI
       run: npm install -g allure-commandline --save-dev
 
+    - name: List global npm packages
+      run: npm list -g --depth=0
+
     - name: Add execute permissions to Allure
-      run: chmod +x $(npm bin -g)/allure
+      run: |
+        ALLURE_PATH=$(npm bin -g)/allure
+        echo "Allure path: $ALLURE_PATH"
+        chmod +x $ALLURE_PATH
 
     - name: Add execute permissions to wdio
       run: chmod +x ./node_modules/.bin/wdio
@@ -40,7 +46,7 @@ jobs:
     - name: Run tests and generate Allure report
       run: |
         npx wdio ./wdio.conf.js
-        allure generate allure-results --clean -o allure-report
+        npx allure generate allure-results --clean -o allure-report
 
     - name: Check if Allure report was generated
       run: |
