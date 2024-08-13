@@ -1,10 +1,7 @@
-name: Run Tests and Deploy Allure Report
+name: Run Tests and Deploy Report
 
 on:
-  workflow_dispatch:  # Allows manual triggering
-  push:
-    branches:
-      - master
+  workflow_dispatch:  # Allows manual triggering of this workflow
 
 jobs:
   build:
@@ -17,39 +14,20 @@ jobs:
     - name: Set up Node.js
       uses: actions/setup-node@v3
       with:
-        node-version: '20'
-
-    - name: Install Chrome
-      run: sudo apt-get install -y google-chrome-stable
+        node-version: '16'
 
     - name: Install dependencies
       run: npm install
 
-    - name: Install Allure CLI
-      run: npm install -g allure-commandline
+    - name: Run WebdriverIO Tests
+      run: npm test  # Ensure this runs your WebdriverIO tests and generates the Allure report
 
-    - name: Run tests and generate Allure report
+    - name: Deploy Allure Report
       run: |
-        npx wdio ./wdio.conf.js
-        npx allure generate allure-results --clean -o allure-report
-
-    - name: Check if Allure report was generated
-      run: |
-        if [ ! -d "allure-report" ]; then
-          echo "Allure report directory does not exist."
-          exit 1
-        fi
-
-    - name: Deploy Allure report to GitHub Pages
-      run: |
-        git config user.name "github-actions"
-        git config user.email "github-actions@github.com"
-        git fetch origin gh-pages || git checkout -b gh-pages
-        git reset --hard origin/gh-pages
-        rm -rf *
+        git config --global user.name 'Your Name'
+        git config --global user.email 'your.email@example.com'
+        git checkout gh-pages
         cp -r allure-report/* .
         git add .
-        git commit -m "Update Allure report" || echo "No changes to commit"
-        git push origin gh-pages --force
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        git commit -m 'Update Allure report'
+        git push origin gh-pages
