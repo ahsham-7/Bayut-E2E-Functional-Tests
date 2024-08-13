@@ -32,10 +32,21 @@ jobs:
       run: |
         git config --global user.name 'Your Name'
         git config --global user.email 'your.email@example.com'
+
+        # Switch to gh-pages branch
         git fetch origin gh-pages || git checkout --orphan gh-pages
         git checkout gh-pages || git checkout --orphan gh-pages
+        git reset --hard
+
+        # Store the new Allure report in a temporary directory
+        mv allure-report ../allure-report-new
+
+        # Clean the branch
         git rm -rf .
-        cp -r allure-report/* .
+
+        # Move the new Allure report files back
+        mv ../allure-report-new/* .
+
         git add .
         git commit -m 'Update Allure report'
         git push origin gh-pages --force
