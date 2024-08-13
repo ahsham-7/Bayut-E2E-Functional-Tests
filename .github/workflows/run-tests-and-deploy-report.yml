@@ -25,9 +25,12 @@ jobs:
     - name: Install dependencies
       run: npm install
 
+    - name: Add execute permissions to wdio
+      run: chmod +x ./node_modules/.bin/wdio
+
     - name: Run tests and generate Allure report
       run: |
-        npx wdio run ./wdio.conf.js
+        npx wdio ./wdio.conf.js
         npx allure generate allure-results --clean -o allure-report
 
     - name: Deploy Allure report to GitHub Pages
