@@ -9,29 +9,46 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      # Checkout the repository
-      - name: Checkout code
-        uses: actions/checkout@v2
+    - name: Checkout code
+      uses: actions/checkout@v3
 
-      # Install dependencies (e.g., WebdriverIO, Allure)
-      - name: Install Dependencies
-        run: |
-          npm install
+    - name: Set up Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: '16'
 
-      # Run tests and generate Allure Report
-      - name: Run Tests
-        run: |
-          npm run test  # Make sure this command generates the Allure report
+    - name: Install Dependencies
+      run: npm install
 
-      # Deploy Allure Report to gh-pages branch
-      - name: Deploy Allure Report to gh-pages
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-          mkdir -p out
-          cp -r allure-report/* out
-          git checkout gh-pages
-          cp -r out/* .
-          git add .
-          git commit -m "Update Allure Report"
-          git push origin gh-pages
+    - name: Add execute permissions for wdio
+      run: chmod +x ./node_modules/.bin/wdio
+
+    - name: Run WebdriverIO Tests
+      run: npx wdio ./wdio.conf.js
+
+    - name: Deploy Allure Report to gh-pages
+      run: |
+        git config user.name "github-actions[bot]"
+        git config user.email "github-actions[bot]@users.noreply.github.com"
+        
+        # Create a directory for the Allure report if it doesn't exist
+        mkdir -p out
+        
+        # Copy the Allure report to the `out` directory
+        cp -r allure-report/* out
+        
+        # Checkout the gh-pages branch
+        git fetch origin gh-pages
+        git checkout gh-pages || git checkout --orphan gh-pages
+        git reset --hard
+        
+        # Copy the new Allure report files into the gh-pages branch
+        cp -r out/* .
+        
+        # Clean up
+        rm -rf out
+        
+        # Add, commit, and push the Allure report to the gh-pages branch
+        git add .
+        git commit -m "Update Allure Report"
+        git push origin gh-pages --force
