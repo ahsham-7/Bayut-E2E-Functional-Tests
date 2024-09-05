@@ -1,1 +1,1 @@
-{"total":1,"items":[{"uid":"c230fd7394eb0b7c1cf68c38193f209e","name":"Footer Sector","statistic":{"failed":0,"broken":2,"skipped":0,"passed":4,"unknown":0,"total":6}}]}
+{"total":2,"items":[{"uid":"c230fd7394eb0b7c1cf68c38193f209e","name":"Footer Sector","statistic":{"failed":0,"broken":6,"skipped":0,"passed":0,"unknown":0,"total":6}},{"uid":"9c4d21b51d3db4585dd68e1886c6defa","name":"FloorPlan Test Cases: Smoke Tests Only","statistic":{"failed":0,"broken":0,"skipped":0,"passed":15,"unknown":0,"total":15}}]}
