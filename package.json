@@ -6,7 +6,7 @@
   "main": "index.js",
   "scripts": {
     "test": "wdio run ./wdio.conf.js",
-    "allure-report": "allure generate --clean -o \"allure-report\""
+    "generate-report": "allure generate --clean -o \"allure-report\""
   },
   "keywords": [],
   "author": "",
