@@ -1,36 +1,37 @@
-name: Run Tests and Deploy Allure Report
+name: Generate and Deploy Allure Report
 
 on:
-  push:
-    branches:
-      - master  # Change this to your default branch if it's not main
-  workflow_dispatch:  # Allows manual triggering of the workflow
+  workflow_dispatch:  # Allows manual dispatch of this workflow
+  repository_dispatch:  # Allows triggering via the API if needed
 
 jobs:
-  build-and-deploy:
+  build:
     runs-on: ubuntu-latest
 
     steps:
+      # Checkout the repository
       - name: Checkout code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v2
 
-      - name: Set up Node.js
-        uses: actions/setup-node@v3
-        with:
-          node-version: '16'  # Set this to your Node.js version if needed
+      # Install dependencies (e.g., WebdriverIO, Allure)
+      - name: Install Dependencies
+        run: |
+          npm install
 
-      - name: Install dependencies
-        run: npm install  # or yarn install if you use Yarn
-
+      # Run tests and generate Allure Report
       - name: Run Tests
-        run: npm test  # This will use the "test" script defined in package.json
+        run: |
+          npm run test  # Make sure this command generates the Allure report
 
-      - name: Generate Allure report
-        run: npm run allure-report  # This will use the "allure-report" script defined in package.json
-
-      - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./allure-report
-          publish_branch: gh-pages
+      # Deploy Allure Report to gh-pages branch
+      - name: Deploy Allure Report to gh-pages
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          mkdir -p out
+          cp -r allure-report/* out
+          git checkout gh-pages
+          cp -r out/* .
+          git add .
+          git commit -m "Update Allure Report"
+          git push origin gh-pages
