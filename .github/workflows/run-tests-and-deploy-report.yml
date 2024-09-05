@@ -20,34 +20,37 @@ jobs:
     - name: Install Dependencies
       run: npm install
 
-    - name: Add execute permissions for wdio
-      run: chmod +x ./node_modules/.bin/wdio
-
     - name: Run WebdriverIO Tests
       run: npx wdio ./wdio.conf.js
 
+    - name: Generate Allure Report
+      run: npx allure generate allure-results --clean -o allure-report
+
     - name: Deploy Allure Report to gh-pages
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       run: |
-        git config user.name "github-actions[bot]"
-        git config user.email "github-actions[bot]@users.noreply.github.com"
-        
+        # Configure Git
+        git config --global user.name "github-actions[bot]"
+        git config --global user.email "github-actions[bot]@users.noreply.github.com"
+
         # Create a directory for the Allure report if it doesn't exist
         mkdir -p out
         
         # Copy the Allure report to the `out` directory
         cp -r allure-report/* out
         
-        # Checkout the gh-pages branch
+        # Fetch and checkout the gh-pages branch
         git fetch origin gh-pages
         git checkout gh-pages || git checkout --orphan gh-pages
         git reset --hard
-        
+
         # Copy the new Allure report files into the gh-pages branch
         cp -r out/* .
         
         # Clean up
         rm -rf out
-        
+
         # Add, commit, and push the Allure report to the gh-pages branch
         git add .
         git commit -m "Update Allure Report"
