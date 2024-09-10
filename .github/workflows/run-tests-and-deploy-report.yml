@@ -1,9 +1,6 @@
 name: CI and Deploy Allure Report
 
 on:
-  push:
-    branches:
-      - master
   workflow_dispatch:
 
 jobs:
@@ -33,4 +30,4 @@ jobs:
       with:
         branch: gh-pages
         folder: allure-report
-        token: ${{ secrets.ACTIONS_DEPLOY_KEY }} 
+        token: ${{ secrets.ACTIONS_DEPLOY_KEY }}
