@@ -1,6 +1,9 @@
 name: CI and Deploy Allure Report
 
 on:
+  push:
+    branches:
+      - master
   workflow_dispatch:
 
 jobs:
