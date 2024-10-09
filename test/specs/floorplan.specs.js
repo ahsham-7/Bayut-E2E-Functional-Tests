@@ -3,6 +3,8 @@ import FloorPlan from '../pageobjects/floorplan.page.js'
 describe('FloorPlan Test Cases: Smoke Tests Only', async()=>{
     it('Verify Floor Plan Cards: Dubai', async() =>{
          FloorPlan.openStage()
+         await FloorPlan.LogSite()
+         await FloorPlan.waitForPageToLoad()
          await FloorPlan.VerifyFloorPlanCardExists(FloorPlan.DubaiFloorPlan)
          await FloorPlan.DubaiFloorPlan.click()
          await FloorPlan.waitForPageToLoad()

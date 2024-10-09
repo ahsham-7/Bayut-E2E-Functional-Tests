@@ -56,7 +56,6 @@ export const config = {
         browserName: 'chrome', // or "firefox", "microsoftedge", "safari"
         'goog:chromeOptions': {
             args: [
-                '--headless',
                 '--no-sandbox',
                 '--disable-dev-shm-usage',
                 '--disable-gpu',  // Optional, depending on your environment

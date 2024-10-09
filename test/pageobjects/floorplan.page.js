@@ -24,7 +24,23 @@ class FloorPlan extends Page {
     get AlAinFloorPlan(){
         return $('//a[@title="Al Ain Floor plans"]')
     }
+    get Username(){
+        return $('//input[@id="username"]')
+    }
+    get Pass(){
+        return $('//input[@id="password"]')
+    }
+    get LoginBtn(){
+        return $('//button[text()="Log in"]')
+    }
+    
+    async LogSite() {
+        await this.Username.setValue('sl')
+        await this.Pass.setValue('getin1')
+        await this.LoginBtn.click()
+    }
 
+    
     async VerifyFloorPlanCardExists(element){
         await this.waitForElementDisplayed(element)
     }
