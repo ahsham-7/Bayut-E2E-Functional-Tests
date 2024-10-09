@@ -36,7 +36,8 @@ jobs:
     - name: Install Allure
       if: env.install == 'false'
       run: |
-        wget -qO - https://dl.bintray.com/qameta/generic/allure/latest/allure-2.13.8.zip | funzip > allure.zip
+        ALLURE_VERSION=2.13.8
+        curl -o allure.zip -L "https://github.com/allure-framework/allure2/releases/download/${ALLURE_VERSION}/allure-${ALLURE_VERSION}-zip.zip"
         unzip allure.zip -d $GITHUB_ENV
         echo "$GITHUB_ENV/allure/bin" >> $GITHUB_PATH
 
