@@ -21,6 +21,24 @@ jobs:
 
     - name: Install dependencies
       run: npm install
+    
+    - name: Check Allure Installation
+      run: |
+        if ! command -v allure &> /dev/null; then
+          echo "Allure is not installed"
+          exit 1
+        else
+          echo "Allure is installed"
+        fi
+
+    - name: Install Allure
+      run: |
+        wget -qO - https://dl.bintray.com/qameta/generic/allure/latest/allure-2.13.8.zip | funzip > allure.zip
+        unzip allure.zip -d $GITHUB_ENV
+        echo "$GITHUB_ENV/allure/bin" >> $GITHUB_PATH
+
+    - name: Set permissions for Allure
+      run: chmod +x $GITHUB_ENV/allure/bin/allure
 
     - name: Fix permissions for WebdriverIO
       run: chmod +x ./node_modules/.bin/wdio  
