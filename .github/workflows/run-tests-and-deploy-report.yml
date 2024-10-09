@@ -37,8 +37,15 @@ jobs:
       if: env.install == 'false'
       run: |
         ALLURE_VERSION=2.13.8
-        curl -o allure.zip -L "https://github.com/allure-framework/allure2/releases/download/${ALLURE_VERSION}/allure-${ALLURE_VERSION}-zip.zip"
+        ALLURE_URL="https://github.com/allure-framework/allure2/releases/download/${ALLURE_VERSION}/allure-${ALLURE_VERSION}-zip.zip"
+        
+        # Download Allure
+        curl -L -o allure.zip "${ALLURE_URL}"
+
+        # Unzip the downloaded file
         unzip allure.zip -d $GITHUB_ENV
+        
+        # Add Allure to the PATH
         echo "$GITHUB_ENV/allure/bin" >> $GITHUB_PATH
 
     - name: Set permissions for Allure
