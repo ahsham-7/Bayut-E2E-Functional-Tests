@@ -11,38 +11,40 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+    # Step 1: Checkout code
     - name: Checkout code
       uses: actions/checkout@v3
 
+    # Step 2: Set up Node.js
     - name: Set up Node.js
       uses: actions/setup-node@v3
       with:
         node-version: '16'
 
+    # Step 3: Install dependencies
     - name: Install dependencies
       run: npm install
-    
+
+    # Step 4: Install Allure using npm
     - name: Install Allure
-      run: |
-        wget -qO - https://dl.bintray.com/qameta/generic/allure/latest/allure-2.13.8.zip | funzip > allure.zip
-        unzip allure.zip -d allure
-        echo "allure/bin" >> $GITHUB_PATH
+      run: npm install -g allure-commandline
 
-    - name: Set permissions for Allure
-      run: chmod +x allure/bin/allure
+    # Step 5: Clean allure-results (Optional but recommended)
+    - name: Clean allure-results
+      run: npm run clean:allure
 
-    - name: Fix permissions for WebdriverIO
-      run: chmod +x ./node_modules/.bin/wdio  
-
+    # Step 6: Run tests and generate allure-results
     - name: Run tests
       run: npm test
 
-    - name: Generate Allure Report
+    # Step 7: Generate Allure Report
+    - name: Generate Allure report
       run: allure generate allure-results --clean -o allure-report
 
+    # Step 8: Deploy Allure Report to GitHub Pages
     - name: Deploy Allure Report to GitHub Pages
       uses: JamesIves/github-pages-deploy-action@v4
       with:
-        branch: gh-pages
-        folder: allure-report
+        branch: gh-pages          # The branch where GitHub Pages is hosted
+        folder: allure-report      # The folder containing the generated Allure report
         token: ${{ secrets.GITHUB_TOKEN }}

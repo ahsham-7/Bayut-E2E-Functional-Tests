@@ -5,8 +5,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "wdio run ./wdio.conf.js",
-    "allure-report": "allure generate --clean -o \"allure-report\""
+  "clean:allure": "rimraf allure-results",
+  "test": "npm run clean:allure && wdio run ./wdio.conf.js"
   },
   "keywords": [],
   "author": "",
