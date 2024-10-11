@@ -5,8 +5,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-  "clean:allure": "rimraf allure-results",
-  "test": "npm run clean:allure && wdio run ./wdio.conf.js"
+    "clean:allure": "rimraf allure-results",
+    "test": "npm run clean:allure && wdio run ./wdio.conf.js"
   },
   "keywords": [],
   "author": "",
@@ -20,6 +20,7 @@
     "@wdio/spec-reporter": "^8.27.0",
     "allure-commandline": "^2.29.0",
     "chromedriver": "^128.0.1",
+    "rimraf": "^6.0.1",
     "wdio-chromedriver-service": "^8.1.1"
   },
   "dependencies": {
